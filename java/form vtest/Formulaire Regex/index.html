@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ff2d38d481.js" crossorigin="anonymous"></script>
+    <title>formulaire test</title>
+</head>
+
+<body>
+    <h1 class="titreFormulaire">Formulaire de contact</h1>
+   
+    <div class="border"></div>
+    <form class="contact-form" action="index.html" method="post">
+
+        <label for="prenom">Entrez votre prénom :</label>
+        <div class="flexInput">
+            <input type="text" name="prenom" id="prenom" class="contact-form-text" placeholder="Votre prénom"
+                pattern="^[A-ZÀ-Ý]{1}[a-zà-ý '-]*([ |-][A-ZÀ-Ý]{1}[a-zà-ý '-]*)?$">
+            <img id='imgRouge' src="imgRouge.png"></img>
+            <img id='imgVerte' src="imgVerte.png"></img>
+            <i class="fas fa-question-circle" id="imgPrenom"
+                title="Inscrivez votre prénom avec une majuscule au début, 2 caractères minimum"></i>
+        </div>
+
+        <span id='prenom_manquant'></span><br>
+
+        <label for="mail">Entrez votre email :</label>
+        <div class="flexInput">
+            <input type="email" name="mail" id="mail" class="contact-form-text" placeholder="Votre email">
+            <img id='imgRouge' src="imgRouge.png"></img>
+            <img id='imgVerte' src="imgVerte.png"></img>
+            <i class="fas fa-question-circle"
+                title="Inscrivez votre courriel dans un format valide : mail@fournisseur.com"></i>
+        </div>
+        <span id='mail_manquant'></span><br>
+
+        <label for="tel">Entrez votre numéro de téléphone :</label>
+        <div class="flexInput">
+            <input type="text" name="tel" id="tel" class="contact-form-text" placeholder="Votre numéro de téléphone" reqired 
+            pattern="^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$">
+            <img id='imgRouge' src="imgRouge.png"></img>
+            <img id='imgVerte' src="imgVerte.png"></img>
+            <i class="fas fa-question-circle"
+                title="Inscrivez votre numéro de téléphone dans un format français valide : 01 02 03 04 05"></i>
+        </div>
+        <span id='tel_manquant'></span><br>
+
+        <label for="mess">Entrez votre message de :</label>
+        <div class="flexInput"></div>
+        <textarea class="contact-form-text" minlength="4" maxlength="1000" placeholder="Votre message"></textarea>
+        <div class="questionHauteur">
+            <i class="fas fa-question-circle" title="Inscrivez votre message 4 caractères minimum et 1000 maximum"></i>
+        </div>
+        <img id='imgRouge' src="imgRouge.png"></img>
+        <img id='imgVerte' src="imgVerte.png"></img>
+        </div>
+        <span id='message_manquant'></span><br>
+
+        <label for="motDePasse">Entrez votre mot de passe :</label>
+        <div class="flexInput">
+            <input type="password" name="motDePasse" id="motDePasse" class="contact-form-text"
+                placeholder="Votre mot de passe" class="contact-form-text" placeholder="Votre prénom"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#\$%\^&\*+])[a-zA-Z\d!@#\$%\^&\*+]{8,}$">
+            <i class="fas fa-question-circle"
+                title="Inscrivez un mot de passe d'au moins 8 caractères, avec une minuscule, une majuscule et un symbole (!@#$%^&*)"></i>
+            <img id='imgRouge' src="imgRouge.png"></img>
+            <img id='imgVerte' src="imgVerte.png"></img></div>
+        </div>
+        <span id='motDePass_manquant'></span><br>
+
+        <input type="submit" id="bouton_envoi" class="contact-form-btn" value="Envoyer">
+    </form>
+    </div>
+
+
+    <script src="formulaire.js"></script>
+</body>
+
+</html>

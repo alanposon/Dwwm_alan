@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+  }
+
+  .titreFormulaire{
+      text-align: center;
+  }
+  
+  .contact-section h1{
+    text-align: center;
+    color: #ddd;
+  }
+  .border{
+    width: 100px;
+    height: 10px;
+    background: #34495e;
+    margin: 40px auto;
+  }
+  
+  .contact-form{
+    max-width: 90;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  .contact-form-text{
+    display: block;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+  }
+  .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+  }
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  .contact-form-btn{
+    float: right;
+    border: 0;
+    background: #34495e;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .contact-form-btn:hover{
+    background: #2980b9;
+  }
+  
+    img#imgRouge {
+    display: none;
+}
+
+    img#imgVerte {
+    display: none;
+    margin: auto;
+}
+
+img {
+    height: 2vh;
+}
+
+.flexInput{
+    display: flex;
+    margin-left: 8%;
+}
+
+textarea.contact-form-text {
+    display: flex;
+    margin-left: 8%;
+    width: 83%;
+}
+
+i.fas.fa-question-circle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  padding-left: 8px;
+}
+
+textarea.contact-form-text {
+  float: left;
+}
+
+.questionHauteur{
+  height: 152px ;
+  display: flex;
+  justify-content: center;
+  width: 25px;
+  padding-left: 8px;
+}

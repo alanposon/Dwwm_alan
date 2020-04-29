@@ -1,0 +1,377 @@
+:root {
+    --color-vert-afpa: #44A33D;
+    --color-vert-clair: #9ee493;
+    --color-marron: #553739;
+    --color-blanc: #fff;
+    --color-vert-fonce: #17301c;
+    --color-gris: #d8d8d8;
+    --color-gris-choix: #a7a7a7;
+    --color-bleu-fonce:#0070ca;
+    --color-bleu-clair:#01b5fc;
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/****** HEADER *****/
+header{
+    margin: 0;
+    padding: 0;
+    background-color:var(--color-blanc);
+    border-bottom: 2px solid var(--color-vert-afpa);
+    display: flex;
+    align-items: center;
+    /* flex:9; */
+
+}
+header div#bienvenue div.centrer a{
+     text-decoration: none;
+     color:var(--color-bleu-fonce);
+}
+img{
+    width: 30%;
+}
+.logo{
+    flex:1;
+}
+#title{
+    display: flex;
+    color: var(--color-vert-afpa);
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    flex: 2;
+    font-size: 3em;
+   
+
+}
+.esp{
+    flex:1;
+}
+
+#bienvenue{
+    flex: 1;
+    text-align: center;
+}
+
+/**********Connexion*************/
+.content{
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+    margin: 10vh 0 15vh 0;
+   
+}
+
+.connect-form{
+    background-color:var(--color-gris);
+    width: 40vw;
+    /* margin:10vh 30vw; */
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.514);
+}
+fieldset{
+    border-radius: 12px;
+    margin:0 1vw 1vw 1vw;
+    border-color: white;
+    padding:1vw 5vw;
+}
+legend{
+    font-size: 2em;
+    color:var(--color-bleu-fonce);
+    padding:0 2vw;
+}
+.contenu{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    flex:1;
+    color: var(--color-vert-fonce);
+}
+
+.ligne{
+    display: flex;
+    align-items: center;
+}
+
+.ligne i{
+    color:var(--color-vert-afpa);
+    font-size: 1.3em;
+    padding: 0 1vw;
+}
+p{
+    text-align: center;
+    
+}
+
+/***************Tableau***************/
+#tableau{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gris);
+    color:var(--color-blanc);
+    margin:4vh 10vw;
+}
+.enTete{
+    display: flex;
+    background-color: var(--color-bleu-fonce);
+    flex:1;
+    text-align: center;
+    padding:1vw 0;
+    font-weight: bold;
+    font-size:1.2em;
+    border-bottom: 4px solid var(--color-blanc);
+        
+}
+.enTeteSemaine{
+    display: flex;
+    background-color: var(--color-bleu-fonce);
+    flex:1;
+    justify-content: center;
+    text-align: center;
+    padding:1vw 0;
+    font-weight: bold;
+    font-size:1.4em;
+    border-bottom:var(--color-bleu-clair) 2px solid;
+
+}
+.colonne{
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.stagiaire{
+font-weight: bold;
+padding-top: 12vh;
+}
+.row{
+    flex: 1; 
+    display: flex;    
+}
+.jour{
+    display: flex;
+}
+.days{
+    padding:2vh 5vw;
+    border-top: 2px solid white;
+    color: var(--color-vert-fonce);
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+.colonne-jour{
+    flex:0.5;
+    padding-top: 7vh;
+}
+.bloc{
+    display: flex;
+    flex:1;
+    text-align: center;
+    align-items: center;
+    color:var(--color-vert-fonce);
+     border-bottom: 4px solid var(--color-blanc);
+}
+
+.bloc2{
+    align-items: flex-start;
+}
+.espv{
+    height: 12vh;
+}
+.rotate{
+    transform: rotate(90deg);
+    flex:1;
+
+}
+textarea{
+    margin:0;
+    /* width: 80%;*/
+} 
+.boutonsTableau{
+    display: flex;
+}
+.centre{
+    display:flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: center;
+}
+input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+  
+}
+.blocCheck{
+    display: flex;
+}
+.valide{
+    flex:1.5;
+    text-align: center;
+    color: var(--color-blanc);
+    font-weight: bold;
+    padding: 1vh 0;
+    background-color: var(--color-vert-afpa);
+}
+.colonneCheck{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.messageCheck{
+    color:red;
+    padding-bottom:1vh ;
+    text-align: center;
+
+}
+
+.commente{
+    min-height:5vh ;
+}
+textarea{
+    overflow: scroll;
+    resize: none;
+    overflow-x: hidden;
+}
+/************Boutons************/
+input,
+select,textarea {
+    width: 100%;
+    font-size: 1em;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.centrer{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+input[type=submit]{
+    width: 50%;
+    background-color:var(--color-bleu-fonce);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 700;
+}
+
+input[type=submit]:hover ,button:hover{
+    background-color:var(--color-bleu-clair);
+}
+.btna{
+    width: 20%;
+    background-color:var(--color-bleu-fonce);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+.btna:hover{
+    background-color:var(--color-bleu-clair);
+}
+
+.dessusFooter {
+    margin-bottom: 10vh;
+}
+/************Footer***************/
+
+footer{
+    position: fixed;
+    bottom :0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--color-vert-afpa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .espace{
+    flex: 0.2;
+    padding-left: 2vw;
+}
+footer p{
+    flex: 2;
+    text-align: center;
+    color:var(--color-blanc);
+
+}
+footer img{
+    flex: 0.2;
+    padding-right: 2vw;
+    max-height: 10vh;
+}
+/***************connexion***************/
+.motDePasse{
+    position: relative;
+}
+#oeil{  
+    position: absolute;
+    right:5vw;
+    cursor: pointer;
+}
+
+/***************Media Query***************/
+
+@media screen and (max-width: 1300px) {
+
+    form.connect-form{
+        width: 60vw;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    form.connect-form{
+        width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    form.connect-form{
+        width: 95vw;
+    }
+
+    #title{
+        flex:1;
+        font-size: 2em;
+    }
+
+    img{
+        width: 70%;
+    }
+
+    form.connect-form fieldset legend{
+        font-size: 1.5em;
+    }
+
+}

@@ -1,0 +1,58 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-image:url(../Images/1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulaire{
+    padding-top: 30em;
+    display: flex;
+    align-content: center;
+    line-height: 3em;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.5;
+    padding: 20px;
+    color: black;
+}
+.titre{
+    color: white;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
+label
+{
+	display: block;
+	width: 200px;
+    float: left;
+}
+input
+{
+    width: 35%;
+    font-family: 'Roboto', sans-serif;
+}
+select
+{
+    width:36.5%;
+}
+textarea
+{
+    width:35%;
+    font-family: 'Roboto', sans-serif;
+}
+.tableauliste
+{
+    padding-top: 30em;
+    display: flex;
+    align-content: center;
+    line-height: 3em;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.5;
+    padding: 20px;
+    color: black;
+}

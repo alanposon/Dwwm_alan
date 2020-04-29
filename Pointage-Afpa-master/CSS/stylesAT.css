@@ -1,0 +1,92 @@
+#interfaceAT{
+    padding-bottom: 12vh;
+}
+
+#interfaceAT .listePointages{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 40vw;
+    align-items: center;
+    max-height: 30vh;
+    overflow: auto;
+    
+}
+
+#interfaceAT .entete{
+    background-color: #0070ca;
+    color: white;
+    border-bottom: 1px solid black;;
+}
+
+#interfaceAT .ligne{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  
+}
+
+#interfaceAT .ligne div{
+    padding: 1vh 1vw;
+    flex: 1;
+    text-align: center;
+}
+
+
+#interfaceAT #listeOffres{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    height: 30vh;
+    width: 30vw;
+    padding:0;
+}
+
+.numOffres{
+    overflow: auto;
+    padding: 1vw;
+    height: 22vh;
+}
+
+.numSemaines{
+    width: 30vw;
+}
+
+h3{
+    text-align: center;
+}
+
+#interfaceAT #selectAllOffres{
+    user-select: none;
+    cursor: pointer;
+}
+
+#interfaceAT .offre{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.3vh 0.1vw;
+}
+
+#interfaceAT .offre input{
+    margin-right: 2vw;
+}
+
+#interfaceAT .offre:hover{
+    background-color: #01b5fc;
+    color: white;
+}
+
+#interfaceAT .offre.checked:not(:hover){
+    background-color: #0070ca;
+    color: white;
+}
+
+#interfaceAT .pointagesOffre{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 4vh 2vw;
+   
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ff2d38d481.js" crossorigin="anonymous"></script>
+    <title>Exercice Input</title>
+</head>
+
+<body>
+    <h1 class="titreFormulaire">Formulaire de contact</h1>
+    <form method="post">
+        <label for="prenom">Entrez votre prénom :</label>
+        <input type="text" name="prenom" id="prenom" required='required' maxlength="20">
+        <img id='image_Crouge' src="X.png"></img><br>
+        <img id='image_Vvert' src="V.png"></img><br>
+        <span id='prenom_manquant'></span><br>
+
+        <label for="mail">Entrez votre email :</label>
+        <input type="email" name="mail" id="mail" required='required'><br>
+        <img id='image_CrougeMail' src="X.png"></img><br>
+        <img id='image_VvertMail' src="V.png"></img><br>
+        <span id='mail_manquant'></span><br>
+
+        <label for="tel">Entrez votre numéro de téléphone :</label>
+        <input type="tel" name="tel" id="tel" required='required'><br>
+        <img id='image_CrougeTel' src="X.png"></img><br>
+        <img id='image_VvertTel' src="V.png"></img><br>
+        <span id='tel_manquant'></span><br>
+        
+
+        <input type="submit" id="bouton_envoi" value="Valider">
+    </form>
+    <script src="formulaire.js"></script>
+</body>
+</html>

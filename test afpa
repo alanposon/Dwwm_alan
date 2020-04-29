@@ -1,0 +1,216 @@
+Different test sur le projet Site de pointage afpa 
+
+Test avec Lettres Differentes: 
+
+Test 1 : Identifiant avec 8 lettres minuscules differentes: azertyui / 
+Test 2 : Identifiant avec 4 lettres minuscules differentes: azer /
+Test 3 : Identifiant avec 8 lettres Majuscules differentes: AZERTYUI / 
+Test 4 : Identifiant avec 4 lettres Majuscules differentes: AZER /
+Test 5 : Identifiant avec 1 lettre Majuscule et 4 minuscules differentes: Azert /
+Test 6 : Identifiant avec 1 lettre Majuscule final et 4 minuscules differentes: azerT/
+Test 7 : Identifiant avec 4 lettres Majuscules et 1 minuscule differentes: AZERt /
+Test 8 : Identifiant avec 4 lettres Majuscules  et 1 minuscule differentes: aZERT/
+
+Test avec lettres semblables : 
+
+Test 1 : Identifiant avec 8 lettres minuscules semblables : aaaaaaaa / 
+Test 2 : Identifiant avec 4 lettres minuscules semblables : aaaa /
+Test 3 : Identifiant avec 8 lettres Majuscules semblables : AAAAAAAA / 
+Test 4 : Identifiant avec 4 lettres Majuscules semblables : AAAA /
+Test 5 : Identifiant avec 1 lettre Majuscule et 4 minuscules semblables : Aaaa /
+Test 6 : Identifiant avec 1 lettre Majuscule final et 4 minuscules semblables : aaaaA/
+Test 7 : Identifiant avec 4 lettres Majuscules et 1 minuscule semblables : AAAAa /
+Test 8 : Identifiant avec 4 lettres Majuscules  et 1 minuscule semblables : aAAAA/
+
+
+Test avec Chiffre differentes : 
+
+Test 1 : Identifiant avec 8 chiffres : 12345678 /
+Test 2 : Identifiant avec 4 chiffres : 1234 /
+
+Test avec Chiffre semblable : 
+
+Test 1 : Identifiant avec 8 chiffres semblables : 11111111 /
+Test 2 : Identifiant avec 4 chiffres semblables : 1111/
+
+
+Test avec symbole differents : 
+
+Test 1 : identifiant avec 4 symboles differents : /-''
+Test 2 : identifiant avec 8 symboles differents : #$@%-*/"
+
+
+Test avec symbole semblables : 
+
+Test 1 : identifiant avec 4 symboles semblables : ----
+Test 2 : identifiant avec 8 symboles semblables : --------
+
+Test chiffre avec symboles differents : 
+
+Test 1 : identifiant avec 2 chiffres et 4 symboles differents : 1-\=.2 
+Test 2 : identifiant avec 2 chiffres 8 symboles differents : 1-/#@_.=)2
+
+Test chiffre avec symboles semblables  : 
+
+Test 1 : identifiant avec 2 chiffres et 4 symboles semblables : 1-----1
+Test 2 : identifiant avec 2 chiffres 8 symboles semblables : 1--------1
+
+Test Symbole avec Lettres differents : 
+
+Test 1 : identifiant avec 1 Symboles et 13 Lettres differentes minuscules  : pierre-marmoud
+Test 2 : identifiant avec 1 Symboles et 13 Lettres differentes majuscules : PIERRE-MARMOUD
+Test 3 : identifiant avec 1 Symboles et 12 Lettres differentes minuscules et une lettre majuscule : Pierre-marmoud 
+Test 4 :  identifiant avec 4 Symboles et 4 Lettres differentes majuscules : A-L-A-N-
+Test 5 :  identifiant avec 4 Symboles , 2 Lettres differentes majuscules et 2 lettres differentes minuscules : A-l-a-N-
+
+Test Symbole avec Lettres semblables : 
+
+Test 1 : identifiant avec 1 Symboles et 13 Lettres semblables minuscules  : pppppp-ppppppp
+Test 2 : identifiant avec 1 Symboles et 13 Lettres semblables majuscules : PPPPPP-PPPPPPP
+Test 3 : identifiant avec 1 Symboles et 12 Lettres semblables minuscules et une lettre majuscule : Pppppp-ppppppp
+Test 4 : identifiant avec 4 Symboles et 4 Lettres semblables majuscules : P-P-P-P-
+Test 5 : identifiant avec 4 Symboles , 2 Lettres semblables majuscules et 2 lettres differentes minuscules : P-p-p-P-
+
+Des chiffres et des Lettres ( pas l'emission ) differentes : 
+
+Test 1 : Identifiant avec 1 chiffre et 4 lettres minuscules differentes: 2azer 
+Test 2 : Identifiant avec 1 chiffre et 4 lettres majuscules differentes: 2AZER
+Test 3 : Identifiant avec 1 chiffre et 8 lettres minuscules differentes: 2azertyui
+Test 4 : Identifiant avec 1 chiffre et 8 lettres majuscules differentes: 2AZERTYUI
+Test 5 : Identifiant avec 2 chiffres et 4 lettres minuscules differentes: 2azer3
+Test 6 : Identifiant avec 2 chiffres et 4 lettres majuscules differentes: 2AZER3
+Test 7 : Identifiant avec 2 chiffres et 8 lettres minuscules differentes: 2azertyui3 
+Test 8 : Identifiant avec 2 chiffres et 8 lettres majuscules differentes: 2AZERTYUI3
+Test 9 : Identifiant avec 2 chiffres et 4 lettres majuscules et 4 minuscules differentes  : 2ABdcETok3
+
+Des chiffres et des Lettres ( pas l'emission ) semblables : 
+
+Test 1 : Identifiant avec 1 chiffre et 4 lettres minuscules semblables: 2aaaa
+Test 2 : Identifiant avec 1 chiffre et 4 lettres majuscules semblables: 2AAAA
+Test 3 : Identifiant avec 1 chiffre et 8 lettres minuscules semblables: 2aaaaaaaa
+Test 4 : Identifiant avec 1 chiffre et 8 lettres majuscules semblables: 2AAAAAAAA
+Test 5 : Identifiant avec 2 chiffres et 4 lettres minuscules semblables: 2aaaa3
+Test 6 : Identifiant avec 2 chiffres et 4 lettres majuscules semblables: 2AAAA3
+Test 7 : Identifiant avec 2 chiffres et 8 lettres minuscules semblables: 2aaaaaaaa3 
+Test 8 : Identifiant avec 2 chiffres et 8 lettres majuscules semblables: 2AAAAAAAA3
+Test 9 : Identifiant avec 2 chiffres et 4 lettres majuscules et 4 minuscules semblables : 2AaaAaaAA2
+
+Test Symboles , Chiffres , Lettres differentes : 
+
+Test 1 : identifiant avec 2 Symboles et 2 Lettres differentes minuscules , 2 chiffres differents  : c3-p0/
+Test 2 : identifiant avec 2 Symboles et 2 Lettres differentes majuscules , 2 chiffres differents  : C3-P0/
+Test 3 : identifiant avec 1 Symboles et 2 Lettres differentes minuscules et une lettre majuscule et 2 chiffres differents: P1a-t0
+Test 4 : identifiant avec 4 Symboles et 2 Lettres differentes majuscules , 2 chiffres differents: #L-0.1N/
+Test 5 : identifiant avec 4 Symboles , 2 Lettres differentes majuscules, 2 lettres differentes minuscules , 2 chiffres differents: P.L-a/n66
+
+
+Test Symboles , Chiffres , Lettres semblables : 
+
+Test 1 : identifiant avec 2 Symboles et 2 Lettres differentes minuscules , 2 chiffres semblables  : 0p-p0-
+Test 2 : identifiant avec 2 Symboles et 2 Lettres differentes majuscules , 2 chiffres semblables  : T0-T0-
+Test 3 : identifiant avec 1 Symboles et 2 Lettres differentes minuscules et une lettre majuscule et 2 chiffres semblables: P0t-t0
+Test 4 : identifiant avec 4 Symboles et 2 Lettres differentes majuscules , 2 chiffres semblables: .N.0.0N.
+Test 5 : identifiant avec 4 Symboles , 2 Lettres differentes majuscules, 2 lettres differentes minuscules , 2 chiffres semblables: A.A-n.n66
+
+Test realiste : 
+
+Test 1 : daenerys targaryen
+Test 2 : Aragorn-fils-d'arathorn 
+Test 3 : Albus Dumbledore 
+Test 4 : Rick-grims 
+Test 5 : JigSaw
+Test 6 : Quig0nj1nn
+Test 7 : Michael-myers22 
+
+Test des checkBox : 
+
+Test des menus deroulants : 
+
+
+test du mot de passe ok et identifiant correct : 
+
+test du mot de passe ok et identifiant incorrect 
+
+test du mot de passe pas correct et identifiant incorrect : 
+
+debeugage avec le parametre.ini , maintenent la connection marche bien 
+
+test formateur : 
+un formateur peut se connecter en temps que AT mais pas en temps que stagiaire 
+faire attention au espace ! 
+quand on fait retour dans "exporter le CSV " sa nous deconnect au lieu de revenir a la page precedente 
+je vais cree une liaison pour avoir juste un retour a la page precedente 
+quand je met retour sa bacule sur le formulaire de connection mais je suis toujours connecter au compte connecter precedemment
+
+
+0600941
+LAFORCE
+ALBERT
+ok
+
+1200591
+SEURIOT
+ANDRE
+ok 
+
+0502772
+DISTANTI
+ANNE
+ok 
+
+0700366
+LOGEZ
+CAROLE
+ok 
+	
+1700978
+FICQUET
+CHRISTOPHE
+probleme dans la table semaine 
+
+0700665
+DEGROOTE
+ELODIE
+ok 
+
+1802963
+FOURNET
+HELENE
+ok 
+
+88CN001
+VASSEUR
+LEON
+ok 
+
+test stagiaire : 
+un stagiaire ne peut pas se connecter en tant que formateur ni en temps que AT 
+MAIK
+JULIEN
+19059054
+MAIK JULIEN/n 19059054 : il y a un /n en trop a modifier 
+
+DUFOUR
+DAVID
+19129518
+
+ENGAMBA
+HANNA
+19129490
+
+	
+MOREAU
+JOSUE
+19129560
+
+HENON
+RUDY
+19129829
+
+TURBOT
+JULIE	
+16156520
+
+REMY
+BRIAN
+19133825

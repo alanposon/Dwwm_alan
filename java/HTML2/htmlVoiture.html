@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>calculer de vitesse</title>
+    <style>
+        #box {
+            width: 160px;
+            height: 200px;
+            border: 1px solid #000;
+            border-radius: 40%;
+            background-size: cover ;
+            background-image:url(../image/sin.jpg);
+        }
+        
+    </style>
+</head>
+
+<body translate="no">
+    <h1>calcule de differente vitesse </h1>
+    <p>
+        <label>choisi la vitesse que tu veux dans la liste:</label>
+        <select id="frameRate">
+            <option value="5">10 km</option>
+            <option value="15">30 km</option>
+            <option value="24" selected>50 km </option>
+            <option value="40">90 km</option>
+            <option value="60">150 km</option>
+        </select>
+    </p>
+    <p>
+        <label>choisi le lapse de temps pour parcourir les kilometres:</label>
+        <select id="distance">
+            <option value="1">5 heure</option>
+            <option value="5" selected>4 heures</option>
+            <option value="10">3 heures</option>
+            <option value="25">2 heures</option>
+            <option value="50">1 heures</option>
+        </select>
+    </p>
+    <div id="box"></div>
+    <script>
+        var box = document.querySelector("#box");
+        var frameRate = document.querySelector("#frameRate");
+        var distance = document.querySelector("#distance");
+        var int;
+
+        function animation() {
+            var margin = 0;
+            int = setInterval(function () {
+                    margin = (margin > window.innerWidth ? 0 : margin + Number(distance.value));
+                    box.style.marginLeft = margin + "px";
+                },
+                1000 / Number(frameRate.value))
+        }
+
+        function retour() {
+            clearInterval(int);
+            animation();
+        }
+
+            animation();
+
+        frameRate.addEventListener("change", retour);
+        distance.addEvenetListener("change", retour);
+    </script>
+</body>
+
+</html>

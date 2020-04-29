@@ -1,0 +1,53 @@
+html,
+body {
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    min-width: 400px;
+    background-image: url("fond.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  
+}
+
+.cadre { 
+    border : 1px solid blue;
+    border-radius: 15%;
+    background-image: url("fond.jpg");
+    filter: grayscale(50%);
+}
+#ville {
+    text-transform: capitalize;
+}
+
+#temperature {
+    font-size: 4em;
+}
+
+#changer {
+    background: rgba(178, 223, 251, .3);
+    cursor: pointer;
+}
+
+#icon {
+    font-size: 4em;
+    height: 40px;
+}
+
+.vitesseVent{
+    font-size: 24px;
+    color: red;
+}
+
+#horaire{
+
+   
+    font-size: 2.5em; 
+}
+
+#date{
+  
+     font-size: 2.5em; 
+     color:rgb(6, 6, 238);
+}

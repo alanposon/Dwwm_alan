@@ -1,0 +1,88 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: gray;
+    font-family: 'Saira', sans-serif;
+}
+
+/*********** Connexion ***********/
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(168, 59, 76);
+    font-size: 1.2em;
+    color: white;
+}
+
+.container {
+    width: 500px;
+    height: 400px;
+    /*  Pour centrer le contenu d'un bloc  on utilise la prop text-align  */
+    text-align: center;
+    /*  Pour centrer un bloc on doit d'abord préciser le width et utiliser ensuite la prop margin  */
+    margin: auto;
+    background-color: lightgrey;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -70px;
+    margin-bottom: 30px;
+}
+
+input {
+    height: 40px;
+    width: 300px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 35px;
+}
+
+.form-input {
+    position: relative;
+
+}
+
+.fa-lock,
+.fa-user {
+    position: absolute;
+    top: 8px;
+    left: 88px;
+    color: rgb(168, 59, 76);
+}
+
+input[type=text] {
+    font-family: 'Saira', sans-serif;
+}
+
+input[type=password] {
+    font-family: 'Saira', sans-serif;
+}
+
+input[type=submit] {
+    width:30%;
+    margin: 2vw;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    font-family: 'Saira', sans-serif;
+    padding-left: 0px;
+    border-radius: 12px;
+    border-style: hidden;
+}
+
+input[type=submit]:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    font-size: 1.3em;
+   
+}
+
+/*************    INTERFACE DE BASE        ************/

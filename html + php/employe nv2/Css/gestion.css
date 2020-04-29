@@ -1,0 +1,69 @@
+header {
+    display: flex;
+    background-color: #d10071;
+    padding: 1vh;
+    align-items: center;
+}
+
+body {
+    background-color: dimgray;
+
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    flex: 1;
+}
+
+.titre {
+    flex: 9;
+    text-align: center;
+    font-size: 3em;
+    color: whitesmoke;
+    text-shadow: 2px 2px 12px #150e14;
+
+
+}
+
+h3 {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    justify-content: center;
+    margin: 3vw 20vw;
+    border-radius: 15px;
+    border: 3px solid black;
+
+}
+
+.bloc1 {
+    display: flex;
+    flex: 1;
+    border: 3px outset;
+    font-size: 1.5em;
+    font-family: serif;
+    background-color: pink;
+    color: deeppink;
+
+}
+
+.bloc {
+    display: flex;
+    flex: 1;
+    border: 1px solid #4d4d4d;
+    font-size: 1em;
+
+}
+
+.ligne {
+    flex: 2;
+    text-align: center;
+    text-decoration: underline;
+}

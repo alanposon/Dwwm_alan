@@ -1,0 +1,265 @@
+html,
+body {
+    margin: 0;
+    /* on met notre html et notre body a une marge de 0 et un haut de page de 0 */
+    padding: 0;
+}
+
+body {
+    /* dans le corp du site */
+    background-image: url(../image/fond.jpg);
+    /* on met notre image en arriere plan */
+    background-position: center;
+    /* on la centre */
+    background-size: cover;
+    /* on definit sa taille en couvrant */
+    background-repeat: repeat;
+    /* si elle est pas assez grande on la repete */
+    display: flex;
+    /* on debloque les enfants pour pouvoir les deplacer */
+    justify-content: center;
+    /* on deplace au centre */
+}
+
+.contenu {
+    width: 80vw;
+    /* je veux que le contenu a une lageur de 80vw */
+}
+
+header {
+    background-image: url(../image/header.jpg);
+    /* on place une image en arriere plan */
+    display: flex;
+    /* on active le mouvement pour les enfants */
+}
+
+.logo {
+
+    flex: 1;
+    /* le logo prendra une place sur 10 */
+
+}
+
+.logo:hover {
+    background-color: gold;
+cursor:no-drop;
+}
+
+.titrePage {
+
+    flex: 9;
+    /* le titre prendra une place de 9 sur 10 ( logo 1/10 , titre 9/10 = 10/10 )*/
+    font-family: Impact, Charcoal, sans-serif;
+    /* on change la police */
+    font-size: 4em;
+    /* on change la taille de la police ;*/
+    letter-spacing: 5px;
+    /* on change l'espacement entre les lettre */
+    text-transform: uppercase;
+    /* on passe le tout en majuscule */
+    text-shadow: white 0.1em 0.1em 0.2em;
+    /* faire un ombrage */
+    text-align: center;
+    /* on aligne le texte au centre */
+}
+
+nav {
+    background-image: url(../image/fond1.png);
+    /* on insert une image en fond */
+    background-position: left;
+    /* et on la place a gauche */
+    display: flex;
+    justify-content: center;
+    /* on place au centre */
+    padding: 0.4vw 0;
+    /* on gere l'espace entre le haut et le bas */
+}
+
+.menu a:hover {
+    background-color: red;
+cursor:pointer;
+}
+
+.menu {
+    display: flex;
+    padding: 0.5vw;
+    margin: 0.1vw;
+    background-image: linear-gradient(to bottom, #3e20d1, #3e90d1);
+    /* on gere le degrader en arriere plan  */
+    border: solid #326280 3px;
+    /* on gere la bordure */
+    border-radius: 5px;
+    /* on gere les coins pour faire plus ou moin arrondi */
+    color: white;
+}
+
+
+.page {
+    display: flex;
+    /* on active */
+    flex-direction: column;
+    /* et on veut que le contenu de la page soit en colonne */
+    margin: 2vh;
+}
+
+.partie1 {
+    display: flex;
+    /* active */
+}
+
+.espace {
+    flex: 0.1;
+    /* l'espace va prendre que 0.1 */
+}
+
+.video {
+    flex: 2;
+    /* la video prendra 2 places */
+    height: 25vh;
+    ;
+
+}
+
+.cookieSemaine {
+
+    flex: 3;
+    /* le cookieSemaine prendra 3 places*/
+    display: flex;
+    flex-direction: column;
+    /* et son contenu sera en colonne */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+    height: 25vh;
+    /* la largeur */
+    overflow-y: scroll;
+    /* pour cree une barre pour scroller 
+    */
+
+}
+
+.titreSemaine {
+    text-align: center;
+    background-color: dodgerblue;
+    font-size: 1em;
+
+    flex: 1;
+}
+
+.ingredientsPhoto {
+    flex: 4;
+    display: flex;
+}
+
+.ingredients {
+    flex: 2;
+}
+
+.photo {
+    flex: 1;
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.recette {
+    flex: 4;
+}
+
+.partie2 {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.titreArticle h3 {
+    text-align: center;
+}
+
+.texteAside {
+    display: flex;
+}
+
+.texteArticle {
+    flex: 9;
+}
+
+aside {
+    flex: 1;
+    border: 2px solid blue;
+    margin: auto;
+}
+
+footer {
+    background-image: url(../image/fond1.png);
+    background-position: top;
+    /* on la veut en haut */
+    display: flex;
+    color: white;
+    text-align: center;
+}
+
+.piedPage {
+    flex: 9;
+}
+
+img,
+video {
+    width: 100%;
+    /* la largeur de l'image sera definit grace a la page */
+    height: 100%;
+}
+
+@media screen and (max-width:1500px) {
+
+    /* quand la page est en dessous de 1500p elle fera : */
+    .titrePage {
+        color: limegreen;
+        /* le titre sera vert */
+        font-size: 3em;
+        /* la taille de la police changera */
+    }
+
+    .ingredientsPhoto {
+        flex-direction: right;
+        /* les ingredients iront a droite */
+    }
+
+    .contenu {
+        width: 100vw;
+        /* et le contenu changera de taille */
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .titrePage {
+        color: red;
+        font-size: 2em;
+    }
+
+    .ingredientsPhoto {
+        flex-direction: column;
+    }
+
+    .contenu {
+        width: 200vw;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .titrePage {
+        color: yellow;
+        font-size: 2em;
+    }
+
+    .ingredientsPhoto {
+        flex-direction: column;
+    }
+
+    .contenu {
+        width: 300vw;
+    }
+    aside { 
+    border : 2px solid green ;} /* les bordures du cadre changerons de couleurs
+}

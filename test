@@ -1,0 +1,29 @@
+ 
+ 
+ ***********************faire des conditions **********************
+ 
+ 
+ a=12;
+if(a>12){
+  alert("c'est bien");
+}
+else if (a<10){
+  alert("cest de la merde ");
+}
+else { alert("bien vessilya ");
+     }
+	 
+****************demander plusieur chose a la suite *******************
+
+var nom; nom = (prompt("Entrez un nom"));
+var prenom; prenom = (prompt("Entrez un prenom"));
+var age; age = parseInt(prompt("Entrez un age"));
+var espace; espace = " ";
+
+var total ; total= nom+espace+prenom+espace+age; alert(total)
+
+
+******* demander et ecrire quelque chose avec du html incorporé *************
+
+var age; age = parseInt(prompt("Entrez votre age"));
+document.write("<b>" + " vous aurez " + "</b>" +(30+ age)+" dans 30 ans ");

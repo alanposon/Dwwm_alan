@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> 
+     <title>Cookie</title>
+    <meta charset="UTF-8">
+  
+
+<link id=css href=style.css rel=stylesheet type=text/css media=all/>
+
+</head>
+<body>
+    <p id='cook'></p> <!--parragraphe relatif a se qu'il y aura dans mes cookie (un test) -->
+<script >
+    document.cookie = ' prenom1=alan; expires=sun, 17 Jul 2020 12:00:00 UTC; path=/'; // le cookie 1 est enregistrer jusqu'a la date indiquer 
+    document.cookie = ' prenom2=baptiste; expires=sun, 17 Jul 2020 12:00:00 UTC; path=/'; 
+
+   document.cookie ='prenom1=vessilya; expires=sun, 17 Jul 2020 12:00:00 UTC; path=/'; // pour modifier la valeur du cookie 1 
+   document.cookie = ' prenom2=baptiste; expires=sun, 17 March 2020 12:00:00 UTC; path=/'; // pour supprimer mon cookie 2 je lui met une date au passer 
+ 
+    var c = document.cookie; // on met le resultat de document.cookie dans la variable c 
+    document.getElementById('cook').innerHTML = c ; // on prend le html present dans la variable c 
+
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+body{
+ background-color: pink;
+
+}
+#logo{ 
+    float:right;
+    border : 1rem solid red ;
+    transition: all 1s;
+border-radius: 95px 10px 55px 200px;
+    
+}
+#logo:hover{
+    border : 1rem solid yellow ;
+    transform: scale(1.25);
+}
+
+p{
+   color :  red ;
+}
+
+#par{
+    color : blue ; 
+    text-decoration:underline;
+        font-family: 'Pinyon Script', cursive;
+    font-size : 30px ; 
+     transition: all 1s;
+}
+#par:hover{
+    color: yellow ;
+    transform: rotate(-5deg);
+}
+#pari{
+    color : blue ; 
+    text-decoration:underline;
+        font-family: 'Pinyon Script', cursive;
+    font-size : 30px ;
+     transition: all 1s;
+}
+#pari:hover{
+    color: yellow ;
+    transform: rotate(25deg);
+}
+#paro{
+    color : blue ; 
+    text-decoration:underline;
+        font-family: 'Pinyon Script', cursive;
+    font-size : 30px ; 
+     transition: all 1s;
+    
+}
+#paro:hover{
+    color: yellow ;
+     transform: rotate(50deg);
+}

@@ -1,0 +1,200 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(41, 41, 41);
+    font-family: 'Trade Winds', cursive;
+}
+.header{
+    background-color: rgb(0, 0, 124);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 2%;
+    text-shadow: 0px 2px 1px #aaa;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 2%;
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.center-form{
+    display: flex;
+    flex-direction: column;
+    margin: 1.2% 1%;
+}
+.center-form-2{
+    display: flex;
+    flex-direction: column;
+    margin: 1% 1%;
+}
+
+.center-form-connexion{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+input[type=submit]{
+    background-color: rgb(0, 0, 82);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+.center-form-connexion a{
+    text-decoration: none;
+    color: white;
+}
+
+.espace{
+    padding: 0 1%;
+}
+.espace-2{
+    padding: 5% 0;
+}
+.espace-3{
+    padding: 6% 0;
+}
+
+.choix-liste-main{
+    margin: 0 25%;
+}
+
+.contenue a{
+    text-decoration: none;
+    color: black;
+}
+.choix-liste{
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: white;
+    margin-bottom: 3%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.choix-liste-2{
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: rgb(167, 167, 167);
+    margin-bottom: 3%;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.choix-liste-3{
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: rgb(2, 122, 96);
+    margin-bottom: 3%;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.choix-liste:hover{
+    padding: 5%;
+    background-color: rgb(231, 231, 231);
+    font-size: 1.2em;
+}
+
+.choix-liste-2:hover{
+    padding: 5%;
+    background-color: rgb(105, 105, 105);
+    font-size: 1.2em;
+}
+
+.choix-liste-3:hover{
+    padding: 5%;
+    background-color: rgb(0, 87, 68);
+    font-size: 1.2em;
+}
+
+.contenue-deconnect{
+    display: flex;
+    justify-content: center;
+}
+
+.contenue-deconnect a{
+    background-color: rgb(110, 110, 110);
+    padding: 1%;
+    border-radius: 4%;
+    transition: 0.5s;
+}
+.deconnect{
+    color: white; 
+}
+
+.contenue-deconnect a:hover{
+    background-color: rgb(51, 51, 51);
+    padding: 2%;
+}
+.deconnect{
+    color: white; 
+    font-size: 1.2em;
+}
+
+.conteneur-1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+.conteneur-tab{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.text-tab{
+    background-color: rgb(1, 1, 158);
+    color: white;
+    border: 1px solid white;
+    padding: 2%;
+}
+
+.conteneur-tab-2{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.text-tab-2{
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border: 1px solid white;
+    padding: 2%;
+}
+
+.text-tab-2 a{
+    color: white;
+    transition: 0.5s;
+}
+
+.text-tab-2 a:hover{
+    color: rgb(151, 0, 0);
+}
+
+a{
+    text-decoration: none;
+}
