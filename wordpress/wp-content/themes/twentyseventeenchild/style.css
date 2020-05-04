@@ -1,0 +1,28 @@
+/*
+Theme Name:   twentyseventeenchild
+Description:  Write here a brief description about your child-theme
+Author:       alan
+Author URL:   http://projets/wordpress
+Template:     twentyseventeen
+Version:      1.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  twentyseventeenchild
+*/
+
+/* Write here your own personal stylesheet */
+
+.Tintro{
+  font-style: italic;
+    
+}
+.intro{ color:yellow;
+}
+.tribe-events-calendar-month{ 
+background-color: azure;}
+
+.tribe-events-c-top-bar.tribe-events-header__top-bar{
+    background-color: azure;}
+}
+
+
