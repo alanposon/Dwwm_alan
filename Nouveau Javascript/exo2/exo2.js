@@ -15,6 +15,10 @@ age = 26 ;
 
 var ville = ""; 
 ville = "warhem "
+var dpt = "Je vis dans le \"59\"";
+var dpt2 = 'je vis dans le "59"'; // pour eviter les apestrophes
+var villee = 'j\'habite a warhem';  
+
 
 var homme = true ; // vrai 
 var femme = false ; // faux 
@@ -27,11 +31,11 @@ var nn = NaN; // n'est pas un nombre
 x = "quatre"; // stock plus 25 mais la chaine "quatre"
 
 alert("Variable x : "+ typeof(x)+ // /n retour a la ligne 
-"\Variable y : "+ typeof(y)+
-"\Variable homme : "+ typeof(a)+
-"\Variable n : "+ typeof(n)+
-"\Variable u : "+ typeof(u)+
-"\Variable nn : "+ typeof(nn));
+"\nVariable y : "+ typeof(y)+
+"\nVariable homme : "+ typeof(a)+ // typeof montre de quelle type est la variable 
+"\nVariable n : "+ typeof(n)+
+"\nVariable u : "+ typeof(u)+
+"\nVariable nn : "+ typeof(nn));
 
 var dpt = "Je vis dans le \"59\"";
 var dpt2 = 'je vis dans le "59"';
