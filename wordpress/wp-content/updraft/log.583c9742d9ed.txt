@@ -1,0 +1,186 @@
+0000.001 (0) Opened log file at time: Tue, 05 May 2020 09:50:21 +0000 on http://projets/wordpress
+0000.011 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.23 WP: 5.4.1 PHP: 7.3.12 (apache2handler, Windows NT ALAN 10.0 build 18363 (Windows 10) AMD64) MySQL: 10.4.10-MariaDB WPLANG: fr_FR Server: Apache/2.4.41 (Win64) PHP/7.3.12 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 13.7M | 4M) multisite: N openssl: OpenSSL 1.1.1d  10 Sep 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.012 (0) Free space on disk containing Updraft's temporary directory: 52091.4 MB
+0000.015 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.017 (0) Semaphore (fd, wp1_options) being initialised
+0000.019 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.021 (0) Set semaphore last lock (fd) time to 2020-05-05 09:50:21
+0000.022 (0) Semaphore lock (fd) complete
+0000.025 (0) Backup run: resumption=0, nonce=583c9742d9ed, file_nonce=583c9742d9ed begun at=1588672221 (0s ago), job type=backup
+0000.026 (0) Scheduling a resumption (1) after 300 seconds (1588672521) in case this run gets aborted
+0000.045 (0) Checking if we have a zip executable available
+0000.047 (0) Creation of backups of directories: beginning
+0000.068 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0001.300 (0) Total entities for the zip file: 682 directories, 4098 files (0 skipped as non-modified), 65.8 MB
+0002.910 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0002.950 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (4.1 MB, 101 (101) files added so far); re-opening (prior size: 0 KB)
+0005.938 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (5.3 MB, 56 (157) files added so far); re-opening (prior size: 1810.3 KB)
+0007.167 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 200 files added (on-disk size: 3205.5 KB)
+0008.980 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (6.4 MB, 125 (282) files added so far); re-opening (prior size: 3205.5 KB)
+0010.452 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 300 files added (on-disk size: 5970.7 KB)
+0011.941 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 400 files added (on-disk size: 5970.7 KB)
+0012.945 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.9 MB, 169 (451) files added so far); re-opening (prior size: 5970.7 KB)
+0014.588 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 500 files added (on-disk size: 6237.4 KB)
+0015.931 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.7 MB, 116 (567) files added so far); re-opening (prior size: 6237.4 KB)
+0016.449 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 600 files added (on-disk size: 6723.1 KB)
+0016.539 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 700 files added (on-disk size: 6723.1 KB)
+0016.628 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 800 files added (on-disk size: 6723.1 KB)
+0017.894 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 900 files added (on-disk size: 6723.1 KB)
+0018.933 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.6 MB, 375 (942) files added so far); re-opening (prior size: 6723.1 KB)
+0020.228 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 1000 files added (on-disk size: 7779.4 KB)
+0021.431 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 1100 files added (on-disk size: 7779.4 KB)
+0021.950 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1 MB, 161 (1103) files added so far); re-opening (prior size: 7779.4 KB)
+0023.715 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 1200 files added (on-disk size: 8104.4 KB)
+0024.396 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 1300 files added (on-disk size: 8104.4 KB)
+0024.933 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (4.4 MB, 232 (1335) files added so far); re-opening (prior size: 8104.4 KB)
+0026.307 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 1400 files added (on-disk size: 9729.2 KB)
+0027.747 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 1500 files added (on-disk size: 9729.2 KB)
+0027.942 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.3 MB, 186 (1521) files added so far); re-opening (prior size: 9729.2 KB)
+0029.792 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 1600 files added (on-disk size: 10121.2 KB)
+0030.934 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.5 MB, 122 (1643) files added so far); re-opening (prior size: 10121.2 KB)
+0033.121 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 1700 files added (on-disk size: 10767.3 KB)
+0033.922 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.6 MB, 115 (1758) files added so far); re-opening (prior size: 10767.3 KB)
+0034.546 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 1800 files added (on-disk size: 11018.4 KB)
+0036.928 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (4.9 MB, 110 (1868) files added so far); re-opening (prior size: 11018.4 KB)
+0039.039 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 1900 files added (on-disk size: 12665.4 KB)
+0039.926 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.6 MB, 55 (1923) files added so far); re-opening (prior size: 12665.4 KB)
+0041.624 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 2000 files added (on-disk size: 13579.2 KB)
+0042.543 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 2100 files added (on-disk size: 13579.2 KB)
+0043.040 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.9 MB, 254 (2177) files added so far); re-opening (prior size: 13579.2 KB)
+0043.661 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 2200 files added (on-disk size: 14282.6 KB)
+0045.543 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 2300 files added (on-disk size: 14282.6 KB)
+0045.928 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.7 MB, 156 (2333) files added so far); re-opening (prior size: 14282.6 KB)
+0047.699 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 2400 files added (on-disk size: 14794.6 KB)
+0048.958 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.4 MB, 157 (2490) files added so far); re-opening (prior size: 14794.6 KB)
+0049.392 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 2500 files added (on-disk size: 15198.1 KB)
+0051.326 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 2600 files added (on-disk size: 15198.1 KB)
+0051.959 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.2 MB, 150 (2640) files added so far); re-opening (prior size: 15198.1 KB)
+0053.238 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 2700 files added (on-disk size: 15307.2 KB)
+0053.433 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 2800 files added (on-disk size: 15307.2 KB)
+0053.491 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 2900 files added (on-disk size: 15307.2 KB)
+0053.532 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 3000 files added (on-disk size: 15307.2 KB)
+0053.573 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 3100 files added (on-disk size: 15307.2 KB)
+0053.591 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (19.2 MB, 4098 files batched, 501 (3141) added so far); re-opening (prior size: 15307.2 KB)
+0054.999 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 3200 files added (on-disk size: 20739.7 KB)
+0055.041 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 3300 files added (on-disk size: 20739.7 KB)
+0055.084 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 3400 files added (on-disk size: 20739.7 KB)
+0055.126 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 3500 files added (on-disk size: 20739.7 KB)
+0055.168 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 3600 files added (on-disk size: 20739.7 KB)
+0055.186 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.8 MB, 4098 files batched, 501 (3642) added so far); re-opening (prior size: 20739.7 KB)
+0055.499 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 3700 files added (on-disk size: 21458.3 KB)
+0055.542 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 3800 files added (on-disk size: 21458.3 KB)
+0055.584 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 3900 files added (on-disk size: 21458.3 KB)
+0055.628 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip.tmp: 4000 files added (on-disk size: 21458.3 KB)
+0057.121 (0) Created plugins zip (0) - 22197.7 KB in 57 s (389.1 KB/s) (sha1: 719048ab730a881c2ce74ec1c35aaa8539c8fca5, sha256: f93505dca6ca5b7549cc0fceb1936d360b3f59aca916ae9d709c455b9bc8261b)
+0057.125 (0) Beginning creation of dump of themes (split every: 400 MB)
+0057.195 (0) Total entities for the zip file: 51 directories, 212 files (0 skipped as non-modified), 3.9 MB
+0058.402 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0059.917 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0059.970 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (3.8 MB, 201 (201) files added so far); re-opening (prior size: 0 KB)
+0060.551 (0) Created themes zip (0) - 2220.2 KB in 3.4 s (648.7 KB/s) (sha1: dd89edc48958592490a14f1f97f9423db3021d43, sha256: fecd1f0cbe7c444ff6a960c1b5c8e434e28c6243c9f2a0052bc379675091cad2)
+0060.554 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0060.555 (0) Looking for candidates to backup in: C:\Users\alan\Documents\projets\wordpress/wp-content/uploads
+0060.556 (0) finding files: 2020: adding to list (1)
+0060.557 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0060.642 (0) Total entities for the zip file: 3 directories, 206 files (0 skipped as non-modified), 11.1 MB
+0061.621 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0062.902 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0062.930 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (10.9 MB, 201 (201) files added so far); re-opening (prior size: 0 KB)
+0065.370 (0) Created uploads zip (0) - 11366.1 KB in 4.8 s (2362.9 KB/s) (sha1: da20f70b41e11052abc308685fb573f15a30d9be, sha256: 0f457b6c378958de804e1e3793978a38e319276b8619a10d3485bb45d49364f9)
+0065.373 (0) Beginning backup of other directories found in the content directory (index: 0)
+0065.375 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0065.375 (0) Looking for candidates to backup in: C:\Users\alan\Documents\projets\wordpress/wp-content
+0065.376 (0) finding files: index.php: adding to list (1)
+0065.377 (0) finding files: languages: adding to list (2)
+0065.378 (0) finding files: plugins: skipping: this is the plugins directory
+0065.378 (0) finding files: themes: skipping: this is the themes directory
+0065.379 (0) finding files: updraft: skipping: this is the updraft directory
+0065.380 (0) finding files: upgrade: skipping: excluded by options
+0065.380 (0) finding files: uploads: skipping: this is the uploads directory
+0065.428 (0) Total entities for the zip file: 3 directories, 192 files (0 skipped as non-modified), 16.4 MB
+0066.449 (0) Zip: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-others.zip.tmp: 100 files added (on-disk size: 0 KB)
+0069.539 (0) Created others zip (0) - 4569 KB in 4.2 s (1099.4 KB/s) (sha1: 27a1e7a947038c1b86c88054edf62265bc83db76, sha256: a34dc59fac581ad12d039199f0122ca285ead73f21e3a1676631023c48e7bc0a)
+0069.545 (0) Saving backup status to database (elements: 8)
+0069.547 (0) Beginning creation of database dump (WordPress DB)
+0069.701 (0) Table wp1_options: Total expected rows (approximate): 216
+0069.798 (0) Table wp1_options: Total rows added: 212 in 0.10 seconds
+0069.805 (0) Table wp1_options: finishing file (backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_options.table.gz - 137 KB)
+0069.809 (0) Table wp1_users: Total expected rows (approximate): 4
+0069.823 (0) Table wp1_users: Total rows added: 4 in 0.01 seconds
+0069.829 (0) Table wp1_users: finishing file (backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_users.table.gz - 0.9 KB)
+0069.833 (0) Table wp1_usermeta: Total expected rows (approximate): 82
+0069.845 (0) Table wp1_usermeta: Total rows added: 82 in 0.01 seconds
+0069.850 (0) Table wp1_usermeta: finishing file (backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_usermeta.table.gz - 1.7 KB)
+0069.855 (0) Table wp1_commentmeta: Total expected rows (approximate): 0
+0069.866 (0) Table wp1_commentmeta: Total rows added: 0 in 0.01 seconds
+0069.871 (0) Table wp1_commentmeta: finishing file (backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_commentmeta.table.gz - 0.4 KB)
+0069.876 (0) Table wp1_comments: Total expected rows (approximate): 2
+0069.893 (0) Table wp1_comments: Total rows added: 2 in 0.02 seconds
+0069.898 (0) Table wp1_comments: finishing file (backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_comments.table.gz - 0.8 KB)
+0069.947 (0) Table wp1_links: Total expected rows (approximate): 0
+0070.121 (0) Table wp1_links: Total rows added: 0 in 0.17 seconds
+0070.141 (0) Table wp1_links: finishing file (backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_links.table.gz - 0.4 KB)
+0070.159 (0) Table wp1_postmeta: Total expected rows (approximate): 428
+0070.200 (0) Table wp1_postmeta: Total rows added: 428 in 0.04 seconds
+0070.211 (0) Table wp1_postmeta: finishing file (backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_postmeta.table.gz - 8.7 KB)
+0070.220 (0) Table wp1_posts: Total expected rows (approximate): 240
+0070.276 (0) Table wp1_posts: Total rows added: 240 in 0.05 seconds
+0070.283 (0) Table wp1_posts: finishing file (backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_posts.table.gz - 25.6 KB)
+0070.287 (0) Table wp1_term_relationships: Total expected rows (approximate): 135
+0070.301 (0) Table wp1_term_relationships: Total rows added: 135 in 0.01 seconds
+0070.306 (0) Table wp1_term_relationships: finishing file (backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_term_relationships.table.gz - 0.7 KB)
+0070.311 (0) Table wp1_term_taxonomy: Total expected rows (approximate): 38
+0070.324 (0) Table wp1_term_taxonomy: Total rows added: 38 in 0.01 seconds
+0070.329 (0) Table wp1_term_taxonomy: finishing file (backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_term_taxonomy.table.gz - 1 KB)
+0070.334 (0) Table wp1_termmeta: Total expected rows (approximate): 0
+0070.344 (0) Table wp1_termmeta: Total rows added: 0 in 0.01 seconds
+0070.349 (0) Table wp1_termmeta: finishing file (backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_termmeta.table.gz - 0.4 KB)
+0070.353 (0) Table wp1_terms: Total expected rows (approximate): 38
+0070.364 (0) Table wp1_terms: Total rows added: 38 in 0.01 seconds
+0070.369 (0) Table wp1_terms: finishing file (backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_terms.table.gz - 0.8 KB)
+0070.373 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_options.table.gz (1/12): adding to final database dump
+0070.397 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_users.table.gz (2/12): adding to final database dump
+0070.398 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_usermeta.table.gz (3/12): adding to final database dump
+0070.400 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_commentmeta.table.gz (4/12): adding to final database dump
+0070.401 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_comments.table.gz (5/12): adding to final database dump
+0070.402 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_links.table.gz (6/12): adding to final database dump
+0070.403 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_postmeta.table.gz (7/12): adding to final database dump
+0070.407 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_posts.table.gz (8/12): adding to final database dump
+0070.413 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_term_relationships.table.gz (9/12): adding to final database dump
+0070.414 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_term_taxonomy.table.gz (10/12): adding to final database dump
+0070.415 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_termmeta.table.gz (11/12): adding to final database dump
+0070.417 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db-table-wp1_terms.table.gz (12/12): adding to final database dump
+0070.428 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db.gz: finished writing out complete database file (152 KB)
+0070.442 (0) Total database tables backed up: 12 (backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db.gz, size: 180254, sha1: 526543a8dff4d19de4cc7009ced7b9a83456da7c, sha256: 8f752ca80855ac6ae135c18315f37c1efd35929adfe1159c29b169e10a2f3294)
+0070.447 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0070.448 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0070.448 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0070.449 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-others.zip: others: This file has not yet been successfully uploaded: will queue
+0070.450 (0) backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db.gz: db: This file has not yet been successfully uploaded: will queue
+0070.451 (0) Saving backup history. Total backup size: 39.6 MB
+0070.453 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0070.455 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0070.456 (0) No remote despatch: user chose no remote backup service
+0070.457 (0) Recording as successfully uploaded: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-plugins.zip
+0070.459 (0) Recording as successfully uploaded: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-themes.zip
+0070.461 (0) Recording as successfully uploaded: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-uploads.zip
+0070.463 (0) Recording as successfully uploaded: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-others.zip
+0070.464 (0) Recording as successfully uploaded: backup_2020-05-05-1150_Le_Seigneur_Des_Anneaux_583c9742d9ed-db.gz
+0070.468 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0070.469 (0) Number of backup sets in history: 1; groups (db): 1
+0070.470 (0) Examining (for databases) backup set with group_id=0, nonce=583c9742d9ed, datestamp=1588672221 (May 05 2020 09:50:21)
+0070.471 (0) This backup set is the backup set just made, so will not be deleted.
+0070.471 (0) Number of backup sets in history: 1; groups (files): 1
+0070.471 (0) Examining (for files) backup set with nonce=583c9742d9ed, datestamp=1588672221 (May 05 2020 09:50:21)
+0070.471 (0) This backup set is the backup set just made, so will not be deleted.
+0070.472 (0) This backup set is the backup set just made, so will not be deleted.
+0070.473 (0) This backup set is the backup set just made, so will not be deleted.
+0070.473 (0) This backup set is the backup set just made, so will not be deleted.
+0070.473 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0070.474 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0070.476 (0) Resume backup (583c9742d9ed, 0): finish run
+0070.493 (0) Decremented the semaphore (fd) by 1
+0070.494 (0) Semaphore (fd) unlocked
+0070.494 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0070.497 (0) No email will/can be sent - the user has not configured an email address.
+0070.498 (0) The backup apparently succeeded and is now complete

@@ -1,0 +1,86 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 5 May 2020 9 h 55 min
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.3.30
+WORDPRESS:	5.4.1
+PHP INFO:	7.3.12 | SAPI: apache2handler
+SERVER:		Apache/2.4.41 (Win64) PHP/7.3.12 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (256M default) 
+MEMORY STACK: 2MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported
+TABLES: total:13 | filtered:0 | create:13
+FILTERED: []
+SQL CREATED: Alan_leseigneurdesanneaux_05052020_fc69643c5b3bd9fa2142_20200505095513_database.sql
+SQL FILE SIZE: 1.23MB (1294079)
+SQL FILE TIME: 2020-05-05 09:55:29
+SQL RUNTIME: 0.72 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  C:/Users/alan/Documents/projets/wordpress
+ARCHIVE FILE: Alan_leseigneurdesanneaux_05052020_fc69643c5b3bd9fa2142_20200505095513_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	142.05MB
+STATS:	Dirs 944 | Files 6,683
+SQL ADDED: Alan_leseigneurdesanneaux_05052020_fc69643c5b3bd9fa2142_20200505095513_database.sql
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 7627
+    [filename] => C:\Users\alan\Documents\projets\wordpress\wp-snapshots\tmp\Alan_leseigneurdesanneaux_05052020_fc69643c5b3bd9fa2142_20200505095513_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 7626
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 52.21MB
+ARCHIVE RUNTIME: 12.47 sec.
+MEMORY STACK: 4MB
+building installer
+add_extra_files1
+add_extra_files2
+add_extra_files3
+add_extra_files4
+Doing archive file check
+add_extra_files5
+add_extra_files6
+add_extra_files8
+Successfully opened zip C:/Users/alan/Documents/projets/wordpress/wp-snapshots/tmp/Alan_leseigneurdesanneaux_05052020_fc69643c5b3bd9fa2142_20200505095513_archive.zip
+Adding enhanced installer files to archive using ZipArchive
+Installer files added to archive
+Added to archive
+After ziparchive close when adding installer
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 1.23MB
+INSTALLER FILE: 61.33KB
+ARCHIVE FILE: 53.56MB 
+EXPECTED FILE/DIRECTORY COUNT: 7,627
+ACTUAL FILE/DIRECTORY COUNT: 7,626
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 14.79 sec.
+PEAK PHP MEMORY USED: 6MB
+DONE PROCESSING => Alan_leseigneurdesanneaux_05052020 5 May 2020 9 h 55 min
+
