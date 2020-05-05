@@ -1,0 +1,6 @@
+- prendre tout mes id des reponses 
+- des quil y a un changement dans les inputs je verifie se qui est rentrer 
+- je recuper l'id du bouton soumettre 
+- quand je click dessus sa ouvre ma fonction soumettre le formulaire qui compare les reponses rentrer et les reponses que j'attend 
+- je cree ma fonction verification : il test si se qui est entrer et en accord avec le pattern voulut si cest bon j'inscrit bon sinon j'inscrit mauvais et si il suprime tout j'inscrit champ manquant 
+-  je cree ma fonction reload qui remet tout a vide les champs 
