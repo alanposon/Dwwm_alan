@@ -22,7 +22,7 @@ Text Domain:  twentyseventeenchild
 background-color: azure;}
 
 .tribe-events-c-top-bar.tribe-events-header__top-bar{
-    background-color: azure;}
+    background-color: azure;
 }
 
 a{ 
@@ -34,3 +34,8 @@ a{
 }
 .sauron.a{ 
 color:yellow; }
+
+.entry-title{ 
+    background: linear-gradient(yellow , blue ,green);
+
+}

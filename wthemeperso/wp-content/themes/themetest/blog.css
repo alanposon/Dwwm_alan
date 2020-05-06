@@ -1,0 +1,60 @@
+
+
+
+
+
+/************************header */ 
+
+.header {
+   
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, 
+rgba(2,0,36,1) 0%, 
+rgba(149,90,17,1) 10%, 
+rgba(217,202,8,1) 19%, 
+rgba(52,163,128,1) 30%,
+ rgba(39,180,144,1) 39%,
+  rgba(0,101,255,1) 49%,
+   rgba(114,0,255,1) 55%,
+   rgba(255,0,239,1) 63%,
+    rgba(255,0,155,1) 74%,
+     rgba(255,0,21,1) 82%,
+      rgba(255,91,0,1) 91%, 
+      rgba(255,0,41,1) 96%);
+    }
+    #navigation-principale li {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+    }
+    #navigation-principale li a {
+    color: #fff;
+    }
+
+/* ************************** contenu ****************************/
+
+.test{
+
+   color:green; 
+    
+}
+
+.aligncenter.size-large{
+   
+background-color: palevioletred;
+}
+a{
+    color : red ; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.blog-title {
+/*  background :linear-gradient(blue , white, red) ;*/
+background-color: peru;
+    
+}
+.blog-title{
+    background :linear-gradient(green,yellow,red) ;  
+}
+
