@@ -1,0 +1,25 @@
+/*
+Template: catch-evolution
+Theme Name: catch-evolutionchild
+Description: le fils de catch evolution 
+Author: Alan    
+Author URI: https://www.monsite.com
+Version: 1.1.0
+*/
+
+/* la balise more permet de mettre un arret a notre article pour choisir quelle partie de notre article on veut montrer quand il est pas ouvert  */
+
+.artCSS{ 
+    /* ma structure mauve  */
+    border: 1px solid #781BED;
+    background-color: #ECDCFF;
+}
+
+.artCSS2{
+    /* ma structure jaune  */
+     border-radius: 10%;
+     background-color: #FFF68F;
+}
+.image{ 
+width: 12em;
+}

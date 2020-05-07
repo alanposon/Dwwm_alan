@@ -1,0 +1,86 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 7 May 2020 10 h 02 min
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.3.32
+WORDPRESS:	5.4
+PHP INFO:	7.3.12 | SAPI: apache2handler
+SERVER:		Apache/2.4.41 (Win64) PHP/7.3.12 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (128M default) 
+MEMORY STACK: 10MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported
+TABLES: total:17 | filtered:0 | create:17
+FILTERED: []
+SQL CREATED: 20200507_evalsite_alan_1b92341ab4312bfd8380_20200507100221_database.sql
+SQL FILE SIZE: 679.66KB (695968)
+SQL FILE TIME: 2020-05-07 10:02:29
+SQL RUNTIME: 0.67 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  C:/Users/alan/Documents/projets/Eval_CMS_Front_alan
+ARCHIVE FILE: 20200507_evalsite_alan_1b92341ab4312bfd8380_20200507100221_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	89.75MB
+STATS:	Dirs 469 | Files 3,854
+SQL ADDED: 20200507_evalsite_alan_1b92341ab4312bfd8380_20200507100221_database.sql
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 4323
+    [filename] => C:\Users\alan\Documents\projets\Eval_CMS_Front_alan\wp-snapshots\tmp\20200507_evalsite_alan_1b92341ab4312bfd8380_20200507100221_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 4322
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 30.95MB
+ARCHIVE RUNTIME: 26.49 sec.
+MEMORY STACK: 10MB
+building installer
+add_extra_files1
+add_extra_files2
+add_extra_files3
+add_extra_files4
+Doing archive file check
+add_extra_files5
+add_extra_files6
+add_extra_files8
+Successfully opened zip C:/Users/alan/Documents/projets/Eval_CMS_Front_alan/wp-snapshots/tmp/20200507_evalsite_alan_1b92341ab4312bfd8380_20200507100221_archive.zip
+Adding enhanced installer files to archive using ZipArchive
+Installer files added to archive
+Added to archive
+After ziparchive close when adding installer
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 679.66KB
+INSTALLER FILE: 61.32KB
+ARCHIVE FILE: 32.44MB 
+EXPECTED FILE/DIRECTORY COUNT: 4,323
+ACTUAL FILE/DIRECTORY COUNT: 4,322
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 28.26 sec.
+PEAK PHP MEMORY USED: 12MB
+DONE PROCESSING => 20200507_evalsite_alan 7 May 2020 10 h 02 min
+
