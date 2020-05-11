@@ -1,0 +1,20 @@
+/*
+Template: oceanwp
+Theme Name: oceanwp Enfant
+Description: Une description du site
+Author: alison
+Author URI: https://www.monsite.com
+Version: 1.0
+*/
+
+.violet{
+    background-color: #ECDCFF;
+    border: solid 1px #781BED;
+}
+.jaune{
+    background-color: #FFF68F;
+}
+.blocCouleur {
+    padding: 1vw;
+    color: black;
+}

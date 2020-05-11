@@ -1,0 +1,411 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 12:28:51
+* VERSION: 1.3.32
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 7.2.14                                |7.3.12
+OS__________________: WINNT                                 |WINNT
+CREATED_____________: 2020-05-07 09:45:45
+WP VERSION__________: 5.4
+DUP VERSION_________: 1.3.32
+DB__________________: 5.7.24
+DB TABLES___________: 17
+DB ROWS_____________: 639
+DB FILE SIZE________: 709.1KB
+********************************************************************************
+SERVER INFO
+PHP_________________: 7.3.12 | SAPI: apache2handler
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: Apache/2.4.41 (Win64) PHP/7.3.12
+DOC ROOT____________: "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "http://projets/Eval_CMS_Correction/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ENGINE______: "ziparchive"
+SET DIR PERMS_______: 0
+DIR PERMS VALUE_____: 644
+SET FILE PERMS______: 0
+FILE PERMS VALUE____: 755
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "C:/Users/alan/Documents/projets/Eval_CMS_Correction/20200507_alison_[HASH]_20200507094545_archive.zip"
+SIZE________________: 42.09MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+
+
+START ZIP FILE EXTRACTION STANDARD >>> 
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "C:/Users/alan/Documents/projets/Eval_CMS_Correction/20200507_alison_[HASH]_20200507094545_archive.zip"
+SIZE________________: 42.09MBFile timestamp set to Current: 2020-05-07 12:29:58
+<<< ZipArchive Unzip Complete: true
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+
+PERMISSION UPDATES: None Applied
+
+STEP-1 COMPLETE @ 12:29:58 - RUNTIME: 66.9644 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 12:30:24
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "create"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.4.10 -- Build Server: 5.7.24
+FILE SIZE:	dup-database__[HASH].sql (628.82KB)
+TIMEOUT:	5000
+MAXPACK:	268435456
+SQLMODE:	STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[C:/Users/alan/Documents/projets/Eval_CMS_Correction/dup-installer/dup-installer-data__[HASH].sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	158
+
+wp_commentmeta: (0)
+wp_comments: (1)
+wp_duplicator_packages: (0)
+wp_links: (0)
+wp_options: (133)
+wp_postmeta: (279)
+wp_posts: (136)
+wp_rednao_smart_forms_entry: (0)
+wp_rednao_smart_forms_entry_detail: (0)
+wp_rednao_smart_forms_table_name: (1)
+wp_rednao_smart_forms_uploaded_files: (0)
+wp_term_relationships: (18)
+wp_term_taxonomy: (4)
+wp_termmeta: (0)
+wp_terms: (4)
+wp_usermeta: (37)
+wp_users: (1)
+Removed '25' cache/transient rows
+
+INSERT DATA RUNTIME: 1.3127 sec.
+STEP-2 COMPLETE @ 12:30:25 - RUNTIME: 1.3211 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 12:30:33
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "Alison"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "C:/wamp64/www/DWWM_Alison/Eval_CMS_Front_Alison/wordpress"
+path_new______________: "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+siteurl_______________: "http://projets/Eval_CMS_Correction"
+url_old_______________: "http://localhost/DWWM_Alison/Eval_CMS_Front_Alison/wordpress"
+url_new_______________: "http://projets/Eval_CMS_Correction"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: false
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/wamp64/www/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  2:"C:\/wamp64\/www\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  3:"C%3A%2Fwamp64%2Fwww%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  4:"C:\wamp64\www\DWWM_Alison\Eval_CMS_Front_Alison\wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  5:"C:\\wamp64\\www\\DWWM_Alison\\Eval_CMS_Front_Alison\\wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  6:"C%3A%5Cwamp64%5Cwww%5CDWWM_Alison%5CEval_CMS_Front_Alison%5Cwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  7:"//localhost/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "//projets/Eval_CMS_Correction"
+	SEARCH  8:"\/\/localhost\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "\/\/projets\/Eval_CMS_Correction"
+	SEARCH  9:"%2F%2Flocalhost%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "%2F%2Fprojets%2FEval_CMS_Correction"
+	SEARCH 10:"https://projets/Eval_CMS_Correction" =============> "http://projets/Eval_CMS_Correction"
+	SEARCH 11:"https:\/\/projets\/Eval_CMS_Correction" ==========> "http:\/\/projets\/Eval_CMS_Correction"
+	SEARCH 12:"https%3A%2F%2Fprojets%2FEval_CMS_Correction" =====> "http%3A%2F%2Fprojets%2FEval_CMS_Correction"
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   133][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/wamp64/www/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  2:"C:\/wamp64\/www\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  3:"C%3A%2Fwamp64%2Fwww%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  4:"C:\wamp64\www\DWWM_Alison\Eval_CMS_Front_Alison\wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  5:"C:\\wamp64\\www\\DWWM_Alison\\Eval_CMS_Front_Alison\\wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  6:"C%3A%5Cwamp64%5Cwww%5CDWWM_Alison%5CEval_CMS_Front_Alison%5Cwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  7:"//localhost/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "//projets/Eval_CMS_Correction"
+	SEARCH  8:"\/\/localhost\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "\/\/projets\/Eval_CMS_Correction"
+	SEARCH  9:"%2F%2Flocalhost%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "%2F%2Fprojets%2FEval_CMS_Correction"
+	SEARCH 10:"https://projets/Eval_CMS_Correction" =============> "http://projets/Eval_CMS_Correction"
+	SEARCH 11:"https:\/\/projets\/Eval_CMS_Correction" ==========> "http:\/\/projets\/Eval_CMS_Correction"
+	SEARCH 12:"https%3A%2F%2Fprojets%2FEval_CMS_Correction" =====> "http%3A%2F%2Fprojets%2FEval_CMS_Correction"
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:   279][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/wamp64/www/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  2:"C:\/wamp64\/www\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  3:"C%3A%2Fwamp64%2Fwww%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  4:"C:\wamp64\www\DWWM_Alison\Eval_CMS_Front_Alison\wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  5:"C:\\wamp64\\www\\DWWM_Alison\\Eval_CMS_Front_Alison\\wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  6:"C%3A%5Cwamp64%5Cwww%5CDWWM_Alison%5CEval_CMS_Front_Alison%5Cwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  7:"//localhost/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "//projets/Eval_CMS_Correction"
+	SEARCH  8:"\/\/localhost\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "\/\/projets\/Eval_CMS_Correction"
+	SEARCH  9:"%2F%2Flocalhost%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "%2F%2Fprojets%2FEval_CMS_Correction"
+	SEARCH 10:"https://projets/Eval_CMS_Correction" =============> "http://projets/Eval_CMS_Correction"
+	SEARCH 11:"https:\/\/projets\/Eval_CMS_Correction" ==========> "http:\/\/projets\/Eval_CMS_Correction"
+	SEARCH 12:"https%3A%2F%2Fprojets%2FEval_CMS_Correction" =====> "http%3A%2F%2Fprojets%2FEval_CMS_Correction"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:   136][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/wamp64/www/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  2:"C:\/wamp64\/www\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  3:"C%3A%2Fwamp64%2Fwww%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  4:"C:\wamp64\www\DWWM_Alison\Eval_CMS_Front_Alison\wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  5:"C:\\wamp64\\www\\DWWM_Alison\\Eval_CMS_Front_Alison\\wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  6:"C%3A%5Cwamp64%5Cwww%5CDWWM_Alison%5CEval_CMS_Front_Alison%5Cwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  7:"//localhost/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "//projets/Eval_CMS_Correction"
+	SEARCH  8:"\/\/localhost\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "\/\/projets\/Eval_CMS_Correction"
+	SEARCH  9:"%2F%2Flocalhost%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "%2F%2Fprojets%2FEval_CMS_Correction"
+	SEARCH 10:"https://projets/Eval_CMS_Correction" =============> "http://projets/Eval_CMS_Correction"
+	SEARCH 11:"https:\/\/projets\/Eval_CMS_Correction" ==========> "http:\/\/projets\/Eval_CMS_Correction"
+	SEARCH 12:"https%3A%2F%2Fprojets%2FEval_CMS_Correction" =====> "http%3A%2F%2Fprojets%2FEval_CMS_Correction"
+
+EVALUATE TABLE: "wp_rednao_smart_forms_entry"_____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_rednao_smart_forms_entry_detail"______________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_rednao_smart_forms_table_name"________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/wamp64/www/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  2:"C:\/wamp64\/www\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  3:"C%3A%2Fwamp64%2Fwww%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  4:"C:\wamp64\www\DWWM_Alison\Eval_CMS_Front_Alison\wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  5:"C:\\wamp64\\www\\DWWM_Alison\\Eval_CMS_Front_Alison\\wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  6:"C%3A%5Cwamp64%5Cwww%5CDWWM_Alison%5CEval_CMS_Front_Alison%5Cwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  7:"//localhost/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "//projets/Eval_CMS_Correction"
+	SEARCH  8:"\/\/localhost\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "\/\/projets\/Eval_CMS_Correction"
+	SEARCH  9:"%2F%2Flocalhost%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "%2F%2Fprojets%2FEval_CMS_Correction"
+	SEARCH 10:"https://projets/Eval_CMS_Correction" =============> "http://projets/Eval_CMS_Correction"
+	SEARCH 11:"https:\/\/projets\/Eval_CMS_Correction" ==========> "http:\/\/projets\/Eval_CMS_Correction"
+	SEARCH 12:"https%3A%2F%2Fprojets%2FEval_CMS_Correction" =====> "http%3A%2F%2Fprojets%2FEval_CMS_Correction"
+
+EVALUATE TABLE: "wp_rednao_smart_forms_uploaded_files"____________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:    18][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/wamp64/www/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  2:"C:\/wamp64\/www\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  3:"C%3A%2Fwamp64%2Fwww%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  4:"C:\wamp64\www\DWWM_Alison\Eval_CMS_Front_Alison\wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  5:"C:\\wamp64\\www\\DWWM_Alison\\Eval_CMS_Front_Alison\\wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  6:"C%3A%5Cwamp64%5Cwww%5CDWWM_Alison%5CEval_CMS_Front_Alison%5Cwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  7:"//localhost/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "//projets/Eval_CMS_Correction"
+	SEARCH  8:"\/\/localhost\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "\/\/projets\/Eval_CMS_Correction"
+	SEARCH  9:"%2F%2Flocalhost%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "%2F%2Fprojets%2FEval_CMS_Correction"
+	SEARCH 10:"https://projets/Eval_CMS_Correction" =============> "http://projets/Eval_CMS_Correction"
+	SEARCH 11:"https:\/\/projets\/Eval_CMS_Correction" ==========> "http:\/\/projets\/Eval_CMS_Correction"
+	SEARCH 12:"https%3A%2F%2Fprojets%2FEval_CMS_Correction" =====> "http%3A%2F%2Fprojets%2FEval_CMS_Correction"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/wamp64/www/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  2:"C:\/wamp64\/www\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  3:"C%3A%2Fwamp64%2Fwww%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  4:"C:\wamp64\www\DWWM_Alison\Eval_CMS_Front_Alison\wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  5:"C:\\wamp64\\www\\DWWM_Alison\\Eval_CMS_Front_Alison\\wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  6:"C%3A%5Cwamp64%5Cwww%5CDWWM_Alison%5CEval_CMS_Front_Alison%5Cwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  7:"//localhost/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "//projets/Eval_CMS_Correction"
+	SEARCH  8:"\/\/localhost\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "\/\/projets\/Eval_CMS_Correction"
+	SEARCH  9:"%2F%2Flocalhost%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "%2F%2Fprojets%2FEval_CMS_Correction"
+	SEARCH 10:"https://projets/Eval_CMS_Correction" =============> "http://projets/Eval_CMS_Correction"
+	SEARCH 11:"https:\/\/projets\/Eval_CMS_Correction" ==========> "http:\/\/projets\/Eval_CMS_Correction"
+	SEARCH 12:"https%3A%2F%2Fprojets%2FEval_CMS_Correction" =====> "http%3A%2F%2Fprojets%2FEval_CMS_Correction"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/wamp64/www/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  2:"C:\/wamp64\/www\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  3:"C%3A%2Fwamp64%2Fwww%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  4:"C:\wamp64\www\DWWM_Alison\Eval_CMS_Front_Alison\wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  5:"C:\\wamp64\\www\\DWWM_Alison\\Eval_CMS_Front_Alison\\wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  6:"C%3A%5Cwamp64%5Cwww%5CDWWM_Alison%5CEval_CMS_Front_Alison%5Cwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  7:"//localhost/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "//projets/Eval_CMS_Correction"
+	SEARCH  8:"\/\/localhost\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "\/\/projets\/Eval_CMS_Correction"
+	SEARCH  9:"%2F%2Flocalhost%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "%2F%2Fprojets%2FEval_CMS_Correction"
+	SEARCH 10:"https://projets/Eval_CMS_Correction" =============> "http://projets/Eval_CMS_Correction"
+	SEARCH 11:"https:\/\/projets\/Eval_CMS_Correction" ==========> "http:\/\/projets\/Eval_CMS_Correction"
+	SEARCH 12:"https%3A%2F%2Fprojets%2FEval_CMS_Correction" =====> "http%3A%2F%2Fprojets%2FEval_CMS_Correction"
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:    37][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/wamp64/www/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  2:"C:\/wamp64\/www\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  3:"C%3A%2Fwamp64%2Fwww%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  4:"C:\wamp64\www\DWWM_Alison\Eval_CMS_Front_Alison\wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  5:"C:\\wamp64\\www\\DWWM_Alison\\Eval_CMS_Front_Alison\\wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  6:"C%3A%5Cwamp64%5Cwww%5CDWWM_Alison%5CEval_CMS_Front_Alison%5Cwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  7:"//localhost/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "//projets/Eval_CMS_Correction"
+	SEARCH  8:"\/\/localhost\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "\/\/projets\/Eval_CMS_Correction"
+	SEARCH  9:"%2F%2Flocalhost%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "%2F%2Fprojets%2FEval_CMS_Correction"
+	SEARCH 10:"https://projets/Eval_CMS_Correction" =============> "http://projets/Eval_CMS_Correction"
+	SEARCH 11:"https:\/\/projets\/Eval_CMS_Correction" ==========> "http:\/\/projets\/Eval_CMS_Correction"
+	SEARCH 12:"https%3A%2F%2Fprojets%2FEval_CMS_Correction" =====> "http%3A%2F%2Fprojets%2FEval_CMS_Correction"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/wamp64/www/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  2:"C:\/wamp64\/www\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  3:"C%3A%2Fwamp64%2Fwww%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  4:"C:\wamp64\www\DWWM_Alison\Eval_CMS_Front_Alison\wordpress" => "C:/Users/alan/Documents/projets/Eval_CMS_Correction"
+	SEARCH  5:"C:\\wamp64\\www\\DWWM_Alison\\Eval_CMS_Front_Alison\\wordpress" => "C:\/Users\/alan\/Documents\/projets\/Eval_CMS_Correction"
+	SEARCH  6:"C%3A%5Cwamp64%5Cwww%5CDWWM_Alison%5CEval_CMS_Front_Alison%5Cwordpress" => "C%3A%2FUsers%2Falan%2FDocuments%2Fprojets%2FEval_CMS_Correction"
+	SEARCH  7:"//localhost/DWWM_Alison/Eval_CMS_Front_Alison/wordpress" => "//projets/Eval_CMS_Correction"
+	SEARCH  8:"\/\/localhost\/DWWM_Alison\/Eval_CMS_Front_Alison\/wordpress" => "\/\/projets\/Eval_CMS_Correction"
+	SEARCH  9:"%2F%2Flocalhost%2FDWWM_Alison%2FEval_CMS_Front_Alison%2Fwordpress" => "%2F%2Fprojets%2FEval_CMS_Correction"
+	SEARCH 10:"https://projets/Eval_CMS_Correction" =============> "http://projets/Eval_CMS_Correction"
+	SEARCH 11:"https:\/\/projets\/Eval_CMS_Correction" ==========> "http:\/\/projets\/Eval_CMS_Correction"
+	SEARCH 12:"https%3A%2F%2Fprojets%2FEval_CMS_Correction" =====> "http%3A%2F%2Fprojets%2FEval_CMS_Correction"
+--------------------------------------
+SCANNED:	Tables:17 	|	 Rows:614 	|	 Cells:5049 
+UPDATED:	Tables:4 	|	 Rows:141 	|	 Cells:170 
+ERRORS:		0 
+RUNTIME:	0.342500 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME ""evalalison""
+	UPDATE DB_USER ""root""
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache '.htaccess__[HASH]' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Deactivated plugins list here: Array
+(
+    [0] => really-simple-ssl/rlrsssl-really-simple-ssl.php
+    [1] => simple-google-recaptcha/simple-google-recaptcha.php
+    [2] => js_composer/js_composer.php
+)
+
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 12:30:33 - RUNTIME: 0.4358 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] No general notices
+	SECTIONS: general
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+====================================
