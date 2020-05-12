@@ -72,7 +72,7 @@ comm = '$comm'");
         </form>
 <?php
     }
-
+// enregistrement des paramettre 
     public function register_settings()
     {
         register_setting('helloworld_settings', 'helloworld_couleur');
