@@ -6,26 +6,26 @@ class hellowidget extends WP_Widget
 
 
 
-
     public function form($instance)
     // formulaire de gestion des paramètres pour le module d'administration
     // donne un nom et id a mes champs nouveaux
     {
         $title = isset($instance['title']) ? $instance['title'] : '';
+        // 
 ?>
         <p>
             <label for="<?php echo $this->get_field_name('title'); ?>"><?php _e('Title:');
-                                                                            ?></label>
+                                // on prend le titre                                             ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php
-                                                                                            echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
+                               // on prend l'id du titre                                                          echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
         </p>
     <?php
     }
 
     public function save_comm() // sauvegarde des commentaires
-    {
+    { 
         if (isset($_POST['helloworld_comm']) && !empty($_POST['helloworld_comm'])) {
-            global $wpdb;
+            global $wpdb; 
             $comm = $_POST['helloworld_comm'];
             $row = $wpdb->get_row("SELECT * FROM {$wpdb->prefix}helloworld_commentaire WHERE
     
@@ -58,11 +58,16 @@ qui écrit Hello World'));
         // on affiche apres le titre 
         // corps du widget
         $couleur = get_option('helloworld_couleur', 'green');
+        // on met une autre couleur au deuxieme 
+        $couleur2 = get_option('helloworld_couleur', 'red');
+        // grace a la fonction option on met la couleur verte a notre titre de case commentaire 
     ?>
+    <!-- on test avec le numero 2 -->
+  <div id="test2" style="color:<?php echo $couleur2; ?>">on va faire un test !</div>
 
         <div id="test" style="color:<?php echo $couleur; ?>">Hello World est un plug-in qui enregistre
             les commentaires en base de données</div>
-
+<!-- mon titre de case commentaire on pose notre couleur dessus  -->
 
         <h1>rendez nous Gabriel</h1> <!--  se qui aura d'afficher  -->
         <form action="" method="post">
@@ -76,5 +81,6 @@ qui écrit Hello World'));
 
 <?php
         echo $args['after_widget'];
+        // apres le widget 
     }
 }

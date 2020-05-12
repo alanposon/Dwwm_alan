@@ -8,6 +8,46 @@ Description: ecrit Hello World
 Author: Alan
 Version: 1.0 */
 
+/****************test de fonction cree par alan ************/
+
+/**** je cree alan dans le head  */
+add_action('wp_head', 'fonctionAlan');
+add_filter('default_content', 'contenu_par_defaut'); 
+// j'ajoute un filtre qui preremplie 
+add_filter('the_content','messageApresContenu');
+// mettre un message apres les articles 
+add_shortcode('nouveauShortcode','newShortcode');
+// cree un shortcode 
+
+function newShortcode(){
+
+     echo ('<p>shortcode de alan </p>');
+}
+
+function messageApresContenu(){
+     $content .= '<p>alan aime ça !</p>'; 
+     return $content; 
+}
+
+ function fonctionAlan(){
+    // je veux afficher : 
+    echo('<p> le test d alan </p>');
+
+    // fonction qui changera la couleur de mon titre 
+
+}
+
+/************ je preremplie mes article ************ */
+
+function contenu_par_defaut(){
+     return "votre commentaire  
+     
+     titre : 
+     
+     commentaire : 
+     
+     signature : ";
+}
 
 // ************** hello world sous forme de widget ( )
  class HelloWorld_Plugin { // on inclut et instancie la classe 
@@ -36,6 +76,7 @@ add_menu_page('Hello World', 'Hello World plugin', 'manage_options',
 public function menu_html() {
 echo '<h1>'.get_admin_page_title().'</h1>';
 echo '<p>Bienvenue sur la page d\'accueil du plugin</p>';
+// on marque sur la page d'acceuil 
 }
  
  }
