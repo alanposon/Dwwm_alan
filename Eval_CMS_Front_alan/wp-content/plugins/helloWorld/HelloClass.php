@@ -50,7 +50,7 @@ AUTO_INCREMENT PRIMARY KEY, comm VARCHAR(255) NOT NULL);");
             $comm = $_POST['helloworld_comm']; // on met les commentaires dans la variable com 
             $row = $wpdb->get_row("SELECT * FROM {$wpdb->prefix}helloworld_commentaire WHERE
 comm = '$comm'");
-                // la requete sql pour aller chercherle prefix devant les commentaires 
+                // la requete sql pour aller chercherle prefix devant les commentaires .
             if (is_null($row)) { // si c 'est nul 
                 $wpdb->insert("{$wpdb->prefix}helloworld_commentaire", array('comm' =>
                          // on insert avant les commentaires le prefix   
@@ -59,7 +59,7 @@ comm = '$comm'");
         } // on ajoute l'action de sauvegarde au chargement du widget
     }
     public function menu_html()
-    { // le html du menu present sur la page 
+    { // le html du menu present sur la page !
         echo '<h1>' . get_admin_page_title() . '</h1>';
         // le titre de l'administrateur de la page 
 ?>

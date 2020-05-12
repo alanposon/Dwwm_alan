@@ -21,7 +21,9 @@ add_shortcode('nouveauShortcode','newShortcode');
 
 function newShortcode(){
 
-     echo ('<p>shortcode de alan </p>');
+     echo ('<div class="test><p>shortcode de alan </p></div>');
+     
+
 }
 
 function messageApresContenu(){
