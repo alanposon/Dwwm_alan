@@ -1,0 +1,6 @@
+img:hover {
+    background-image: url('goku.jpg');
+}
+p:hover {
+    color : red ;
+}
