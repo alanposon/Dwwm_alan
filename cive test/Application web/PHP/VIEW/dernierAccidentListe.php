@@ -2,28 +2,43 @@
 
 $temps = TempsSansAccidentManager::getList();
 ?>
-<div class="ligne">
+
+
+<div class="bas">
+    <div class="formIdent">
+        <div class="formulaire"><div class="fondOrange">
+
     <div class="bloc titre">Date du dernier accident </div>
     
-</div>
+
 <?php
 foreach ($temps as $elt) {
 ?>
     <div class="ligne">
         <div class="bloc contenu"><?php echo $elt->getDateDernierAccident() ?></div>
        
-        <a href="index.php?action=dernierAccidentForm&m=modif&id=<?php echo $elt->getIdTe() ?>">
+        <a href="index.php?action=dernierAccidentForm&m=modif&id=<?php echo $elt->getIdTempsSansAccident() ?>">
             <div class="bouton">Modifier</div>
         </a>
         <?php 
-            if ($lvl==3){
-                echo    '<a href="index.php?action=userFormAdmin&m=suppr&id='.$elt->getIdUser() .'">
+      
+                echo    '<a href="index.php?action=dernierAccidentForm&m=suppr&id='.$elt->getIdTempsSansAccident() .'">
                             <div class="bouton">Supprimer</div>
                         </a>';
-            }?>
+            ?>
     </div>
 <?php } ?>
-</div>
-<a href="index.php?action=userFormAdmin&m=ajout">
-    <div class="bouton"> Ajouter un client</div>
-</a>
+</div></div>
+
+<div class="idenCIVE">
+            <img src="IMAGE/logoCive.png">
+            <div class="coord">
+                <br><strong>CIVE</strong>
+                <br> 2 rue de l'industrie
+                <br> 59820 Gravelines
+                <br> France
+                <br> Tél. 03 28 66 06 49
+                <br> Mail. cive@orange.fr
+            </div>
+        </div>
+    </div>
