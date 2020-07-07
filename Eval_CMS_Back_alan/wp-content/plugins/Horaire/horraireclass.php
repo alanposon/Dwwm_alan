@@ -23,7 +23,7 @@ class horraireClass
     
     }
 
-    public static function instalHorraire()
+    public  function instalHorraire()
     { // cree une table dans la bdd 
         //des que j'active le plug-in
         global $wpdb;// declarer directement en fonction 
@@ -32,7 +32,7 @@ class horraireClass
     } // hor c'est se quil y a dans ma base de donner les horraire
     // nouveauHorraire c'est ma table 
 
-    public static function desinstalHorraire()
+    public  function desinstalHorraire()
     {//fonction de  desinstalation de la table  
     global $wpdb; // vide la table a base de donner 
     $wpdb->query("DROP TABLE IF EXISTS {$wpdb->prefix}desinstalHorraire_NouvHorraire;");
