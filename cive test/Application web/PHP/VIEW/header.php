@@ -3,13 +3,16 @@
 $lvl = (isset($_SESSION['level'])) ? (int) $_SESSION['level'] : 2;
 $id = (isset($_SESSION['id'])) ? (int) $_SESSION['id'] : 0;
 $matricule = (isset($_SESSION['matricule'])) ? $_SESSION['matricule'] : '';
+$nom = (isset($_SESSION['nom'])) ? $_SESSION['nom'] : '';
+$prenom = (isset($_SESSION['prenom'])) ? $_SESSION['prenom'] : '';
+$posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntreprise'] : '';
 ?>
 
 <body>
     <header>
         <div>
 
-           
+
 
             <div id="container">
                 <div class="haut">
@@ -24,6 +27,10 @@ $matricule = (isset($_SESSION['matricule'])) ? $_SESSION['matricule'] : '';
                         <div class="logo3">
                             <a href="https://fr.linkedin.com/in/christophe-hinderyckx-aa3444103"><img class="linkedin" src="IMAGE/linkedin.png" alt="LinkedIn">
                         </div>
+                        <?php if ($matricule != "") {
+                            echo '<div class="fondOrange">' . $nom . ' ' . $prenom . ' ' . $matricule . '</div>';
+                        }
+                        ?>
                     </div>
                     <nav>
                         <ul>
@@ -46,17 +53,29 @@ $matricule = (isset($_SESSION['matricule'])) ? $_SESSION['matricule'] : '';
 
                             <li><a href="index.php?action=legislation"> Législation </a></li>
                             <li><a href="index.php?action=contact"> Contact </a></li>
-                            <li><a href="index.php?action=offreEmploiListe"> Recherche Emploi </a></li>
-                            <li><a href="index.php?action=connectionForm"> Connection </a></li>
+
+                            <li><?php if ($matricule != "") {
+
+                                    echo '   <a class ="btn btn-success"  href="index.php?action=offreEmploiListeAdmin" > Offre Emploi </a>';
+                                } else {
+
+                                    echo ' <a class ="btn btn-success" href="index.php?action=connectionForm" > Offre Emploi </a>';
+                                } 
+                                ?></li>
+
+
+                            <li><?php if ($matricule != "") {
+
+                                    echo ' <a class ="btn btn-success"  href="index.php?action=deconnectionForm" > Deconnexion </a>';
+                                } else {
+
+                                    echo '   <a class ="btn btn-success"  href="index.php?action=connectionForm" > Connexion </a>';
+                                } ?></li>
+
+
                     </nav>
 
                     <h2><?php
                         // si je souhaite afficher ou je me trouve 
                         //echo '<div class="titrePage">'.$titre.'</div>' 
                         ?></h2>
-                         <div class="colonne centrer">
-                <?php if ($matricule != "") {
-                    echo '<div class="centrer">' . $matricule . '</div>
-                <div class="centrer"> <a href="index.php?action=deconnectionForm">Déconnecter</a> </div>';
-                }
-                ?> </div>

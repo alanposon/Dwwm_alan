@@ -1,9 +1,9 @@
 
 
 <?php 
-
-$prenomUtilisateur = (isset($_SESSION['nom'])) ? $_SESSION['prenom'] : 1;
-echo  $prenomUtilisateur ;
+// inserer le prenom 
+// $prenomUtilisateur = (isset($_SESSION['nom'])) ? $_SESSION['prenom'] : 1;
+// echo  $prenomUtilisateur ;
 
 ?>
 <html>

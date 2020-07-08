@@ -16,17 +16,23 @@ else //On est dans le cas traitement
     //On récupère les variables
     $i = 0; // compte le nombre d'erreurs à afficher
     $temps = time();
+    $nom=$_POST['nom'];
+    $prenom=$_POST['prenom'];
+    $mail=$_POST['mail'];
     $matricule=$_POST['matricule'];
-    $pass = md5($_POST['motDepasse']); // on hache le password avec md5
+    $pass = md5($_POST['motDePasse']); // on hache le password avec md5
     $confirm = md5($_POST['confirm']);
+    $posteEntreprise=$_POST['posteEntreprise'];
     $role = 1;
     //Vérification du matricule
     $utilisateur  = UserManager::getByMatricule($matricule);
-    if ($utilisateur->getIdUser()!=null)
-    {
-        $matricule_erreur1 = "Votre matricule est déjà utilisé par un membre";
-        $i++;
-    }
+   
+   // ********* probleme ********** 
+    // if ($utilisateur->getIdUser()!=null)
+    // {
+    //     $matricule_erreur1 = "Votre matricule est déjà utilisé par un membre";
+    //     $i++;
+    // }
     
     if (strlen($matricule) < 3 || strlen($matricule) > 15)
     {
@@ -37,21 +43,21 @@ else //On est dans le cas traitement
     //Vérification du mdp
     if ($pass != $confirm || empty($confirm) || empty($pass))
     {
-        $mdp_erreur = "Votre mot de passe et votre confirmation sont différents, ou sont vides";
+        $motDePasse_erreur = "Votre mot de passe et votre confirmation sont différents, ou sont vides";
         $i++;
     }
     
  
     if ($i==0) // S'il n'y a pas d'erreur
     {
-    	$nouvelUtilisateur = new User(['matricule'=>$_POST['matricule'],'password'=>md5($_POST['password']),'role'=>$role]);
+    	$nouvelUtilisateur = new User(['nom'=>$_POST['nom'],'prenom'=>$_POST['prenom'],'mail'=>$_POST['mail'],'matricule'=>$_POST['matricule'],'motDePasse'=>md5($_POST['motDePasse']),'posteEntreprise'=>$_POST['posteEntreprise']]);
         UserManager::add($nouvelUtilisateur); // On crée l'utilisateur dans la base
         $nouvelUtilisateur = UserManager::getByMatricule($_POST['matricule']); //pour récupérer l'ID
         echo'<h1>Inscription terminée</h1>';
         echo'<p>Bienvenue '.stripslashes(htmlspecialchars($_POST['matricule'])).' vous êtes maintenant inscrit</p>';
         
         //Et on définit les variables de sessions
-        $_SESSION['matricule'] = $nouvelUtilisateur->getmatricule();
+        $_SESSION['matricule'] = $nouvelUtilisateur->getMatricule();
         $_SESSION['id'] = $nouvelUtilisateur->getIdUser() ;
         $_SESSION['level'] = $nouvelUtilisateur->getPosteEntreprise();
         header("refresh:3,url=index.php?action=userListeAdmin");

@@ -12,7 +12,7 @@
 <div class ="boutonIns ">
 <h2>Pas encore inscrit ? </h2> 
 <a href="index.php?action=inscriptionForm">
-    <button type="submit">inscription </button>
+    <button type="submit">Inscription </button>
 </a></div>
 <form method="post" action="index.php?action=connectionForm">
 
@@ -20,15 +20,15 @@
     <div class="bas">
         <div class="formIdent">
             <div class="formulaire">
-                <legend>Connection</legend>
+                <legend><h1>Connexion</h1></legend>
 
 
-                <p><label for="matricule">Matricule :</label>
-                    <input type="number" id="matricule" value=""  placeholder="Matricule"/>
+                <p><label for="matricule"><h3>Matricule :</h3></label>
+                    <input type="number" id="matricule" name="matricule" value=""  placeholder="Matricule"/>
                 </p>
 
-                <p><label for="motDePasse">Mot de passe :</label>
-                    <input type="password" id="motdePasse" value="" placeholder="Mot de passe"/>
+                <p><label for="motDePasse"><h3>Mot de passe :</h3></label>
+                    <input type="password" id="motDePasse" name="motDePasse" value="" placeholder="Mot de passe"/>
                     <input type="submit" value="Mot de passe oublié" />
                 </p>
                 <p>

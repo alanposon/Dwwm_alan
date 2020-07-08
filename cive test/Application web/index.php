@@ -129,18 +129,21 @@ if (isset($_GET["action"])) {
             AfficherPage('Php/View/', 'nosRealisationsHCTS', "nosRealisationsHCTS");
             break;
 
-        case "offreEmploiForm":
-            AfficherPage('Php/View/', 'offreEmploiForm', "offreEmploiForm");
+        case "offreEmploiFormAdmin":
+            AfficherPage('Php/View/', 'offreEmploiFormAdmin', "offreEmploiFormAdmin");
             break;
 
-        case "offreEmploiAction":
-            AfficherPage('Php/View/', 'offreEmploiAction', "offreEmploiAction");
+        case "offreEmploiActionAdmin":
+            AfficherPage('Php/View/', 'offreEmploiActionAdmin', "offreEmploiActionAdmin");
             break;
 
-        case "offreEmploiListe":
-            AfficherPage('Php/View/', 'offreEmploiListe', "offreEmploiListe");
+        case "offreEmploiListeAdmin":
+            AfficherPage('Php/View/', 'offreEmploiListeAdmin', "offreEmploiListeAdmin");
             break;
-
+            case "postulerForm":
+                AfficherPage('Php/View/', 'postulerForm', "postulerForm");
+                break;
+               
         case "rechercheEmploi":
             AfficherPage('Php/View/', 'rechercheEmploi', "rechercheEmploi");
             break;

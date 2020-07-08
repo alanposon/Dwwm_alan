@@ -1,59 +1,129 @@
 <?php
 
-//on recupere l'action à mener (ajout/modif/suppression)
-$act = $_GET["act"];
-if ($act != "ajout") {
-    // on recupere l'id de la personne à modifier ou à supprimer via le $_GET
-    $id = $_GET["id"];
-    $p = OffreEmploiManager::findById($id);
+
+$lvl = (isset($_SESSION['level'])) ? (int) $_SESSION['level'] : 2;
+$id = (isset($_SESSION['id'])) ? (int) $_SESSION['id'] : 0;
+$numeroOffreEmploi = (isset($_SESSION['numeroOffreEmploi'])) ? $_SESSION['numeroOffreEmploi'] : '';
+// envoyer un message a l'entreprise 
+
+
+if (isset($_POST['mailform'])) {
+
+    if (!empty($_POST['numeroOffreEmploi']) and !empty($_POST['entrepriseOffreEmploi']) and !empty($_POST['dateOffreEmploi']) and !empty($_POST['descriptionOffreEmploi'])) {
+        // paramettre d'encodage 
+        $header = "MIME-Version: 1.0\r\n";
+        $header .= 'From:"poson.alan@gmail.com"<poson.alan@gmail.com>' . "\n";
+        $header .= 'Content-Type:text/html; charset="uft-8"' . "\n";
+        $header .= 'Content-Transfer-Encoding: 8bit';
+
+
+        $message = '
+<html>
+	<body>
+		<div align="center">
+		
+            <u>Nom de l\'expéditeur :</u>' . $_POST['nom'] . '<br>
+            <u>Prenom de l\'expéditeur :</u>' . $_POST['prenom'] . '<br>
+            <u>Mail de l\'expéditeur :</u>' . $_POST['mail'] . '<br>
+            <u>Objet:</u>' . $_POST['objet'] . '<br>
+            <br>
+            ' . nl2br($_POST['message']) . '
+		</div>
+	</body>
+</html>
+';
+
+        mail("alan.poson@gmail.com", "CONTACT - CIVE", $message, $header);
+        $msg = "Votre message a bien été envoyé !";
+    } else {
+        $msg = " Tout les champs doivent etre complétés !";
+    }
 }
+
 ?>
-<div class="formulaire center">
-    <form action="index.php?action=postulerAction&act=<?php echo $act; ?>" method="POST">
-        <fieldset>
-            <legend><i class="fas fa-address-card"></i>Vos coordonnées</legend>
-            <label for="numeroOffreEmploi"> Numero d'offre</label>
-            <!--on renseigne la value dans l'input si on est en modif ou suppr -->
-            <input type="number" name="numeroOffreEmploi" id="numeroOffreEmploi" maxlength="30" required <?php if ($act != "ajout") {
-                                                                                echo 'value ="' . $p->getNumeroOffreEmploi() . '"';
-                                                                            }
-                                                                            ?>>
-            <!--  on met l'id dans un champ caché pour qu'il soit renseigné dans le $_POST au moment de la validation du formulaire  -->
-            <?php if ($act != "ajout") {
-                echo '<input type="text" name="idOffreEmploi" id="idOffreEmploi" hidden value ="' . $p->getIdOffreEmploi() . '" >';
+<div class="bas">
+    <div class="formIdent">
+        <form method="POST" action="">
+
+            <div class="formulaire">
+                <h2>Offre emploi : </h2>
+
+                <legend><i class="fas fa-address-card"></i>Vos coordonnées</legend>
+                <p><label for="numeroOffreEmploi">numero Offre Emploi :</label>
+                    <div><?php echo 'il doit y avoir le numero de l\'offre ' . $numeroOffreEmploi; ?></div>
+
+
+                    <p><label for="entrepriseOffreEmploi">entreprise Offre Emploi :</label>
+                        <input type="text" name="entrepriseOffreEmploi" value="<?php if (isset($_POST['entrepriseOffreEmploi'])) {
+                                                                                    echo $_POST['entrepriseOffreEmploi'];
+                                                                                } ?>" /></p>
+
+
+                    <p><label for="dateOffreEmploi"> Date offre emploi :</label>
+                        <input type="text" name="dateOffreEmploi" value="<?php if (isset($_POST['dateOffreEmploi'])) {
+                                                                                echo $_POST['dateOffreEmploi'];
+                                                                            } ?>" /></p>
+
+                    <p><label for="descriptionOffreEmploi"> Description offre emploi:</label>
+                        <div><textarea name="descriptionOffreEmploi"><?php if (isset($_POST['descriptionoffreEmploi'])) {
+                                                                            echo $_POST['descriptionoffreEmploi'];
+                                                                        } ?></textarea>
+                    </p>
+
+
+                    <p>
+                        <div style="margin-left: 150px;">
+                            <input type="submit" value="envoyer" name="mailform" />
+                            <input type="reset" value="Annuler" />
+                        </div>
+                    </p>
+            </div>
+        </form>
+    </div>
+    <div class="bas">
+        <div class="formIdent">
+            <form method="POST" action="">
+
+                <div class="formulaire">
+                    <h2>Offre emploi : </h2>
+
+                    <p><label for="nom"> nom*:</label>
+                        <input type="text" name="nom" value="<?php if (isset($_POST['nom'])) {
+                                                                    echo $_POST['nom'];
+                                                                } ?>" /></p>
+
+                    <p><label for="mail"> mail* :</label>
+                        <input type="email" name="mail" value="<?php if (isset($_POST['mail'])) {
+                                                                    echo $_POST['mail'];
+                                                                } ?>" /></p>
+
+                    <p><label for="message"> Votre message*:</label>
+                        <div><textarea name="message"><?php if (isset($_POST['message'])) {
+                                                            echo $_POST['message'];
+                                                        } ?></textarea>
+                    </p>
+
+
+                </div>
+            </form>
+
+            <?php
+            if (isset($msg)) {
+                echo '<div class="mesMail">' . $msg . '</div>';
             }
             ?>
-
-            <label for="entrepriseOffreEmploi">Entreprise</label>
-            <input type="text" name="entrepriseOffreEmploi" id="entrepriseOffreEmploi" required <?php if ($act != "ajout") {
-                                                                        echo 'value ="' . $p->getEntrepriseOffreEmploi() . '"';
-                                                                    }
-                                                                    ?>>
-
-            <label for="dateOffreEmploi">Date d'emission de l'offre</label>
-            <input type="date" name="dateOffreEmploi" id="dateOffreEmploi" required <?php if ($act != "ajout") {
-                                                                                    echo 'value ="' . $p->getDateOffreEmploi() . '"';
-                                                                                }
-                                                                                ?>>
-
-            <label for="descriptionOffreEmploi">description </label>
-            <input type="message" name="descriptionOffreEmploi" id="descriptionOffreEmploi" required <?php if ($act != "ajout") {
-                                                                        echo 'value ="' . $p->getDescriptionOffreEmploi() . '"';
-                                                                    } ?>>
-                                                    
-        </fieldset>
-        <div class="btn">
-            <!-- on change l'intitulé du bouton en fonction de l'action -->
-            <button type="submit" name="modifier"> <?php if ($act == "ajout") {
-                                                        echo 'Ajouter';
-                                                    } elseif ($act == "modif") {
-                                                        echo 'Modifier';
-                                                    } else {
-                                                        echo "Supprimer";
-                                                    }
-                                                    ?></button>
-            <a href="index.php?action=accueil"> <button type="reset" name="annuler" class="annule"> Annuler</button></a>
         </div>
-        </fieldset>
-    </form>
+    </div>
 </div>
+        <div class="idenCIVE">
+            <img src="IMAGE/logoCive.png">
+            <div class="coord">
+                <br><strong>CIVE</strong>
+                <br> 2 rue de l'industrie
+                <br> 59820 Gravelines
+                <br> France
+                <br> Tél. 03 28 66 06 49
+                <br> Mail. cive@orange.fr
+            </div>
+        </div>
+    </div>

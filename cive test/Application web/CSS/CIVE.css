@@ -1,5 +1,4 @@
-
-/***** le header *****/ 
+/***** le header *****/
 body {
   padding: 0;
   margin: 0;
@@ -29,7 +28,7 @@ body {
 .logo1 {
   display: flex;
   flex: 1;
-  
+
 }
 
 .logo2 {
@@ -60,7 +59,9 @@ body {
   padding: 3vh;
   margin-right: -30px;
 }
-.FR:hover, .ENG:hover{
+
+.FR:hover,
+.ENG:hover {
   cursor: pointer;
 }
 
@@ -454,7 +455,11 @@ li a:hover {
   opacity: 1;
 }
 
-/***** hover article *****/
+/***** Message de connexion  *****/
+
+.bienvenue {
+  padding-left: 50px;
+}
 
 /************ Bandeau ************/
 .bandeau {
@@ -556,11 +561,12 @@ li a:hover {
 /************* nos métier ********/
 
 /****** titre ******/
-.titrePage { 
-  color : red ;
+.titrePage {
+  color: red;
   padding-left: 5%;
   margin-bottom: -20px;
 }
+
 .titreM i {
   /* metier */
   font-size: smaller;
@@ -657,8 +663,9 @@ li a:hover {
   height: 200px;
 
 }
-.description span img{ 
-    width: 50px;
+
+.description span img {
+  width: 50px;
   height: 50px;
 }
 
@@ -892,141 +899,154 @@ li a:hover {
 /******HCTS********* HCTS **********HCTS*******/
 /*********************************************/
 
-/************* switch de header **************/ 
+/************* switch de header **************/
 
-.titreH1 { 
+.titreH1 {
   padding: 5%;
   color: white;
-background: linear-gradient(to right, rgb(142, 198, 63), rgb(41, 5, 5));
+  background: linear-gradient(to right, rgb(142, 198, 63), rgb(41, 5, 5));
 }
-.titreH1 span { 
+
+.titreH1 span {
   font-size: 20px;
 }
 
-.txtG h2{ 
+.txtG h2 {
   color: white;
   background: linear-gradient(to right, rgb(142, 198, 63), rgb(41, 5, 5));
 }
+
 /****** entreprise ******/
-.entreprise img{ 
-height: 40vh;
-width: 97.5vw;
-margin-top: 10%;
-}  
-
-
-
-.fondVert { 
-  color: white;
-background: linear-gradient(to right,rgb(142, 198, 63), rgb(41, 5, 5));
+.entreprise img {
+  height: 40vh;
+  width: 97.5vw;
+  margin-top: 10%;
 }
 
 
-/***** Presentation *****/ 
 
-
-.presentationHH h2{ 
+.fondVert {
   color: white;
   background: linear-gradient(to right, rgb(142, 198, 63), rgb(41, 5, 5));
-  }
-  
-.geographie { 
-
-display: flex;
-padding-top: 80px;
-}
-
-.geographie img { 
-height: 220px;
-width: auto;
 }
 
 
-/*******bas1 gauche  **************/ 
+/***** Presentation *****/
 
-.basGauche { 
-  flex : 3; 
-  display : flex;
+
+.presentationHH h2 {
+  color: white;
+  background: linear-gradient(to right, rgb(142, 198, 63), rgb(41, 5, 5));
 }
-.introBG img{
+
+.geographie {
+
+  display: flex;
+  padding-top: 80px;
+}
+
+.geographie img {
+  height: 220px;
+  width: auto;
+}
+
+
+/*******bas1 gauche  **************/
+
+.basGauche {
+  flex: 3;
+  display: flex;
+}
+
+.introBG img {
   height: 100px;
   width: 100px;
   margin-top: 5%;
 }
-/***** basGauche *****/ 
-.basGaucheD{ 
-text-align: center;
+
+/***** basGauche *****/
+.basGaucheD {
+  text-align: center;
 
 }
 
 /*******bas1 Droite **************/
-.basDroite { 
+.basDroite {
 
-  flex : 1; 
-  display:flex; 
+  flex: 1;
+  display: flex;
 }
 
-/**** hcts titre *****/ 
+/**** hcts titre *****/
 
-.titreHCTS{  
-    color: white;
-      background: linear-gradient(to right, rgb(142, 198, 63), rgb(41, 5, 5));
-     
+.titreHCTS {
+  color: white;
+  background: linear-gradient(to right, rgb(142, 198, 63), rgb(41, 5, 5));
+
 }
 
-/***** hover article *****/ 
+/***** hover article *****/
 
- /************ Bandeau ************/
-.bandeau { 
-margin: 10px ;
-padding: 10px ;
+/************ Bandeau ************/
+.bandeau {
+  margin: 10px;
+  padding: 10px;
   text-align: center;
-  border : 5px solid grey; 
-  color: white ;  
-  
+  border: 5px solid grey;
+  color: white;
+
 }
 
 /************* slider HCTS*******/
 
 @keyframes slide {
-  0%, 20%, 100% {
-      left: 0; /*1ère image*/
+
+  0%,
+  20%,
+  100% {
+    left: 0;
+    /*1ère image*/
   }
-  35%, 50% {
-      left: -100vw; /*2ème image*/
+
+  35%,
+  50% {
+    left: -100vw;
+    /*2ème image*/
   }
 
 }
 
 
-/******* contact *****/ 
+/******* contact *****/
 
 
 /**** formulaire contact *****/
-.formIdent { 
-display: flex;
+.formIdent {
+  display: flex;
 
 }
+
 .coord {
   color: white;
   background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5));
   padding: 5%;
   border-radius: 5%;
 }
-.idenCIVE img{ 
-width: 150px;
-height: 150px;
+
+.idenCIVE img {
+  width: 150px;
+  height: 150px;
 }
 
 
-form { 
+form {
   padding-left: 5%;
   margin-top: 50px;
-  border : 1px solid white ;
+  border: 1px solid white;
   border-radius: 5%;
   color: white;
   background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5));
-opacity: 80%;
+  opacity: 80%;
 }
 
 .formulaire {
@@ -1038,10 +1058,11 @@ opacity: 80%;
   padding: 5%;
 }
 
-.formulaire input { 
+.formulaire input {
   display: flex;
 
 }
+
 .cssform p {
   width: 300px;
   clear: left;
@@ -1072,12 +1093,13 @@ opacity: 80%;
   margin-left: 3px;
 }
 
-/***** recherche emploi *****/ 
+/***** recherche emploi *****/
 
-.hautOffre { 
- 
+.hautOffre {
+
   padding: 5%;
 }
+
 .basOffre {
   display: flex;
   flex-wrap: wrap;
@@ -1094,13 +1116,15 @@ opacity: 80%;
   margin-bottom: 2rem;
   text-align: center;
   margin-top: 10px;
- font-size: 0.7em;
+  font-size: 0.7em;
 
 }
-.LC { 
-  height: 30px ;
+
+.LC {
+  height: 30px;
   width: auto;
 }
+
 .offre {
 
   margin-top: 10%;
@@ -1116,42 +1140,57 @@ opacity: 80%;
   margin-top: 10%;
   background-size: cover;
 
-   
+
 }
-input, button ,.bouton {
+
+input,
+button,
+.bouton {
   background-color: blanchedalmond;
   border: coral;
   border-radius: 10%;
   margin-top: 5px;
 }
-input:hover , button:hover{ 
+
+input:hover,
+button:hover {
   cursor: pointer;
 }
-.rechercheSite:hover { 
+
+.rechercheSite:hover {
 
   cursor: text;
 }
 
-.mesMail { 
+.mesMail {
 
-  color : green ; 
+  color: green;
   font-size: 1.5em;
   padding: 180px 0px 0px 10px;
 }
 
+.boutonIns { 
+  padding-left: 3%;
+}
+
+
+}
+/****** offre d'emploi quand on est pas encore connecter *****/ 
+
+.offreCo:hover { 
+
+  
+    content: 'Connecter vous pour decouvrir nos offres d\'emploi';
+}
 
 footer {
 
-    background:#ccc;
-    
-    position:absolute;
-    
-    bottom:0;
-    
-    width:100%;
-    
-    padding-top:50px;
-    
-    height:50px;
-    
- }
+  background-color: rgb(36, 26, 24);
+  color: white;
+  bottom: 0;
+  width: 100%;
+  line-height: 4em; /* hauteur de ligne */
+  text-align: center;
+  height: 50px;
+
+}
