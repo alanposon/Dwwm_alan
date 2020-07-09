@@ -45,6 +45,21 @@ if (isset($_GET["action"])) {
             AfficherPage('Php/View/', 'ajoutModifOffreEmploi', "ajoutModifOffreEmploi");
             break;
 
+            
+        case "chantierListe":
+            AfficherPage('Php/View/', 'chantierListe', "chantierListe");
+            break;
+
+            
+        case "chantierForm":
+            AfficherPage('Php/View/', 'chantierForm', "chantierForm");
+            break;
+
+            
+        case "chantierAction":
+            AfficherPage('Php/View/', 'chantierAction', "chantierAction");
+            break;
+
         case "connectionAction":
             AfficherPage('Php/View/', 'connectionAction', "connectionAction");
             break;

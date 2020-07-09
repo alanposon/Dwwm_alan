@@ -1173,8 +1173,8 @@ button:hover {
   padding-left: 3%;
 }
 
+.navA { color : white; }
 
-}
 /****** offre d'emploi quand on est pas encore connecter *****/ 
 
 .offreCo:hover { 

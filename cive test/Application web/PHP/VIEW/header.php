@@ -52,7 +52,19 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
                             </li>
 
                             <li><a href="index.php?action=legislation"> Législation </a></li>
-                            <li><a href="index.php?action=contact"> Contact </a></li>
+                            <li><?php if ($lvl== 3) {
+
+                               echo ' <li class="deroulant">><div class="navA"><h3>Administrateur</h3></div>
+                               <ul class="sous">
+                               <li><a href="index.php?action=dernierAccidentListe"> MAJ du Dernier accident </a></li>
+                               <li><a href="index.php?action=chantierListe"> Gestion des chantiers</a></li>
+                               <li><a href="index.php?action=nosRealisationsHCTS"> Nos réalisations </a></li>
+                           </ul>
+                               </li>';
+                            }else{
+                                echo '<li><a href="index.php?action=contact"> Contact </a></li>';
+                            } ?>
+                            
 
                             <li><?php if ($matricule != "") {
 

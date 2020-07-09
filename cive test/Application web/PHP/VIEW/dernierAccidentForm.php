@@ -3,10 +3,10 @@
 //on recupere l'action à mener (ajout/modif/suppression)
 // if(isset($_POST['act'])) // verifie la variable act 
 // {}
-$act = $_GET["act"];
+$act = isset($_GET["act"]);
 
 
-if ($act != "ajout") {
+if ($act != "modif") {
     // on recupere l'id de la personne à modifier ou à supprimer via le $_GET
     $id = $_GET["id"];
     $p = TempsSansAccidentManager::findById($id);
@@ -24,7 +24,7 @@ if ($act != "ajout") {
             <form action="index.php?action=dernierAccidentAction&act=<?php echo $act; ?>" method="POST">
 
                 <p><label for="dateDernierAccident">Nouvelle date du denier accident :</label>
-                    <input type="date" id="dateDernierAccident" required <?php if ($act != "modif") {
+                    <input type="date" id="dateDernierAccident" name="dateDernierAccident" required <?php if ($act != "modif") {
                                                                                 echo 'value ="' . $p->getDateDernierAccident() . '"';
                                                                             }
                                                                             ?>>
@@ -34,14 +34,17 @@ if ($act != "ajout") {
                     }
                     ?>
                     <div class="btn">
-                        <!-- on change l'intitulé du bouton en fonction de l'action -->
-                        <button type="submit" name="modifier">Modifier <?php if ($act == "modif") {
-                                                                    echo 'Modifier';
-                                                                } 
-                                                               
-                                                                ?></button>
-                        <a href="index.php?action=dernierAccidentListe"> <button type="reset" name="annuler" class="annule"> Annuler</button></a>
-                    </div>
+            <!-- on change l'intitulé du bouton en fonction de l'action -->
+            <button type="submit" name="modifier"> <?php if ($act == "ajout") {
+                                                        echo 'Ajouter';
+                                                    } else 
+                                                        { echo 'Modifier';
+                                                       
+                                                    }
+                                                    ?></button>
+        
+                <button type="reset" name="annuler" class="annule">  Annuler</button></a>
+        </div>
 
 
 

@@ -9,7 +9,7 @@ if ($act != "ajout") {
 }
 ?>
 <div class="formulaire center">
-    <form action="index.php?action=offreEmploiAction&act=<?php echo $act; ?>" method="POST">
+    <form action="index.php?action=offreEmploiActionAdmin&act=<?php echo $act; ?>" method="POST">
         <fieldset>
             <legend></i>Vos coordonnées</legend>
             <label for="numeroOffreEmploi"> Numero d'offre</label>

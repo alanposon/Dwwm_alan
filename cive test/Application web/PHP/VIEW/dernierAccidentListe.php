@@ -23,7 +23,7 @@ foreach ($temps as $elt) {
         <?php 
       
                 echo    '<a href="index.php?action=dernierAccidentForm&m=suppr&id='.$elt->getIdTempsSansAccident() .'">
-                            <div class="bouton">Supprimer</div>
+                            <div class="bouton">modifier</div>
                         </a>';
             ?>
     </div>
