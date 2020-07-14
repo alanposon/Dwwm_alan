@@ -26,6 +26,25 @@ function afficherPage($chemin, $page, $titre)
 DbConnect::init();
 session_start();
 
+
+
+
+// fichier langue // 
+
+
+
+/*********** version xml  *************/
+
+// if (!empty($_GET['lang'])) {
+//     $lang = $_GET['lang'];
+// } else {
+//     $lang = 'fr';
+// }
+// $bibliotheque = simplexml_load_file('/XML/langues.xml');
+// $langue = $bibliotheque->$lang;
+// echo $tras100;
+
+
 //Si une route est demandée
 if (isset($_GET["action"])) {
     switch ($_GET["action"]) {
@@ -45,17 +64,23 @@ if (isset($_GET["action"])) {
             AfficherPage('Php/View/', 'ajoutModifOffreEmploi', "ajoutModifOffreEmploi");
             break;
 
-            
+
         case "chantierListe":
             AfficherPage('Php/View/', 'chantierListe', "chantierListe");
             break;
+            //*********************************** */
 
-            
+        case "Liste":
+            AfficherPage('Php/View/', 'Liste', "Liste");
+            break;
+
+            //****************************** */
+
         case "chantierForm":
             AfficherPage('Php/View/', 'chantierForm', "chantierForm");
             break;
 
-            
+
         case "chantierAction":
             AfficherPage('Php/View/', 'chantierAction', "chantierAction");
             break;
@@ -70,6 +95,10 @@ if (isset($_GET["action"])) {
 
         case "confirmation":
             AfficherPage('Php/View/', 'confirmation', "confirmation");
+            break;
+
+        case "confirmationChantier":
+            AfficherPage('Php/View/', 'confirmationChantier', "confirmationChantier");
             break;
 
         case "contact":
@@ -155,10 +184,10 @@ if (isset($_GET["action"])) {
         case "offreEmploiListeAdmin":
             AfficherPage('Php/View/', 'offreEmploiListeAdmin', "offreEmploiListeAdmin");
             break;
-            case "postulerForm":
-                AfficherPage('Php/View/', 'postulerForm', "postulerForm");
-                break;
-               
+        case "postulerForm":
+            AfficherPage('Php/View/', 'postulerForm', "postulerForm");
+            break;
+
         case "rechercheEmploi":
             AfficherPage('Php/View/', 'rechercheEmploi', "rechercheEmploi");
             break;

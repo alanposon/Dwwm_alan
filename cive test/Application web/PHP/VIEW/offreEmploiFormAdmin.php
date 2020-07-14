@@ -54,6 +54,6 @@ if ($act != "ajout") {
                                                     ?></button>
             <a href="index.php?action=accueil"> <button type="reset" name="annuler" class="annule"> Annuler</button></a>
         </div>
-        </fieldset>
+       
     </form>
 </div>

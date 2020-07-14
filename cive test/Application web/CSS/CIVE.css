@@ -10,7 +10,9 @@ body {
 #container {
   background-color: rgba(128, 128, 128, 0.171);
 }
-
+.log {
+  display:flex; 
+}
 .hautH {
   display: flex;
   padding: 16px;
@@ -178,10 +180,9 @@ li a:hover {
 
 .bas1 {
 
-  height: 20vh;
+ align-items: center;
   display: flex;
-
-
+ 
 }
 
 .bas2 {
@@ -325,10 +326,6 @@ li a:hover {
 
 /*******bas1 gauche  **************/
 
-.basGauche {
-  flex: 3;
-  display: flex;
-}
 
 .introBG img {
   height: 100px;
@@ -337,16 +334,27 @@ li a:hover {
 }
 
 /***** basGauche *****/
-.basGaucheD {
+.basGauche {
+  display: flex;
   text-align: center;
 
+}
+.basGaucheD { 
+  max-width: 180px;
 }
 
 /*******bas1 Droite **************/
 .basDroite {
 
-  flex: 1;
+  
+  height: 300px;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+.basDroite>* {
+  flex: 1 1 10px;
 }
 
 /****** veritas *****/
@@ -468,7 +476,9 @@ li a:hover {
   text-align: center;
   border: 5px solid grey;
   color: white;
-
+  background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5));
+border-radius: 5%;
+display: flex;
 }
 
 /************* slider *******/
@@ -953,22 +963,12 @@ li a:hover {
 
 /*******bas1 gauche  **************/
 
-.basGauche {
-  flex: 3;
-  display: flex;
-}
-
 .introBG img {
   height: 100px;
   width: 100px;
   margin-top: 5%;
 }
 
-/***** basGauche *****/
-.basGaucheD {
-  text-align: center;
-
-}
 
 /*******bas1 Droite **************/
 .basDroite {

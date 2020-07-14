@@ -1,6 +1,4 @@
-
-
-<?php 
+<?php
 // inserer le prenom 
 // $prenomUtilisateur = (isset($_SESSION['nom'])) ? $_SESSION['prenom'] : 1;
 // echo  $prenomUtilisateur ;
@@ -9,6 +7,7 @@
 <html>
 <div class="Bas">
     <div class="bandeau">
+        <marquee direction="left" scrollamount="6"><img src="https://www.gifsanimes.com/data/media/1829/soudeur-image-animee-0011.gif" width="35" height="55" alt="logo Soudeur"> 50 JOURS SANS ACCIDENT! </marquee>
     </div>
 
     <div id="slider">
@@ -43,42 +42,24 @@
         </div>
 
         <div class="basDroite">
-            <div class="2logo1">
-                <div class="veritasC">
-                    <img class="veritasI" src="IMAGE/veritas.png" alt="" />
-                    <div class="veritasT">
-                        <p>Les organisations qui se demandent comment améliorer la qualité
-                            de leurs produits et services et satisfaire invariablement
-                            aux exigences de leurs clients peuvent se tourner vers l’ISO.
-                            La famille de normes ISO 9000, qui inclut plusieurs des normes les plus connues de
-                            l’ISO
-                            , a été élaborée pour répondre à divers aspects du management de la qualité.</p>
 
-                    </div>
-                </div>
-                <div class="maseC">
-                    <img class="maseI" src="IMAGE/mase.png" alt="" />
-                    <div class="maseT">
-                        <p>Hello world!</p>
-                    </div>
-
-                </div>
+            <div class="logoA">
+                <img class="veritasI" src="IMAGE/veritas.png" alt="" />
             </div>
-            <div class="2logo2">
-                <div class="cefriC">
-                    <img class="cefriI" src="IMAGE/cefri.png" alt="" />
-                    <div class="cefriT">
-                        <p>Hello world!</p>
-                    </div>
-                </div>
-                <div class="edfC">
-                    <img class="edfI" src="IMAGE/edf.png" alt="" />
-                    <div class="edfT">
-                        <p>Hello world!</p>
-                    </div>
-                </div>
+
+            <div class="logoA">
+                <div><img class="maseI" src="IMAGE/mase.png" alt="logoMase" /></div>
+            </div>
+
+            <div class="logoA">
+                <img class="cefriI" src="IMAGE/cefri.png" alt="" />
+            </div>
+
+            <div class="logoA">
+                <img class="edfI" src="IMAGE/edf.png" alt="" />
             </div>
         </div>
+
 
     </div>
     <div class="basB">

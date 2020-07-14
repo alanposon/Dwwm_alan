@@ -50,7 +50,6 @@ Class Texte {
         $this->_texte = $_texte;
         return $this;
     }
-
 	  /******* Construct *******/
     public function __construct(array $options = [])
     {

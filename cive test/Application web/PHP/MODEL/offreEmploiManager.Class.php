@@ -34,7 +34,7 @@ class OffreEmploiManager
     {
         $db = DbConnect::getDb();
         $id = (int) $id;
-        $q = $db->query("SELECT * FROM offreemploi WHERE idOffreEmploi=" .$id);
+        $q = $db->query("SELECT * FROM offreemploi WHERE idOffreEmploi=" . $id);
         $results = $q->fetch(PDO::FETCH_ASSOC);
         if ($results != false) {
             return new OffreEmploi($results);
@@ -55,5 +55,4 @@ class OffreEmploiManager
         }
         return $offreEmploi;
     }
-
 }
