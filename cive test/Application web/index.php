@@ -30,7 +30,9 @@ session_start();
 
 
 // fichier langue // 
-
+if (isset($_GET['lang'])) {
+    $_SESSION['langue']=$_GET['lang'];
+}
 
 
 /*********** version xml  *************/
