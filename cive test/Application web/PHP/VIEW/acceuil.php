@@ -2,12 +2,13 @@
 // inserer le prenom 
 // $prenomUtilisateur = (isset($_SESSION['nom'])) ? $_SESSION['prenom'] : 1;
 // echo  $prenomUtilisateur ;
-
-?>
+//  $date = (isset($_SESSION['dateDernierAccident'])) ? $_SESSION['dateDernierAccident'] : TempsSansAccident::getDateDernierAccident();
+//  echo  'voici la date :'.$date;
+// ?>
 <html>
 <div class="Bas">
     <div class="bandeau">
-        <marquee direction="left" scrollamount="6"><img src="https://www.gifsanimes.com/data/media/1829/soudeur-image-animee-0011.gif" width="35" height="55" alt="logo Soudeur"> <?php echo TempsSansAccidentManager::getDateDernierAccident(); ?><?php echo TexteManager::getTexte("50 jours sans accident !"); ?></marquee>
+        <marquee direction="left" scrollamount="6"><img src="https://www.gifsanimes.com/data/media/1829/soudeur-image-animee-0011.gif" width="35" height="55" alt="logo Soudeur"> <?php /*echo TempsSansAccident::getDateDernierAccident();*/ ?><?php echo TexteManager::getTexte("50 jours sans accident !"); ?></marquee>
     </div>
 
     <div id="slider">

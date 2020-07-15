@@ -1202,3 +1202,7 @@ table.color_line tr:nth-child(2n+3) td {
   color: rgb(134, 10, 10); 
   background-color: white;
 }
+td input { 
+  width: 100px;
+  height: 100px;
+}

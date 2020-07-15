@@ -69,24 +69,36 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
                             <li><a href="index.php?action=legislation"><?php echo TexteManager::getTexte("Législation"); ?></a></li>
                             <li><?php if ($lvl == 3) {
 
-                                    echo ' <li class="deroulant"><div class="navA"><h3>Administration</h3></div>
+                                    echo '<li class="deroulant"><div class="navA"><h3>Administration</h3></div>
                                <ul class="sous">
-                               <li><a href="index.php?action=dernierAccidentListe"><?php echo TexteManager::getTexte("Maj du dernier accident"); ?></a></li>
-                               <li><a href="index.php?action=chantierListe"> <?php echo TexteManager::getTexte("Gestion des chantiers"); ?></a></li>
+                               <li><a href="index.php?action=dernierAccidentListe">';
+
+                                    echo TexteManager::getTexte("Maj du dernier accident");
+
+                                    echo '</a></li>
+                               <li><a href="index.php?action=chantierListe">';
+                                    echo TexteManager::getTexte("Gestion des chantiers");
+                                    echo  '</a></li>
                              
                            </ul>
                                </li>';
                                 } else {
-                                    echo '<li><a href="index.php?action=contact"> <?php echo TexteManager::getTexte("Contact"); ?> </a></li>';
+                                    echo '<li><a href="index.php?action=contact">';
+                                    echo TexteManager::getTexte("Contact");
+                                    echo '</a></li>';
                                 } ?>
 
 
                             <li><?php if ($matricule != "") {
 
-                                    echo '   <a class ="btn btn-success"  href="index.php?action=offreEmploiListeAdmin" > <?php echo TexteManager::getTexte("Offre Emploi"); ?> </a>';
+                                    echo '   <a class ="btn btn-success"  href="index.php?action=offreEmploiListeAdmin" >';
+                                    echo TexteManager::getTexte("Offre Emploi");
+                                    echo ' </a>';
                                 } else {
 
-                                    echo ' <a class ="btn btn-success" href="index.php?action=connectionForm" > <?php echo TexteManager::getTexte("Offre Emploi"); ?></a>';
+                                    echo ' <a class ="btn btn-success" href="index.php?action=connectionForm" >';
+                                    echo TexteManager::getTexte("Offre Emploi");
+                                    echo '</a>';
                                 }
                                 ?></li>
                             <li><?php if ($matricule != "" && $lvl > 1) {
@@ -98,10 +110,14 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
 
                             <li><?php if ($matricule != "") {
 
-                                    echo ' <a class ="btn btn-success"  href="index.php?action=deconnectionForm" > <?php echo TexteManager::getTexte("Deconnexion"); ?> </a>';
+                                    echo ' <a class ="btn btn-success"  href="index.php?action=deconnectionForm" >';
+                                    echo TexteManager::getTexte("Deconnexion");
+                                    echo '</a>';
                                 } else {
-
-                                    echo '   <a class ="btn btn-success"  href="index.php?action=connectionForm" > <?php echo TexteManager::getTexte("Connexion"); ?> </a>';
+                                    echo '   <a class ="btn btn-success"  href="index.php?action=connectionForm" >';
+                                     echo TexteManager::getTexte("Connexion"); 
+                                     echo' </a>';
+                                     
                                 } ?></li>
 
 
