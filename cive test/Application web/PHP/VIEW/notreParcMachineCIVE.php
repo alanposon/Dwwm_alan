@@ -13,7 +13,7 @@
                     <p>Propriétaire de ses QMOS et DMOS</p>
                     <h3>Les ateliers sont équipés de plusieurs machines outils </h3>
                 </div>
-                <div class="parcM">
+                <div class="activite">
                     <img src="IMAGE/plieuse.jpg" alt="plieuse">
                     <div class="titre">
                         <h3>Une plieuse</h3>
@@ -30,7 +30,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="parcM">
+                <div class="activite">
                     <img src="IMAGE/cisaille.jpg" alt="cisaille guillotine">
                     <div class="titre">
                         <h3>Une cisaille guillotine</h3>
@@ -48,7 +48,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="parcM">
+                <div class="activite">
                     <img src="IMAGE/scie.jpg" alt="scie à ruban">
                     <div class="titre">
                         <h3>Une scie à ruban</h3>
@@ -58,7 +58,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="parcM">
+                <div class="activite">
                     <img src="IMAGE/poinçonneuse.jpg" alt="Poinçonneuse">
                     <div class="titre">
                         <h3>Poinçonneuse</h3>
@@ -68,7 +68,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="parcM">
+                <div class="activite">
                     <img src="IMAGE/perceuse.jpg" alt="Une perceuse à colonne">
                     <div class="titre">
                         <h3>Une perceuse à colonne</h3>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <h3>Egalement des moyens informatiques (DAO) </h3>
-                <div class="parcM">
+                <div class="activite">
                     <img src="IMAGE/Metalcad.jpg" alt="Metalcad">
                     <div class="titre">
                         <h3>Metalcad</h3>
@@ -93,7 +93,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="parcM">
+                <div class="activite">
                     <img src="IMAGE/autocad.jpg" alt="Autocad">
                     <div class="titre">
                         <h3>Autocad</h3>
@@ -102,7 +102,7 @@
                         <p>AutoCAD® est un logiciel de conception assistée par ordinateur (CAO) qui permet aux architectes, ingénieurs et professionnels de la construction de créer des dessins 2D et 3D précis. </p>
                     </div>
                 </div>
-                <div class="parcM">
+                <div class="activite">
                     <img src="IMAGE/logitrace.jpg" alt="Logitrace">
                     <div class="titre">
                         <h3>Logitrace</h3>

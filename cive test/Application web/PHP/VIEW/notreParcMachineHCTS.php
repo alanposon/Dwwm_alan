@@ -15,7 +15,7 @@
               <div class="plus"><h2>LE PETIT+</h2>
               <div>Nous possédons un tunnel avec poste de travail mobile de meulage/soudage (Dim. : 9 x 3 x 2.5m de hauteur) ce qui permet à une ou plusieurs équipes de fabriquer au plus près de la zone de montage en toute sécurité. </div>
             </div>
-              <div class="parcM">
+              <div class="activite">
                   <img src="IMAGE/aspi.JPG" alt="bras aspirants">
                   <div class="titre">
                       <h3>Des postes de travail ergonomiques avec bras aspirants </h3>
@@ -28,7 +28,7 @@
                              contre les dangers de substances et vapeurs toxiques. </p>
                   </div>
               </div>
-              <div class="parcM">
+              <div class="activite">
                   <img src="IMAGE/souder.jpg" alt="poste a souder synergique">
                   <div class="titre">
                       <h3>Des postes a souder synergiques</h3>
@@ -38,7 +38,7 @@
                            les travaux de tôlerie fine.</p>
                   </div>
               </div>
-              <div class="parcM">
+              <div class="activite">
                   <img src="IMAGE/potence.jpg" alt="potence">
                   <div class="titre">
                       <h3> 5 potences d'une tonne</h3>
@@ -47,7 +47,7 @@
                       <p>Elle est conçue pour manutentionner des charges dans une zone délimitée par la longueur du bras de la potence                     </p>
                   </div>
               </div>
-              <div class="parcM">
+              <div class="activite">
                   <img src="IMAGE/scieO.jpg" alt="scie orientables">
                   <div class="titre">
                       <h3>2 Scies orientables 60°</h3>
@@ -57,7 +57,7 @@
                           (ou lame) denté, actionné par une machine</p>
                   </div>
               </div>
-              <div class="parcM">
+              <div class="activite">
                   <img src="IMAGE/cisaille.jpg" alt="cisaille 12mm ">
                   <div class="titre">
                       <h3>1 cisaille (capacité 12 mm en 3000)</h3>
@@ -76,7 +76,7 @@
                       </p>
                   </div>
               </div>
-              <div class="parcM">
+              <div class="activite">
                 <img src="IMAGE/plieuse.jpg" alt="plieuse">
                 <div class="titre">
                     <h3>1 plieuse 120T longueur de travail 3m</h3>
@@ -94,7 +94,7 @@
                     </p>
                 </div>
             </div>
-            <div class="parcM">
+            <div class="activite">
                 <img src="IMAGE/scieA.jpg" alt="scie automatique">
                 <div class="titre">
                     <h3>1 scie automatique capacité H400</h3>
@@ -104,7 +104,7 @@
                     </p>
                 </div>
             </div>
-            <div class="parcM">
+            <div class="activite">
                 <img src="IMAGE/plasma.jpg" alt="decoupe plasma">
                 <div class="titre">
                     <h3>1 table découpe plasma </h3>
@@ -120,7 +120,7 @@
                 </div>
             </div>
               <h3>Egalement des moyens informatiques (DAO) </h3>
-              <div class="parcM">
+              <div class="activite">
                   <img src="IMAGE/Metalcad.jpg" alt="Metalcad">
                   <div class="titre">
                       <h3>Metalcad</h3>
@@ -130,7 +130,7 @@
                       </p>
                   </div>
               </div>
-              <div class="parcM">
+              <div class="activite">
                   <img src="IMAGE/autocad.jpg" alt="Autocad">
                   <div class="titre">
                       <h3>Autocad</h3>
@@ -139,7 +139,7 @@
                       <p>AutoCAD® est un logiciel de conception assistée par ordinateur (CAO) qui permet aux architectes, ingénieurs et professionnels de la construction de créer des dessins 2D et 3D précis. </p>
                   </div>
               </div>
-              <div class="parcM">
+              <div class="activite">
                   <img src="IMAGE/logitrace.jpg" alt="Logitrace">
                   <div class="titre">
                       <h3>Logitrace</h3>

@@ -43,27 +43,27 @@
 
         <div class="basDroite">
 
-            <div class="logoA">
+          
                 <img class="veritasI" src="IMAGE/veritas.png" alt="" />
-            </div>
+         
 
-            <div class="logoA">
-                <div><img class="maseI" src="IMAGE/mase.png" alt="logoMase" /></div>
-            </div>
+       
+                <img class="maseI" src="IMAGE/mase.png" alt="logoMase" />
+      
 
-            <div class="logoA">
+         
                 <img class="cefriI" src="IMAGE/cefri.png" alt="" />
-            </div>
+          
 
-            <div class="logoA">
+          
                 <img class="edfI" src="IMAGE/edf.png" alt="" />
-            </div>
+        
         </div>
 
 
     </div>
     <div class="basB">
-        <div class="entreprise"> <img src="IMAGE/entreprise.png" alt="entreprise CIVE"></div>
+ <img src="IMAGE/entreprise.png" alt="entreprise CIVE">
         <div class="bas2">
             <div class="fondOrange">
                 <h2> Un peu d'histoire... </h2>

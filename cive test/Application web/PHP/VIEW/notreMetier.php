@@ -14,7 +14,7 @@
         </div>
     </div>
     <h2> Voici nos Métiers : </h2>
-    <div class="metier">
+    <div class="activite">
         <img src="IMAGE/tuyauteurM.JPG" alt="tuyauteur">
         <div class="titre">
             <h3>Tuyauteur</h3>
@@ -35,7 +35,7 @@
 
         </div>
     </div>
-    <div class="metier">
+    <div class="activite">
         <img src="IMAGE/soudeurM.JPG" alt="tuyauteur">
         <div class="titre">
             <h3>Soudeur</h3>
@@ -69,7 +69,7 @@
                 ou encore dans une entreprise de tuyauterie industrielle en travaux publics.</p>
         </div>
     </div>
-    <div class="metier">
+    <div class="activite">
         <img src="IMAGE/monteurM.JPG" alt="monteur">
         <div class="titre">
             <h3>Monteur</h3>
@@ -89,7 +89,7 @@
 
         </div>
     </div>
-    <div class="metier">
+    <div class="activite">
         <img src="IMAGE/encadrement.JPG" alt="encadrement technique">
         <div class="titre">
             <h3>Encadrement technique</h3>
@@ -100,7 +100,7 @@
 
         </div>
     </div>
-    <div class="metier">
+    <div class="activite">
         <img src="IMAGE/qsre.JPG" alt="encadrement QSRE">
         <div class="titre">
             <h3>Encadrement QSRE</h3>
