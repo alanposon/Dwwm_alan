@@ -20,17 +20,17 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
                     <div class="hautH">
 
 
-                <div id="titre_page">
-                <?php echo TexteManager::getTexte("accueil"); ?>
-                </div>
-                <div id="eeee">
+                        <div id="titre_page">
 
-                </div>
+                        </div>
+                        <div id="eeee">
+
+                        </div>
 
 
                         <div class="logo1">
-                        <a href="index.php?lang=FR" >  <img class="FR" src="IMAGE/fr.jpg" alt="Français"></a>
-				        <a href="index.php?lang=EN" ><img class="ENG" src="IMAGE/eng.jpg" alt="anglais"></a>
+                            <a href="index.php?lang=FR"> <img class="FR" src="IMAGE/fr.jpg" alt="Français"></a>
+                            <a href="index.php?lang=EN"><img class="ENG" src="IMAGE/eng.jpg" alt="anglais"></a>
 
                             <!-- <div><img class="FR" src="IMAGE/fr.jpg" alt="Français"></div> -->
                             <!-- <div><img class="ENG" src="IMAGE/eng.jpg" alt="anglais"></div> -->
@@ -41,87 +41,73 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
                         <div class="logo3">
                             <a href="https://fr.linkedin.com/in/christophe-hinderyckx-aa3444103"><img class="linkedin" src="IMAGE/linkedin.png" alt="LinkedIn">
                         </div>
-                        <?php if ($matricule != "")
-{
-    echo '<div class="fondOrange">' . $nom . ' ' . $prenom . ' ' . $matricule . '</div>';
-}
+                        <?php if ($matricule != "") {
+                            echo '<div class="fondOrange">' . $nom . ' ' . $prenom . ' ' . $matricule . '</div>';
+                        }
 
-?>
+                        ?>
                     </div>
                     <nav>
                         <ul>
                             <li><a href="index.php?action=acceuil"> <?php echo TexteManager::getTexte("accueil"); ?> </a></li>
-                            <li class="deroulant"><a href="index.php?action=notreMetier"> Notre Métier </a>
+                            <li class="deroulant"><a href="index.php?action=notreMetier"> <?php echo TexteManager::getTexte("Notre metier"); ?></a>
                                 <ul class="sous">
-                                    <li><a href="index.php?action=nosActivitesCIVE"> Nos activités </a></li>
-                                    <li><a href="index.php?action=notreParcMachineCIVE"> Notre parc machine </a></li>
-                                    <li><a href="index.php?action=nosRealisationsCIVE"> Nos réalisations </a></li>
+                                    <li><a href="index.php?action=nosActivitesCIVE"><?php echo TexteManager::getTexte("Nos Activités"); ?></a></li>
+                                    <li><a href="index.php?action=notreParcMachineCIVE"><?php echo TexteManager::getTexte("Notre Parc Machines"); ?> </a></li>
+                                    <li><a href="index.php?action=nosRealisationsCIVE"> <?php echo TexteManager::getTexte("Nos Réalisations"); ?> </a></li>
                                 </ul>
                             </li>
 
                             <li class="deroulant"><a href="index.php?action=HCTS"> HCTS </a>
                                 <ul class="sous">
-                                    <li><a href="index.php?action=nosActivitesHCTS"> Nos activités </a></li>
-                                    <li><a href="index.php?action=notreParcMachineHCTS"> Notre parc machine </a></li>
-                                    <li><a href="index.php?action=nosRealisationsHCTS"> Nos réalisations </a></li>
+                                    <li><a href="index.php?action=nosActivitesHCTS"><?php echo TexteManager::getTexte("Nos Activités"); ?></a></li>
+                                    <li><a href="index.php?action=notreParcMachineHCTS"> <?php echo TexteManager::getTexte("Notre Parc Machines"); ?> </a></li>
+                                    <li><a href="index.php?action=nosRealisationsHCTS"><?php echo TexteManager::getTexte("Nos Réalisations"); ?> </a></li>
                                 </ul>
                             </li>
 
-                            <li><a href="index.php?action=legislation"> Législation </a></li>
-                            <li><?php if ($lvl == 3)
-{
+                            <li><a href="index.php?action=legislation"><?php echo TexteManager::getTexte("Législation"); ?></a></li>
+                            <li><?php if ($lvl == 3) {
 
-    echo ' <li class="deroulant"><div class="navA"><h3>Administration</h3></div>
+                                    echo ' <li class="deroulant"><div class="navA"><h3>Administration</h3></div>
                                <ul class="sous">
-                               <li><a href="index.php?action=dernierAccidentListe"> MAJ du Dernier accident </a></li>
-                               <li><a href="index.php?action=chantierListe"> Gestion des chantiers</a></li>
-                               <li><a href="index.php?action=nosRealisationsHCTS"> Nos réalisations </a></li>
+                               <li><a href="index.php?action=dernierAccidentListe"><?php echo TexteManager::getTexte("Maj du dernier accident"); ?></a></li>
+                               <li><a href="index.php?action=chantierListe"> <?php echo TexteManager::getTexte("Gestion des chantiers"); ?></a></li>
+                             
                            </ul>
                                </li>';
-}
-else
-{
-    echo '<li><a href="index.php?action=contact"> Contact </a></li>';
-}?>
+                                } else {
+                                    echo '<li><a href="index.php?action=contact"> <?php echo TexteManager::getTexte("Contact"); ?> </a></li>';
+                                } ?>
 
 
-                            <li><?php if ($matricule != "")
-{
+                            <li><?php if ($matricule != "") {
 
-    echo '   <a class ="btn btn-success"  href="index.php?action=offreEmploiListeAdmin" > Offre Emploi </a>';
-}
-else
-{
+                                    echo '   <a class ="btn btn-success"  href="index.php?action=offreEmploiListeAdmin" > <?php echo TexteManager::getTexte("Offre Emploi"); ?> </a>';
+                                } else {
 
-    echo ' <a class ="btn btn-success" href="index.php?action=connectionForm" > Offre Emploi </a>';
-}
-?></li>
- <li><?php if ($matricule != "" && $lvl > 1)
-{
+                                    echo ' <a class ="btn btn-success" href="index.php?action=connectionForm" > <?php echo TexteManager::getTexte("Offre Emploi"); ?></a>';
+                                }
+                                ?></li>
+                            <li><?php if ($matricule != "" && $lvl > 1) {
 
-    echo ' <a class ="btn btn-success"  href="index.php?action=planning" > Planning </a>';
-}
-else
-{
-
-}?></li>
+                                    echo ' <a class ="btn btn-success"  href="index.php?action=planning" > Planning </a>';
+                                } else {
+                                } ?></li>
 
 
-                            <li><?php if ($matricule != "")
-{
+                            <li><?php if ($matricule != "") {
 
-    echo ' <a class ="btn btn-success"  href="index.php?action=deconnectionForm" > Deconnexion </a>';
-}
-else
-{
+                                    echo ' <a class ="btn btn-success"  href="index.php?action=deconnectionForm" > <?php echo TexteManager::getTexte("Deconnexion"); ?> </a>';
+                                } else {
 
-    echo '   <a class ="btn btn-success"  href="index.php?action=connectionForm" > Connexion </a>';
-}?></li>
+                                    echo '   <a class ="btn btn-success"  href="index.php?action=connectionForm" > <?php echo TexteManager::getTexte("Connexion"); ?> </a>';
+                                } ?></li>
 
 
                     </nav>
 
                     <h2><?php
-// si je souhaite afficher ou je me trouve
-//echo '<div class="titrePage">'.$titre.'</div>'
-?></h2>
+                        // si je souhaite afficher ou je me trouve
+                        //echo '<div class="titrePage">'.$titre.'</div>'
+                        ?></h2>

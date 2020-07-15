@@ -7,7 +7,7 @@
 <html>
 <div class="Bas">
     <div class="bandeau">
-        <marquee direction="left" scrollamount="6"><img src="https://www.gifsanimes.com/data/media/1829/soudeur-image-animee-0011.gif" width="35" height="55" alt="logo Soudeur"> 50 JOURS SANS ACCIDENT! </marquee>
+        <marquee direction="left" scrollamount="6"><img src="https://www.gifsanimes.com/data/media/1829/soudeur-image-animee-0011.gif" width="35" height="55" alt="logo Soudeur"> <?php echo TempsSansAccidentManager::getDateDernierAccident(); ?><?php echo TexteManager::getTexte("50 jours sans accident !"); ?></marquee>
     </div>
 
     <div id="slider">
@@ -16,28 +16,27 @@
 
             <figure id="slide1">
                 <img src="IMAGE/soudure.jpg" alt="Une première image">
-                <figcaption>soudure</figcaption>
+                <figcaption><?php echo TexteManager::getTexte("Soudure"); ?></figcaption>
             </figure>
             <figure id="slide2">
                 <img src="IMAGE/chaudronnerie.jpg" alt="Une deuxième image">
-                <figcaption>Chaudronnerie</figcaption>
+                <figcaption><?php echo TexteManager::getTexte("Chaudronnerie"); ?></figcaption>
             </figure>
             <figure id="slide3">
                 <img src="IMAGE/tuyauteur.jpg" alt="Une troisième image">
-                <figcaption>Tuyauterie</figcaption>
+                <figcaption><?php echo TexteManager::getTexte("Tuyauterie"); ?></figcaption>
             </figure>
         </div>
 
     </div>
-
+    
 
     <div class="bas1">
         <div class="basGauche">
             <div class="introBG"> <img src="IMAGE/logoCive.png" alt="logo CIVE">
             </div>
             <div class="basGaucheD">
-                <p>Véritable spécialiste en tuyauterie, chaudronnerie & soudage,
-                    CIVE propose de la maintenance industrielle et nucléaire , agro-alimentaire et gaz </p>
+                <p><?php echo TexteManager::getTexte("veritable"); ?></p>
             </div>
         </div>
 
@@ -66,7 +65,7 @@
  <img src="IMAGE/entreprise.png" alt="entreprise CIVE">
         <div class="bas2">
             <div class="fondOrange">
-                <h2> Un peu d'histoire... </h2>
+                <h2> <?php echo TexteManager::getTexte("histoire"); ?> </h2>
             </div>
             <div class="histoire">
                 <div class="2005">

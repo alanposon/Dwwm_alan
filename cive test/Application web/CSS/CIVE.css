@@ -1185,3 +1185,20 @@ footer {
   height: 50px;
 
 }
+.planning { 
+  text-align: center;
+}
+table { 
+background-color: rgb(243, 154, 0);
+  border: 2px rgb(243, 154, 0) solid;
+ display: inline;
+}
+
+table.color_line tr:nth-child(2n+0) td {
+  color: white; 
+  background-color: rgb(66, 4, 4);
+}
+table.color_line tr:nth-child(2n+3) td {
+  color: rgb(134, 10, 10); 
+  background-color: white;
+}

@@ -31,7 +31,7 @@ session_start();
 
 // fichier langue // 
 if (isset($_GET['lang'])) {
-    $_SESSION['langue']=$_GET['lang'];
+    $_SESSION['langue'] = $_GET['lang'];
 }
 
 
@@ -186,6 +186,11 @@ if (isset($_GET["action"])) {
         case "offreEmploiListeAdmin":
             AfficherPage('Php/View/', 'offreEmploiListeAdmin', "offreEmploiListeAdmin");
             break;
+
+        case "planning":
+            AfficherPage('Php/View/', 'planning', "planning");
+            break;
+
         case "postulerForm":
             AfficherPage('Php/View/', 'postulerForm', "postulerForm");
             break;
