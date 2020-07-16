@@ -46,7 +46,7 @@ if (isset($_GET['lang'])) {
 // $langue = $bibliotheque->$lang;
 // echo $tras100;
 
-
+require "PHP/CONTROLLER/Outils.php";
 //Si une route est demandée
 if (isset($_GET["action"])) {
     switch ($_GET["action"]) {
