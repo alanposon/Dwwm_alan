@@ -1,8 +1,7 @@
 <?php
-// var_dump($_POST);
 
 $p = new Chantier($_POST);
-// var_dump($p);
+
 switch ($_GET["act"])
 {
     case "1":

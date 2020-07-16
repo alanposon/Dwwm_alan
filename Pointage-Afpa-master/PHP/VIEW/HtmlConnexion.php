@@ -4,7 +4,8 @@
             <legend>Connexion :</legend>
             <div class="contenu">
                 <label for="choix">Choix Utilisateur :</label>
-                <div class="ligne">                    <select name="choix" id="choix">
+                <div class="ligne">                    
+                <select name="choix" id="choix">
                         <option value="formateur">Formateur</option>
                         <option value="stagiaire">Stagiaire</option>
                         <option value="at">Assistant Technique</option>
