@@ -1,10 +1,32 @@
-<div class="planning">
+<?php
+
+$planningAffichage = PlanningManager::getList();
+$chantierAffichage = ChantierManager::getList();
+$lvl = (isset($_SESSION['level'])) ? (int) $_SESSION['level'] : 2;
+$id = (isset($_SESSION['id'])) ? (int) $_SESSION['id'] : 0;
+
+$libellePlanning = (isset($_SESSION['libellePlanning'])) ? $_SESSION['libellePlanning'] : '';
+
+
+
+
+$affichage = '<div class="planning">
     <table class=" color_line">
         <label for="mois">Planning du mois de : </label>
 
         <select name="mois" id="mois">
             <option value="Janvier">Janvier</option>
             <option value="Fevrier">Fevrier</option>
+            <option value="Mars">Mars</option>
+            <option value="Avril">Avril</option>
+            <option value="Mai">Mai</option>
+            <option value="Juin">Juin</option>
+            <option value="Juillet">Juillet</option>
+            <option value="Aout">Aout</option>
+            <option value="Septembre">Septembre</option>
+            <option value="Octobre">Octobre</option>
+            <option value="Novembre">Novembre</option>
+            <option value="Decembre">Decembre</option>
 
         </select>
         <div class="calendrier">
@@ -60,7 +82,7 @@
                 <td>
                     <div class="numero">13</div><input type="button" value="la definition ">
                 </td>
-                <!-- onclick="alert('<?php /*echo ChantierManager::getMatriculeChantier(); ')"*/ ?> -->
+            
                 <td>
                     <div class="numero">14</div><input type="button" value="la definition ">
                 </td>
@@ -118,7 +140,31 @@
                     <div class="numero">30</div><input type="button" value="la definition ">
                 </td>
                 <td>
-                    <div class="numero">31</div><input type="button" value="la definition ">
+                    <div class="numero">31</div><div>';
+                    
+                     foreach ($chantierAffichage as $chan) {
+
+                       
+                        '<div class="basOffre">
+                         <div class="offre">
+                        <div class="inter">
+                        <img class="LC" src="IMAGE/logoCive.png" alt="logo">
+                      
+                        <div class="contenu">' . $chan->getDateChantier() . '</div>
+                        <div class="contenu">' . $chan->getAdresseChantier() . '</div>
+                                    <div class="contenu">' . $chan->getActiviteChantier() . '</div>
+                                  ';
+                    
+                        if ($lvl > 2) {
+                    
+                          echo'<a href="index.php?action=chantierForm&id=' . $chan->getIdChantier() . '&act=modif">   <div class="bouton"> modifier </div></a>
+                                    <a href="index.php?action=chantierForm&id=' . $chan->getIdChantier() . '&act=suppr">   <div class="bouton"> supprimer</div></a>
+                                </div>';
+                        } else {
+                         echo '<a  href="index.php?action=chantierForm"> <div class="bouton">chantier</div></a></div>  
+                            ';
+                        };
+                    }'</div>
                 </td>
                 <td>
                     <div class="numero"></div><input type="button" value="">
@@ -132,6 +178,14 @@
                 <td>
                     <div class="numero"></div><input type="button" value="">
                 </td>
-        </div>
-    </table>
-</div>
+        </div>'; 
+
+         if ($lvl > 2) {
+            $affichage .='  <a class="bouton" href="index.php?action=planningForm&act=ajout">Ajoutez un évenement</a>';
+        }
+        
+        $affichage .=
+    '</table>
+</div>';
+
+echo $affichage ; 

@@ -1,18 +1,18 @@
 <?php
- var_dump($_POST);
+// var_dump($_POST);
 
-$p = new OffreEmploi($_POST);
- var_dump($p);
+$p = new Planning($_POST);
+// var_dump($p);
 switch ($_GET["act"])
 {
     case "ajout":
-        OffreEmploiManager::add($p);
+       PlanningManager::add($p);
         break;
     case "modif":
-        OffreEmploiManager::update($p);
+        PlanningManager::update($p);
         break;
     case "suppr":
-        OffreEmploiManager::delete($p);
+        PlanningManager::delete($p);
         break;
 }
 header("location:index.php?action=confirmation");

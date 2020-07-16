@@ -191,6 +191,14 @@ if (isset($_GET["action"])) {
             AfficherPage('Php/View/', 'planning', "planning");
             break;
 
+        case "planningForm":
+            AfficherPage('Php/View/', 'planningForm', "planningForm");
+            break;
+
+        case "planningAction":
+            AfficherPage('Php/View/', 'planningAction', "planningAction");
+            break;
+
         case "postulerForm":
             AfficherPage('Php/View/', 'postulerForm', "postulerForm");
             break;

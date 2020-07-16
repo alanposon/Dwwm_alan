@@ -23,7 +23,7 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
                         <div id="titre_page">
 
                         </div>
-                        <div id="eeee">
+                        <div>
 
                         </div>
 
@@ -31,9 +31,6 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
                         <div class="logo1">
                             <a href="index.php?lang=FR"> <img class="FR" src="IMAGE/fr.jpg" alt="Français"></a>
                             <a href="index.php?lang=EN"><img class="ENG" src="IMAGE/eng.jpg" alt="anglais"></a>
-
-                            <!-- <div><img class="FR" src="IMAGE/fr.jpg" alt="Français"></div> -->
-                            <!-- <div><img class="ENG" src="IMAGE/eng.jpg" alt="anglais"></div> -->
                         </div>
                         <div class="logo2">
                             <div><img class="logoT" src="IMAGE/logoCive.png" alt="logoCive"></div>
@@ -110,14 +107,13 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
 
                             <li><?php if ($matricule != "") {
 
-                                    echo ' <a class ="btn btn-success"  href="index.php?action=deconnectionForm" >';
+                                    echo '<a class="deconnexion"  href="index.php?action=deconnectionForm" >';
                                     echo TexteManager::getTexte("Deconnexion");
                                     echo '</a>';
                                 } else {
-                                    echo '   <a class ="btn btn-success"  href="index.php?action=connectionForm" >';
-                                     echo TexteManager::getTexte("Connexion"); 
-                                     echo' </a>';
-                                     
+                                    echo '<a class="connexion"  href="index.php?action=connectionForm" >';
+                                    echo TexteManager::getTexte("Connexion");
+                                    echo '</a>';
                                 } ?></li>
 
 

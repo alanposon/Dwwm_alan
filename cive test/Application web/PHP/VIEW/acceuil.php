@@ -113,7 +113,7 @@
         </div>
         <div class="bas3">
             <div class="fondOrange">
-                <h2> Effectif </h2>
+                <h2> <?php echo TexteManager::getTexte("effectif"); ?> </h2>
             </div>
             <div class="effectif">
                 <div class="2005">
@@ -145,8 +145,9 @@
         </div>
         <div class="bas4">
             <div class="fondOrange">
-                <h2> Chiffre d'affaire </h2>
+                <h2><?php echo TexteManager::getTexte("chiffre"); ?> </h2>
             </div>
+
             <div class="CA">
                 <div class="2005">
                     <h3>100%</h3>
@@ -186,7 +187,7 @@
     </div>
     <div class="bas5">
         <div class="fondOrange">
-            <h2> Nos clients </h2>
+            <h2><?php echo TexteManager::getTexte("Nos clients "); ?> </h2>
         </div>
         <div class="clients">
             <h3>ACTEMIUM | BOCCARD | EDF | ENDEL DGA | ENDEL ENGIE |
@@ -197,7 +198,7 @@
     </div>
     <div class="bas6">
         <div class="fondOrange">
-            <h2> Nos fournisseurs </h2>
+            <h2><?php echo TexteManager::getTexte("Nos fournisseurs "); ?></h2>
         </div>
         <div class="fournisseur">
             <p>Des fournisseurs uniques à moins de 20 minutes pour 90% de nos activités avec lesquelles
@@ -207,7 +208,7 @@
     </div>
     <div class="bas7">
         <div class="fondOrange">
-            <h2> Des equipes disponibles et compétentes </h2>
+            <h2> <?php echo TexteManager::getTexte("equipe"); ?></h2>
         </div>
         <div class="presentation">
 
@@ -222,12 +223,12 @@
             <p>> Par des exercices en atelier</p>
             <p>> Les ateliers de dextérité</p>
             <p>> Par le passage en formations</p>
-            <h2>Un savoir-faire complet</h2>
+            <h2><?php echo TexteManager::getTexte("Savoir"); ?></h2>
             <h3>Nous réalisons differentes ativités :</h3>
             <p>> Tuyauterie-soudage</p>
             <p>> Métallerie-serrurerie</p>
             <p>> Chaudronnerie qualifiée</p>
-            <h2>800 M² d'atelier de production </h2>
+            <h2> <?php echo TexteManager::getTexte("800 M² d'atelier de production"); ?></h2>
             <h3>Nous possédons un atelier de production avec plusieurs machines permettant la préfabrication de
                 tuyauterie, de structures métaliques... </h3>
             <p>> Des machines de découpe performantes : découpeur plasma, scie automatique...</p>
@@ -237,7 +238,7 @@
     </div>
     <div class="bas8">
         <div class="geographieT">
-            <h3> Une mobilité géographique étendue dans différents secteurs </h3>
+            <h3> <?php echo TexteManager::getTexte(" Une mobilité géographique étendue dans différents secteurs"); ?></h3>
         </div>
         <div class="geographie">
             <div class="txtG">
@@ -252,7 +253,7 @@
     </div>
     <div class="bas9">
 
-        <h2> Les secteurs qui ont recours à nos services <br>sont variés : </h2>
+        <h2><?php echo TexteManager::getTexte("Les secteurs"); ?></h2>
         <h3>Tertiaires | Industriels | Nucléaires</h3>
 
     </div>
