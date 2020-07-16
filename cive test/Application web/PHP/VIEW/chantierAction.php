@@ -5,7 +5,7 @@ $p = new Chantier($_POST);
 // var_dump($p);
 switch ($_GET["act"])
 {
-    case "ajout":
+    case "1":
         ChantierManager::add($p);
         break;
     case "modif":

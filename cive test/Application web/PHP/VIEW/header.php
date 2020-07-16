@@ -36,7 +36,7 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
                             <div><img class="logoT" src="IMAGE/logoCive.png" alt="logoCive"></div>
                         </div>
                         <div class="logo3">
-                            <a href="https://fr.linkedin.com/in/christophe-hinderyckx-aa3444103"><img class="linkedin" src="IMAGE/linkedin.png" alt="LinkedIn">
+                            <a href="https://fr.linkedin.com/in/christophe-hinderyckx-aa3444103"><img class="linkedin" src="IMAGE/linkedin.png" alt="LinkedIn"></a>
                         </div>
                         <?php if ($matricule != "") {
                             echo '<div class="fondOrange">' . $nom . ' ' . $prenom . ' ' . $matricule . '</div>';
@@ -46,7 +46,7 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="index.php?action=acceuil"> <?php echo TexteManager::getTexte("accueil"); ?> </a></li>
+                            <li><a href="index.php?action=accueil"> <?php echo TexteManager::getTexte("accueil"); ?> </a></li>
                             <li class="deroulant"><a href="index.php?action=notreMetier"> <?php echo TexteManager::getTexte("Notre metier"); ?></a>
                                 <ul class="sous">
                                     <li><a href="index.php?action=nosActivitesCIVE"><?php echo TexteManager::getTexte("Nos Activités"); ?></a></li>

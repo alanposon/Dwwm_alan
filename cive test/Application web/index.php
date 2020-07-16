@@ -54,8 +54,8 @@ if (isset($_GET["action"])) {
 
             //Afficher la page correspondante
 
-        case "acceuil":
-            AfficherPage('Php/View/', 'acceuil', "acceuil");
+        case "accueil":
+            AfficherPage('Php/View/', 'accueil', "accueil");
             break;
 
         case "administration":
@@ -227,5 +227,5 @@ if (isset($_GET["action"])) {
             break;
     }
 } else {  //Sinon afficher la page par defaut
-    AfficherPage('Php/View/', 'acceuil', "acceuil");
+    AfficherPage('Php/View/', 'accueil', "accueil");
 }

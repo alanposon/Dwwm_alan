@@ -1,8 +1,8 @@
 <?php
-// var_dump($_POST);
+ var_dump($_POST);
 
 $p = new TempsSansAccident($_POST);
-// var_dump($p);
+ var_dump($p);
 switch ($_GET["act"])
 {
     case "ajout":

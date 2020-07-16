@@ -60,7 +60,7 @@ else //On est dans le cas traitement
         $_SESSION['matricule'] = $nouvelUtilisateur->getMatricule();
         $_SESSION['id'] = $nouvelUtilisateur->getIdUser() ;
         $_SESSION['level'] = $nouvelUtilisateur->getPosteEntreprise();
-        header("refresh:3,url=index.php?action=userListeAdmin");
+        header("refresh:3,url=index.php?action=accueil");
     }
     else // on affiche les erreurs
     {

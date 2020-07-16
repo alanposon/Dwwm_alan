@@ -4,7 +4,7 @@ class ChantierManager
     public static function add(Chantier $obj)
     {
         $db = DbConnect::getDb();
-        $q = $db->prepare("INSERT INTO chantier ( matriculeChantier, 0adresseChantier, activiteChantier, dateChantier, idVille ) VALUES ( :matriculeChantier, :adresseChantier, :activiteChantier, :dateChantier, :idVille )");
+        $q = $db->prepare("INSERT INTO chantier ( matriculeChantier, adresseChantier, activiteChantier, dateChantier, idVille ) VALUES ( :matriculeChantier, :adresseChantier, :activiteChantier, :dateChantier, :idVille )");
         $q->bindValue(":matriculeChantier", $obj->getMatriculeChantier());
         $q->bindValue(":adresseChantier", $obj->getAdresseChantier());
         $q->bindValue(":activiteChantier", $obj->getActiviteChantier());
