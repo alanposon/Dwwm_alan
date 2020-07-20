@@ -1,4 +1,5 @@
 <?php
+
 function ChargerClasse($classe)
 {
     if (file_exists("PHP/CONTROLLER/" . $classe . ".Class.php")) {
@@ -9,15 +10,12 @@ function ChargerClasse($classe)
     }
 }
 spl_autoload_register("ChargerClasse");
-
-
+// fonction qui charge les classes
 function afficherPage($chemin, $page, $titre)
-//function AfficherPage($nom)
-
+// fonction qui structure la page 
 {
     include 'PHP/VIEW/head.php';
     include 'PHP/VIEW/header.php';
-    //include 'PHP/VIEW/' . $nom . '.php'; //Chargement de la page en fonction du chemin et du nom
     include $chemin . $page . '.php';
     include 'PHP/VIEW/footer.php';
 }
@@ -26,27 +24,13 @@ function afficherPage($chemin, $page, $titre)
 DbConnect::init();
 session_start();
 
-
-
-
 // fichier langue // 
 if (isset($_GET['lang'])) {
     $_SESSION['langue'] = $_GET['lang'];
 }
-
-
-/*********** version xml  *************/
-
-// if (!empty($_GET['lang'])) {
-//     $lang = $_GET['lang'];
-// } else {
-//     $lang = 'fr';
-// }
-// $bibliotheque = simplexml_load_file('/XML/langues.xml');
-// $langue = $bibliotheque->$lang;
-// echo $tras100;
-
+// fichier contenent mes fonctions utiles
 require "PHP/CONTROLLER/Outils.php";
+
 //Si une route est demandée
 if (isset($_GET["action"])) {
     switch ($_GET["action"]) {
@@ -148,6 +132,10 @@ if (isset($_GET["action"])) {
             AfficherPage('Php/View/', 'legislation', "legislation");
             break;
 
+            case "meteo":
+                AfficherPage('Php/View/', 'meteo', "meteo");
+                break;
+
         case "nosActivitesCIVE":
             AfficherPage('Php/View/', 'nosActivitesCIVE', "nosActivitesCIVE");
             break;
@@ -214,6 +202,11 @@ if (isset($_GET["action"])) {
         case "rechercheEmploiAdmin":
             AfficherPage('Php/View/', 'rechercheEmploiAdmin', "rechercheEmploiAdmin");
             break;
+
+            case "test":
+                AfficherPage('Php/View/', 'test', "test");
+                break;
+
         case "userListeAdmin":
             AfficherPage('Php/View/', 'userListeAdmin', "userListeAdmin");
             break;

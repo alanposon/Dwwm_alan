@@ -8,15 +8,20 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
 $numeroOffreEmploi = (isset($_SESSION['numeroOffreEmploi'])) ? $_SESSION['numeroOffreEmploi'] : '';
 
 $affichage = '
-<div class="hautOffre">';
+<div class="hautOffre">
+
+';
 
 
-$affichage .= ' <div class="recherche"> <label for="rechercheSite">Recherche rapide :</label>
-        <input type="search" id="rechercheSite" name="rechercheSite" aria-label="Search through site content">
+$affichage .= '  <div class="fondOrange"><h2>Offre d emploi</h2> </div>
 
-        <button>Recherche</button></div>
-        <div class="fondOrange"><h2>Offre d emploi</h2> </div>';
 
+<form name="search" onSubmit="return findInPage(this.motcle.value);">
+<input name="motCle" type="text" onFocus="nbSearch=0; if (this.value=="Mot-cle") {this.value=""}" value="Mot-cle">
+<input type="submit" value="OK">
+</form>';
+        
+      
 if ($lvl > 2) {
 
     $affichage .= '<a class="bouton" href="index.php?action=offreEmploiFormAdmin&act=ajout">Ajoutez une offre d\'emploi</a></div>  

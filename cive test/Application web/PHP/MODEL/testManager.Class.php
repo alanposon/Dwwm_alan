@@ -18,23 +18,23 @@ DbConnect::init();
 
 //*********************************UserManager**************************** *//
 
-// ADD UserManager : ok 
+// ADD UserManager : ok
 // $m = new User(["nom"=>"Poson","prenom"=>"Alan","mail"=>"alan.poson@gmail.com","matricule"=>0001,"motDePasse"=>"test","posteEntreprise"=>1]);
 // var_dump($m);
-// UserManager::add($m);   
+// UserManager::add($m);
 
-// Update UserManager : ok 
+// Update UserManager : ok
 // $m = UserManager::findById(5);
 // var_dump($m);
 // $m->setNom("cassiau");
 // var_dump($m);
 // UserManager::update($m);
 
-// Delete UserManager : ok 
+// Delete UserManager : ok
 // $m = UserManager::findById(5);
 // UserManager::delete($m);
 
-//Get Liste UserManager : ok 
+//Get Liste UserManager : ok
 // $tableau = UserManager::getList();
 // foreach ($tableau as $info)
 // {
@@ -47,7 +47,7 @@ DbConnect::init();
 // ADD PosteEntrepriseManager :
 // $m = new PosteEntreprise(["LibellePosteEntreprise"=>"soudeur"]);
 // var_dump($m);
-// PosteEntrepriseManager::add($m);   
+// PosteEntrepriseManager::add($m);
 
 // Update PosteEntrepriseManager :
 // $m = PosteEntrepriseManager::findById(1);
@@ -74,7 +74,7 @@ DbConnect::init();
 // ADD ChantierManager :
 // $m = new Chantier(["adresseChantier"=>"19 rue franklin","activiteChantier"=>"peche","dateChantier"=>"2020-06-06","idVille"=>23]);
 // var_dump($m);
-// ChantierManager::add($m);   
+// ChantierManager::add($m);
 
 // Update ChantierManager :
 // $m = ChantierManager::findById(1);
@@ -101,7 +101,7 @@ DbConnect::init();
 // ADD ImgSliderManager :
 // $m = new ImgSlider(["libelleImgSlider"=>"entreprise"]);
 // var_dump($m);
-// ImgSliderManager::add($m);   
+// ImgSliderManager::add($m);
 
 // Update ImgSliderManager :
 // $m = ImgSliderManager::findById(1);
@@ -128,7 +128,7 @@ DbConnect::init();
 // ADD OffreEmploiManager :
 // $m = new OffreEmploi(["numeroOffreEmploi"=>"123456", "entrepriseOffreEmploi"=>"CIVE", "dateOffreEmploi"=>"2020-07-22", "descriptionOffreEmploi"=>"mission de soudure de 4 mois en atelier "]);
 // var_dump($m);
-// OffreEmploiManager::add($m);   
+// OffreEmploiManager::add($m);
 
 // Update OffreEmploiManager :
 // $m = OffreEmploiManager::findById(1);
@@ -154,7 +154,7 @@ DbConnect::init();
 // ADD PlanningManager :
 // $m = new Planning(["libellePlanning"=>"semaine 24", "dateChantier"=>"2020-07-25", "activiteChantier"=>"soudure", "adresseChantier"=>"13 rue du general laurent"]);
 // var_dump($m);
-// PlanningManager::add($m);   
+// PlanningManager::add($m);
 
 // Update PlanningManager :
 // $m = PlanningManager::findById(2);
@@ -180,7 +180,7 @@ DbConnect::init();
 // ADD TempsSansAccidentManager :
 // $m = new TempsSansAccident(["dateDernierAccident"=>"2020-06-25"]);
 // var_dump($m);
-// TempsSansAccidentManager::add($m);   
+// TempsSansAccidentManager::add($m);
 
 // Update TempsSansAccidentManager :
 // $m = TempsSansAccidentManager::findById(1);
@@ -207,7 +207,7 @@ DbConnect::init();
 // ADD VilleManager :
 // $m = new Ville(["libelleVille"=>"Malo", "codePostal"=>59140]);
 // var_dump($m);
-// VilleManager::add($m);   
+// VilleManager::add($m);
 
 // Update VilleManager :
 // $m = VilleManager::findById(4);
@@ -234,7 +234,7 @@ DbConnect::init();
 // ADD InteractionManager :
 // $m = new Interaction(["idOffreEmploi"=>"1","idUser"=>"1","CV"=>"Poson Alan", "reponse"=>"je vous fait parvenir mon cv pour le poste de soudeur"]);
 // var_dump($m);
-// InteractionManager::add($m);   
+// InteractionManager::add($m);
 
 // Update InteractionManager :
 // $m = InteractionManager::findById(1);
@@ -249,6 +249,32 @@ DbConnect::init();
 
 // Get Liste InteractionManager :
 // $tableau = InteractionManager ::getList();
+// foreach ($tableau as $info)
+// {
+//     echo $info->toString();
+// }
+
+//*********************************ActiviteManager**************************** *//
+// TEST OK *****
+
+// ADD ActiviteManager :
+// $m = new Activite(["libelleActivite"=>"nucleaire"]);
+// var_dump($m);
+// ActiviteManager::add($m);
+
+// Update ActiviteManager :
+// $m = ActiviteManager::findById(2);
+// var_dump($m);
+// $m->setLibelleActivite("tuyauterie");
+// var_dump($m);
+// ActiviteManager::update($m);
+
+// Delete ActiviteManager :
+// $m = ActiviteManager::findById(4);
+// ActiviteManager::delete($m);
+
+// Get Liste ActiviteManager :
+// $tableau = ActiviteManager ::getList();
 // foreach ($tableau as $info)
 // {
 //     echo $info->toString();

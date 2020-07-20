@@ -28,7 +28,7 @@ if ($act != "ajout")
                     <!--  on met l'id dans un champ caché pour qu'il soit renseigné dans le $_POST au moment de la validation du formulaire  -->
                     <?php if ($act != "ajout")
 {
-    echo '<input type="text" name="idChantier" id="idChantier" hidden value ="' . $p->getIdChantier() . '" >';
+    echo '<input type="hidden" name="idChantier" id="idChantier" hidden value ="' . $p->getIdChantier() . '" >';
 }
 ?>
                     <label for="adresseChantier">Adresse du chantier</label>
@@ -37,14 +37,16 @@ if ($act != "ajout")
     echo 'value ="' . $p->getAdresseChantier() . '"';
 }
 ?>>
-
-
-                    <label for="activiteChantier">Activité chantier</label>
-                    <input type="text" name="activiteChantier" id="activiteChantier" required <?php if ($act != "ajout")
-{
-    echo 'value ="' . $p->getActiviteChantier() . '"';
+    <label for="ActiviteChantier">Activite du chantier</label>
+<?php
+if ($act != "ajout") {
+    echo optionComboBox($p->getIdActivite(),"Activite");
 }
-?>>
+else{
+    echo optionComboBox("","Activite");
+}
+
+    ?>  
 
 
 <label for="dateChantier">Date chantier</label>
@@ -53,6 +55,7 @@ if ($act != "ajout")
     echo 'value ="' . $p->getDateChantier() . '"';
 }
 ?>>
+    <label for="VilleChantier">Ville :</label>
 <?php
 if ($act != "ajout") {
     echo optionComboBox($p->getIdVille(),"Ville");

@@ -4,10 +4,10 @@ class ChantierManager
     public static function add(Chantier $obj)
     {
         $db = DbConnect::getDb();
-        $q = $db->prepare("INSERT INTO chantier ( matriculeChantier, adresseChantier, activiteChantier, dateChantier, idVille ) VALUES ( :matriculeChantier, :adresseChantier, :activiteChantier, :dateChantier, :idVille )");
+        $q = $db->prepare("INSERT INTO chantier ( matriculeChantier, adresseChantier, idActivite, dateChantier, idVille ) VALUES ( :matriculeChantier, :adresseChantier, :idActivite, :dateChantier, :idVille )");
         $q->bindValue(":matriculeChantier", $obj->getMatriculeChantier());
         $q->bindValue(":adresseChantier", $obj->getAdresseChantier());
-        $q->bindValue(":activiteChantier", $obj->getActiviteChantier());
+        $q->bindValue(":idActivite", $obj->getIdActivite());
         $q->bindValue(":dateChantier", $obj->getDateChantier());
         $q->bindValue(":idVille", $obj->getIdVille());
         $q->execute();
@@ -16,11 +16,11 @@ class ChantierManager
     public static function update(Chantier $obj)
     {
         $db = DbConnect::getDb();
-        $q = $db->prepare("UPDATE chantier SET matriculeChantier:matriculeChantier, adresseChantier = :adresseChantier, activiteChantier = :activiteChantier, dateChantier = :dateChantier, idVille = :idVille WHERE idChantier = :idChantier");
+        $q = $db->prepare("UPDATE chantier SET matriculeChantier = :matriculeChantier, adresseChantier = :adresseChantier, idActivite = :idActivite, dateChantier = :dateChantier, idVille = :idVille WHERE idChantier = :idChantier");
         $q->bindValue(":matriculeChantier", $obj->getMatriculeChantier());
         $q->bindValue(":idChantier", $obj->getIdChantier());
         $q->bindValue(":adresseChantier", $obj->getAdresseChantier());
-        $q->bindValue(":activiteChantier", $obj->getActiviteChantier());
+        $q->bindValue(":idActivite", $obj->getIdActivite());
         $q->bindValue(":dateChantier", $obj->getDateChantier());
         $q->bindValue(":idVille", $obj->getIdVille());
         $q->execute();

@@ -36,7 +36,7 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
                             <div><img class="logoT" src="IMAGE/logoCive.png" alt="logoCive"></div>
                         </div>
                         <div class="logo3">
-                            <a href="https://fr.linkedin.com/in/christophe-hinderyckx-aa3444103"><img class="linkedin" src="IMAGE/linkedin.png" alt="LinkedIn"></a>
+                            <a href="https://fr.linkedin.com/in/christophe-hinderyckx-aa3444103" target="_blank"><img class="linkedin" src="IMAGE/linkedin.png" alt="LinkedIn"></a>
                         </div>
                         <?php if ($matricule != "") {
                             echo '<div class="fondOrange">' . $nom . ' ' . $prenom . ' ' . $matricule . '</div>';
@@ -100,7 +100,13 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
                                 ?></li>
                             <li><?php if ($matricule != "" && $lvl > 1) {
 
-                                    echo ' <a class ="btn btn-success"  href="index.php?action=planning" > Planning </a>';
+                                    echo '<li class="deroulant"><a href="index.php?action=planning"> Planning </a>
+                                        <ul class="sous">
+                                         <li>
+                                          <a href="index.php?action=meteo"> Meteo
+                                          </a>
+                                         </li> 
+                                        </ul>';
                                 } else {
                                 } ?></li>
 

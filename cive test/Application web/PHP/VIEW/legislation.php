@@ -1,8 +1,5 @@
 <div class="bas">
-                <div class="recherche"> <label for="rechercheSite">Recherche rapide :</label>
-                    <input type="search" id="rechercheSite" name="rechercheSite" aria-label="Search through site content">
-
-                    <button>Recherche</button></div>
+      
                 <div class="soudure">
 
 

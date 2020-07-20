@@ -34,7 +34,7 @@ foreach ($listeChantier as $chan) {
   
     <div class="contenu">' . $chan->getMatriculeChantier() . '</div>
     <div class="contenu">' . $chan->getAdresseChantier() . '</div>
-                <div class="contenu">' . $chan->getActiviteChantier() . '</div>
+                <div class="contenu">' . $chan->getIdActivite() . '</div>
                 <div class="contenu">' . $chan->getDateChantier() . '</div>
                 <div class="contenu">' . $chan->getIdVille() . '</div>';
 

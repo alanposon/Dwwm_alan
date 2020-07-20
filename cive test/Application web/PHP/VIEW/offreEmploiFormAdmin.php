@@ -1,12 +1,14 @@
 <?php
 
 //on recupere l'action à mener (ajout/modif/suppression)
-$act = $_GET["act"];
-if ($act != "ajout") {
+if ( isset($_GET["act"])) $act=$_GET["act"];
+if ($act != "ajout")
+{
     // on recupere l'id de la personne à modifier ou à supprimer via le $_GET
-    $id = $_GET["id"];
+    $id = isset($_GET["id"]);
     $p = OffreEmploiManager::findById($id);
 }
+
 ?>
 <div class="formulaire center">
     <form action="index.php?action=offreEmploiActionAdmin&act=<?php echo $act; ?>" method="POST">

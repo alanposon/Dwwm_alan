@@ -1,14 +1,13 @@
 <?php
 
 //on recupere l'action à mener (ajout/modif/suppression)
-// if(isset($_POST['act'])) // verifie la variable act 
-// {}
-$act = isset($_GET["act"]);
+
+if ( isset($_GET["act"])) $act=$_GET["act"];
 
 
-if ($act != "modif") {
+if ($act != "ajout") {
     // on recupere l'id de la personne à modifier ou à supprimer via le $_GET
-    $id = $_GET["id"];
+    $id = isset($_GET["id"]);
     $p = TempsSansAccidentManager::findById($id);
 }
 ?>
@@ -24,31 +23,39 @@ if ($act != "modif") {
             <form action="index.php?action=dernierAccidentAction&act=<?php echo $act; ?>" method="POST">
 
                 <p><label for="dateDernierAccident">Nouvelle date du denier accident :</label>
-                    <input type="date" id="dateDernierAccident" name="dateDernierAccident" required <?php if ($act != "modif") {
+                    <input type="date" id="dateDernierAccident" name="dateDernierAccident" required <?php if ($act != "ajout") {
                                                                                 echo 'value ="' . $p->getDateDernierAccident() . '"';
                                                                             }
                                                                             ?>>
                     <!--  on met l'id dans un champ caché pour qu'il soit renseigné dans le $_POST au moment de la validation du formulaire  -->
-                    <?php if ($act != "modif") {
-                        echo '<input type="text" name="idTempsSansAccident" id="idTempsSansAccident" hidden value ="' . $p->getIdTempsSansAccident() . '" >';
+                    <?php if ($act != "ajout") {
+                        echo $p->getIdTempsSansAccident();
                     }
                     ?>
                     <div class="btn">
             <!-- on change l'intitulé du bouton en fonction de l'action -->
             <button type="submit" name="modifier"> <?php if ($act == "ajout") {
                                                         echo 'Ajouter';
-                                                    } else 
-                                                        { echo 'Modifier';
-                                                       
+                                                    }
+                                                    elseif ($act == "modif")
+                                                    {
+                                                        echo 'Modifier';
+                                                    }
+                                                    else
+                                                    {
+                                                        echo "Supprimer";
                                                     }
                                                     ?></button>
-        
-                <button type="reset" name="annuler" class="annule">  Annuler</button></a>
-        </div>
 
-
+              <a href="index.php?action=accueil"> <button type="reset" name="annuler" class="annule"> Annuler</button></a>
+                </div>
 
             </form>
+                                                </div>
+
+
+
+        
         </div>
         <div class="idenCIVE">
             <img src="IMAGE/logoCive.png">

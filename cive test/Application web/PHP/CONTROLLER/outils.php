@@ -8,28 +8,26 @@
  * @return void
  */
 
-function optionComboBox($code,$nom)
+function optionComboBox($code, $nom)
 {
-    $select = '<select id="id'.$nom.'" name="id'.$nom.'" >';
-    if ($nom="Ville"){
+    $select = '<select id="id' . $nom . '" name="id' . $nom . '" >';
+    if ($nom = "Ville") {
         $liste = VilleManager::getList();
     }
-    
-    if ($code == null)
-    { // si le code est null, on ne mets pas de choix par défaut avec valeur
+    if ($nom = "Activite") {
+        $liste = ActiviteManager::getList();
+    }
+    if ($code == null) { // si le code est null, on ne mets pas de choix par défaut avec valeur
         $select .= '<option value="" SELECTED>Choisir une valeur</option>';
     }
-    foreach ($liste as $elt)
-    {
-        $methodId= "getId".$nom;
-        $methodLibelle= "getLibelle".$nom;
+    foreach ($liste as $elt) {
+        $methodId = "getId" . $nom;
+        $methodLibelle = "getLibelle" . $nom;
         if ($code == $elt->$methodId()) //appel de la methode stockée dans $method
         { // si le code entré en paramètre est égale à l'élément alors c'est celui qui est selectionné 
-                $select .= '<option value="' . $elt->$methodId() . '" SELECTED>' . $elt->$methodLibelle() . '</option>';
-        }
-        else
-        {
-                $select .= '<option value="' . $elt->$methodId() . '">' . $elt->$methodLibelle(). '</option>';
+            $select .= '<option value="' . $elt->$methodId() . '" SELECTED>' . $elt->$methodLibelle() . '</option>';
+        } else {
+            $select .= '<option value="' . $elt->$methodId() . '">' . $elt->$methodLibelle() . '</option>';
         }
     }
     $select .= "</select>";

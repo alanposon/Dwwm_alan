@@ -5,7 +5,7 @@ class Chantier
     private $_idChantier;
     private $_matriculeChantier;
     private $_adresseChantier;
-    private $_activiteChantier;
+    private $_idActivite;
     private $_dateChantier ;
     private $_idVille;
 
@@ -41,13 +41,13 @@ class Chantier
         return $this;
     }
 
-    public function getActiviteChantier()
+    public function getIdActivite()
     {
-        return $this->_activiteChantier;
+        return $this->_idActivite;
     }
-    public function setActiviteChantier($_activiteChantier)
+    public function setIdActivite($_idActivite)
     {
-        $this->_activiteChantier = $_activiteChantier;
+        $this->_idActivite = $_idActivite;
         return $this;
     }
 
@@ -92,7 +92,7 @@ class Chantier
     /******* Autres methodes *******/
     public function toString()
     {
-        return "Identifiant du chantier : " . $this->getIdChantier() ."matricule du chantier : " . $this->getMatriculeChantier() .' adresse du chantier : ' . $this->getAdresseChantier() . 'activite chantier : ' . $this->getActiviteChantier() .'date du chantier : ' . $this->getDateChantier() .'identifiant de la ville : ' . $this->getIdVille() .'.';
+        return "Identifiant du chantier : " . $this->getIdChantier() ."matricule du chantier : " . $this->getMatriculeChantier() .' adresse du chantier : ' . $this->getAdresseChantier() . 'activite chantier : ' . $this->getIdActivite() .'date du chantier : ' . $this->getDateChantier() .'identifiant de la ville : ' . $this->getIdVille() .'.';
     }
 
     

@@ -2,7 +2,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-image: url(../IMAGE/fondAcier.jpg);
+
   font-family: monospace;
 
 }
@@ -10,9 +10,11 @@ body {
 #container {
   background-color: rgba(128, 128, 128, 0.171);
 }
+
 .log {
-  display:flex; 
+  display: flex;
 }
+
 .hautH {
   display: flex;
   padding: 16px;
@@ -180,9 +182,9 @@ li a:hover {
 
 .bas1 {
 
- align-items: center;
+  align-items: center;
   display: flex;
- 
+
 }
 
 .bas2 {
@@ -339,7 +341,8 @@ li a:hover {
   text-align: center;
 
 }
-.basGaucheD { 
+
+.basGaucheD {
   max-width: 180px;
 }
 
@@ -351,19 +354,20 @@ li a:hover {
 
   padding-left: 5%;
 }
-.basDroite img { 
+
+.basDroite img {
   min-width: 20%;
   max-width: 50%;
   height: 100px;
 
-  border : 3px transparent solid ; 
+  border: 3px transparent solid;
 }
 
 /****** veritas *****/
 
 .veritasI {
   /* image */
- 
+
   width: 175px;
   height: auto;
 }
@@ -479,8 +483,8 @@ li a:hover {
   border: 5px solid grey;
   color: white;
   background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5));
-border-radius: 5%;
-display: flex;
+  border-radius: 5%;
+  display: flex;
 }
 
 /************* slider *******/
@@ -573,9 +577,10 @@ display: flex;
 /************* nos métier ********/
 
 /****** titre ******/
-.titre { 
+.titre {
   text-align: center;
 }
+
 .titrePage {
   color: red;
   padding-left: 5%;
@@ -712,7 +717,8 @@ display: flex;
   width: 50px;
   height: 50px;
 }
-.logoA { 
+
+.logoA {
   display: flex;
 }
 
@@ -948,12 +954,13 @@ display: flex;
 
 /*******bas1 gauche  **************/
 
-.basB img{ 
-padding-left: 5%;
+.basB img {
+  padding-left: 5%;
   width: 90%;
   height: 50%;
-  
-} 
+
+}
+
 .introBG img {
   height: 100px;
   width: 100px;
@@ -1134,13 +1141,17 @@ form {
 
 }
 
-input,
 button,
 .bouton {
-  background-color: blanchedalmond;
-  border: coral;
-  border-radius: 10%;
-  margin-top: 5px;
+  border: none;
+  padding: 6px 0 6px 0;
+  border-radius: 75%;
+  border-bottom: 7px solid rgb(243, 154, 0);
+  font: bold 13px Arial;
+  color: #555;
+  background: #fff;
+  box-shadow: 2px 2px 3px #999;
+  border-top: 2px solid #59cd27;
 }
 
 input:hover,
@@ -1160,18 +1171,20 @@ button:hover {
   padding: 180px 0px 0px 10px;
 }
 
-.boutonIns { 
+.boutonIns {
   padding-left: 3%;
 }
 
-.navA { color : white; }
+.navA {
+  color: white;
+}
 
-/****** offre d'emploi quand on est pas encore connecter *****/ 
+/****** offre d'emploi quand on est pas encore connecter *****/
 
-.offreCo:hover { 
+.offreCo:hover {
 
-  
-    content: 'Connecter vous pour decouvrir nos offres d\'emploi';
+
+  content: 'Connecter vous pour decouvrir nos offres d\'emploi';
 }
 
 footer {
@@ -1180,29 +1193,98 @@ footer {
   color: white;
   bottom: 0;
   width: 100%;
-  line-height: 4em; /* hauteur de ligne */
+  line-height: 4em;
+  /* hauteur de ligne */
   text-align: center;
   height: 50px;
 
 }
-.planning { 
+
+.planning {
   text-align: center;
 }
-table { 
-background-color: rgb(243, 154, 0);
+
+table {
+  background-color: rgb(243, 154, 0);
   border: 2px rgb(243, 154, 0) solid;
- display: inline;
+  display: inline;
 }
 
 table.color_line tr:nth-child(2n+0) td {
-  color: white; 
+  color: white;
   background-color: rgb(66, 4, 4);
 }
+
 table.color_line tr:nth-child(2n+3) td {
-  color: rgb(134, 10, 10); 
+  color: rgb(134, 10, 10);
   background-color: white;
 }
-td input { 
+
+td input {
   width: 100px;
   height: 100px;
+}
+
+/***** api meteo *****/
+
+.contient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+.cadre {
+  border: 1px solid white;
+  border-radius: 15%;
+  background-image: url(../IMAGE/fondMeteo.jpg);
+  filter: grayscale(50%);
+  background-size: cover;
+  height: 500px;
+  width:300px;
+}
+
+#ville {
+  text-transform: capitalize;
+  font-size: 3em;
+}
+
+#temperature {
+  font-size: 3em;
+}
+
+#changer {
+  margin-top: 5%;
+  text-align: center;
+color: yellow;
+  cursor: pointer;
+}
+
+#icon {
+  font-size: 5em;
+  height: 80px;
+}
+
+.vitesseVent {
+  font-size: 1.5em;
+
+}
+
+#horaire {
+  color: white;
+
+  font-size: 1.5em;
+}
+
+#date {
+
+  font-size: 1.8em;
+  color: white;
+}
+
+form {
+  margin-bottom: 50px;
 }

@@ -1,8 +1,12 @@
 <?php
 
 $temps = TempsSansAccidentManager::getList();
-?>
 
+$lvl = (isset($_SESSION['level'])) ? (int) $_SESSION['level'] : 2;
+$id = (isset($_SESSION['id'])) ? (int) $_SESSION['id'] : 0;
+$dateDernierAccident= (isset($_SESSION['dateDernierAccident'])) ? $_SESSION['dateDernierAccident'] : '';
+
+?>
 
 <div class="bas">
     <div class="formIdent">
@@ -20,12 +24,7 @@ foreach ($temps as $elt) {
         <a href="index.php?action=dernierAccidentForm&m=modif&id=<?php echo $elt->getIdTempsSansAccident() ?>">
             <div class="bouton">Modifier</div>
         </a>
-        <?php 
-      
-                echo    '<a href="index.php?action=dernierAccidentForm&m=suppr&id='.$elt->getIdTempsSansAccident() .'">
-                            <div class="bouton">modifier</div>
-                        </a>';
-            ?>
+     
     </div>
 <?php } ?>
 </div></div>
