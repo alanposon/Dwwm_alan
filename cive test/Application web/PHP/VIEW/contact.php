@@ -49,6 +49,7 @@ if (isset($_POST['mailform'])) {
                                                             } ?>" pattern="^[A-ZÀ-Ý]{1}[a-zà-ý '-]*([ |-][A-ZÀ-Ý]{1}[a-zà-ý '-]*)?$" />
                     <img id='imgRouge' src="./IMAGE/imgRouge.png"></img>
                     <img id='imgVerte' src="./IMAGE/imgVerte.png"></img>
+                    <div class="description"></div>
                     <i class="fas fa-question-circle" id="imgNom" title="Inscrivez votre Nom avec une majuscule au début, 2 caractères minimum"></i>
 
                     <span id='nom_manquant'></span><br>
