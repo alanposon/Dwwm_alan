@@ -55,6 +55,7 @@ else{
     echo 'value ="' . $p->getDateChantier() . '"';
 }
 ?>>
+
     <label for="VilleChantier">Ville :</label>
 <?php
 if ($act != "ajout") {
@@ -71,7 +72,7 @@ else{
                 </fieldset>
                 <div class="btn">
                     <!-- on change l'intitulé du bouton en fonction de l'action -->
-                    <button type="submit" name="modifier"> <?php if ($act == "ajout")
+                    <button type="submit" name="ajout"> <?php if ($act == "ajout")
 {
     echo 'Ajouter';
 }

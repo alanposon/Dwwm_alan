@@ -21,7 +21,7 @@ foreach ($temps as $elt) {
     <div class="ligne">
         <div class="bloc contenu"><?php echo $elt->getDateDernierAccident() ?></div>
        
-        <a href="index.php?action=dernierAccidentForm&m=modif&id=<?php echo $elt->getIdTempsSansAccident() ?>">
+        <a href="index.php?action=dernierAccidentForm&act=ajout&id=<?php echo $elt->getIdTempsSansAccident() ?>">
             <div class="bouton">Modifier</div>
         </a>
      

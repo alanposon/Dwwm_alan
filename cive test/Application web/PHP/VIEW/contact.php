@@ -73,8 +73,8 @@ if (isset($_POST['mailform'])) {
                         <input type="email" name="mail" class="contact-form-text" placeholder="Votre email" value="<?php if (isset($_POST['mail'])) {
                                                                                                                         echo $_POST['mail'];
                                                                                                                     } ?>" />
-                        <img id='imgRouge' src="imgRouge.png"></img>
-                        <img id='imgVerte' src="imgVerte.png"></img>
+                        <img id='imgRouge' src="./IMAGE/imgRouge.png"></img>
+                        <img id='imgVerte' src="./IMAGE/imgVerte.png"></img>
                         <i class="fas fa-question-circle" title="Inscrivez votre courriel dans un format valide : mail@fournisseur.com"></i>
 
                     </div>
@@ -84,8 +84,8 @@ if (isset($_POST['mailform'])) {
                     <div class="flexInput">
                         <input type="text" name="objet" minlength="4" maxlength="30" value="<?php if (isset($_POST['objet'])) {
                                                                                                 echo $_POST['objet'];
-                                                                                            } ?>" /> <img id='imgRouge' src="imgRouge.png"></img>
-                        <img id='imgVerte' src="imgVerte.png"></img>
+                                                                                            } ?>" /> <img id='imgRouge' src="./IMAGE/imgRouge.png"></img>
+                        <img id='imgVerte' src="./IMAGE/imgVerte.png"></img>
                         <i class="fas fa-question-circle" id="imgObjet" title="Inscrivez l'objet avec 4 caractères minimum et maximum 30 "></i>
 
                     </div>
@@ -100,8 +100,8 @@ if (isset($_POST['mailform'])) {
                                                     <div class="questionHauteur">
             <i class="fas fa-question-circle" title="Inscrivez votre message 4 caractères minimum et 1000 maximum"></i>
         </div>
-        <img id='imgRouge' src="imgRouge.png"></img>
-        <img id='imgVerte' src="imgVerte.png"></img>
+        <img id='imgRouge' src="./IMAGE/imgRouge.png"></img>
+        <img id='imgVerte' src="./IMAGE/imgVerte.png"></img>
 
 
                     </div>

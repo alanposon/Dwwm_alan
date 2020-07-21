@@ -1,7 +1,7 @@
 <?php
 
 //on recupere l'action à mener (ajout/modif/suppression)
-
+$act="";
 if ( isset($_GET["act"])) $act=$_GET["act"];
 
 
@@ -9,7 +9,7 @@ if ($act != "ajout") {
     // on recupere l'id de la personne à modifier ou à supprimer via le $_GET
     $id = isset($_GET["id"]);
     $p = TempsSansAccidentManager::findById($id);
-}
+} var_dump($act);
 ?>
 
 
@@ -31,7 +31,9 @@ if ($act != "ajout") {
                     <?php if ($act != "ajout") {
                         echo $p->getIdTempsSansAccident();
                     }
+                   
                     ?>
+
                     <div class="btn">
             <!-- on change l'intitulé du bouton en fonction de l'action -->
             <button type="submit" name="modifier"> <?php if ($act == "ajout") {
