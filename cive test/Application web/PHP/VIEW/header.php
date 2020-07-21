@@ -10,6 +10,7 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
 ?>
 
 <body>
+</script>
     <header>
         <div>
 
@@ -33,8 +34,16 @@ $posteEntreprise = (isset($_SESSION['posteEntreprise'])) ? $_SESSION['posteEntre
                             <a href="index.php?lang=EN"><img class="ENG" src="IMAGE/eng.jpg" alt="anglais"></a>
                         </div>
                         <div class="logo2">
-                            <div><img class="logoT" src="IMAGE/logoCive.png" alt="logoCive"></div>
-                        </div>
+                              <!-- pour le switch de logo  -->
+ <?php if ("index.php?action="=="HCTS" ){
+     echo ' <div><img class="logoT" src="./IMAGE/HCTS.png" alt="logoCive"></div>
+                        </div>'; 
+ }else { 
+    echo ' <div><img class="logoT" src="./IMAGE/logoCive.png" alt="logoHCTS"></div>
+    </div> ';
+}?>
+    
+                           
                         <div class="logo3">
                             <a href="https://fr.linkedin.com/in/christophe-hinderyckx-aa3444103" target="_blank"><img class="linkedin" src="IMAGE/linkedin.png" alt="LinkedIn"></a>
                         </div>

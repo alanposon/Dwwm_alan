@@ -1285,6 +1285,72 @@ color: yellow;
   color: white;
 }
 
-form {
-  margin-bottom: 50px;
+
+/***** LOGO AIDE CONTACT REGEX *****/ 
+form { 
+  width: 70%;
+}
+
+
+
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+
+  img#imgRouge {
+  display: none;
+}
+
+  img#imgVerte {
+  display: none;
+  margin: auto;
+}
+
+img {
+  height: 2vh;
+}
+
+.flexInput{
+  display: flex;
+  margin-left: 8%;
+}
+
+textarea.contact-form-text {
+  display: flex;
+  margin-left: 8%;
+  width: 83%;
+}
+
+i.fas.fa-question-circle {
+align-items: center;
+display: flex;
+justify-content: center;
+font-size: 25px;
+padding-left: 8px;
+}
+
+textarea.contact-form-text {
+float: left;
+}
+
+.questionHauteur{
+height: 152px ;
+display: flex;
+justify-content: center;
+width: 25px;
+padding-left: 8px;
 }
