@@ -1,0 +1,413 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../IMAGE/fondAcier.jpg);
+    font-family: monospace;
+}
+
+#container {
+    background-color: rgba(128, 128, 128, 0.171);
+}
+
+.hautH {
+    display: flex;
+    padding: 16px;
+    font-weight: lighter;
+    -moz-box-shadow: 2px 2px 6px rgb(189, 163, 163);
+    -webkit-box-shadow: 2px 2px 6px rgb(228, 214, 214);
+    box-shadow: 2px 2px 6px rgb(219, 209, 209);
+    margin: 15px;
+    background-image: url(../IMAGE/fondT.jpg);
+    background-size: cover;
+    align-items: center;
+
+}
+
+.logo1 {
+    display: flex;
+    flex: 1;
+}
+
+.logo2 {
+
+    flex: 1;
+}
+
+.logo2 img {
+
+    width: 200px;
+    height: auto;
+}
+
+.logo3 {
+    align-items: flex-end;
+}
+
+.logoT {
+    flex: 3;
+    height: 50px;
+    width: 50px;
+}
+
+
+.titre {
+    font-size: 35px;
+    text-shadow: -2px -2px rgb(180, 180, 180), 1px 1px rgb(245, 245, 245), -3px 0 4px rgba(236, 223, 223, 0);
+
+    color: rgb(234, 250, 17);
+}
+
+
+.FR {
+    height: 30px;
+    width: 30px;
+    margin: 1vw;
+    padding: 3vh;
+    margin-right: -30px;
+}
+
+.ENG {
+    height: 30px;
+    width: 30px;
+    margin: 1vw;
+    padding: 3vh;
+
+}
+
+.linkedin {
+    flex: 1;
+    height: 30px;
+    width: 30px;
+    margin: 1vw;
+    padding: 4vh;
+
+}
+
+/************ nav barre **********/
+ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    /* repartir dans ma nav barre */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* avoir le fond */
+    background-color: rgb(36, 26, 24);
+}
+
+li {
+    float: left;
+    /* les alignés */
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* pour pas avoir de soulignement
+*/
+}
+
+nav a:hover {
+    /* change de couleur quand je passe sur le menu */
+    color: rgb(239, 146, 2);
+    border-bottom: 2px solid rgb(239, 146, 2);
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: rgb(30, 20, 20);
+    position: absolute;
+    width: 12%;
+    z-index: 1000;
+    /* pour passer au dessus des elements */
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: black;
+}
+
+.deroulant>a::after {
+    content: " ▼";
+    font-size: 12px;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+/****** Bas ******/
+
+.bas {
+    display: flex;
+    font-family: monospace;
+    padding: 5%;
+    flex-direction: column;
+}
+
+img {
+
+    width: 280px;
+    height: 200px;
+
+}
+
+/*pour le saut de page, on cree une class que l'on met en display:none*/
+.target {
+
+    display: none
+}
+
+
+/* englobe le slider */
+
+.cadre_diapo {
+
+    max-width: 280px;
+    margin: 2rem auto;
+    overflow: hidden;
+    box-shadow: 30px -15px rgb(50, 26, 24);
+   
+}
+
+.interieur_diapo {
+
+    display: flex;
+    
+    width: 200%;
+    transition: transform .4s ease-in-out
+}
+
+.description {
+
+    position: relative;
+
+}
+
+.description span {
+
+    position: absolute;
+    left: 0;
+    top: 2%;
+    font-size: 75%;
+    display: flex;
+    padding: .5rem;
+    justify-content: center;
+    color: white;
+    background: hsla(0, 0%, 0%, .35);
+    border-radius: 30%;
+}
+
+.logoC {
+    width: 50px;
+    height: 50px;
+}
+
+/**** remplissage des cases du diapo *****/
+
+/***** Diapo 1 *****/
+
+#B_id1:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(0)
+}
+
+/*image 1*/
+
+#B_id2:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-50%)
+}
+
+/*image 2*/
+
+#B_id3:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-100%)
+}
+
+/*image 3*/
+
+#B_id4:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-150%)
+}
+
+/*image 4*/
+
+#B_id5:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-200%)
+}
+
+/*image 5*/
+
+/***** Diapo 2 *****/
+
+#C_id1:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(0)
+}
+
+/*image 1*/
+
+#C_id2:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-50%)
+}
+
+/*image 2*/
+
+#C_id3:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-100%)
+}
+
+/*image 3*/
+
+#C_id4:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-150%)
+}
+
+/*image 4*/
+
+/***** Diapo 3 *****/
+
+#D_id1:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(0)
+}
+
+/*image 1*/
+
+#D_id2:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-50%)
+}
+
+/*image 2*/
+
+#D_id3:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-100%)
+}
+
+/*image 3*/
+
+/***** Diapo 4 *****/
+
+#E_id1:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(0)
+}
+
+/*image 1*/
+
+#E_id2:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-50%)
+}
+
+/*image 2*/
+
+#E_id3:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-100%)
+}
+
+/*image 3*/
+
+/***** Diapo 5 *****/
+
+#F_id1:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(0)
+}
+
+/*image 1*/
+
+#F_id2:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-50%)
+}
+
+/*image 2*/
+
+#F_id3:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-100%)
+}
+
+/*image 3*/
+
+#F_id4:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-150%)
+}
+
+/*image 4*/
+
+/***** Diapo 6 *****/
+
+#G_id1:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(0)
+}
+
+/*image 1*/
+
+#G_id2:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-50%)
+}
+
+/*image 2*/
+
+#G_id3:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-100%)
+}
+
+/*image 3*/
+
+#G_id4:target~.cadre_diapo .interieur_diapo {
+    transform: translatex(-150%)
+}
+
+/*image 4*/
+
+/*navigation avec images miniatures*/
+.navigation_diapo {
+
+    display: flex;
+    /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+
+.navigation_diapo img {
+
+    border: 3px solid white;
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, .4);
+    width: 50px;
+    height: 50px;
+    margin: -5px;
+
+}
+
+
+@media (min-width:31.25rem) {
+
+    .description span {
+
+        font-size: initial
+    }
+
+}
