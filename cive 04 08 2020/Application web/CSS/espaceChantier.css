@@ -1,0 +1,217 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../IMAGE/fondAcier.jpg);
+    font-family: monospace;
+
+}
+
+#container {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.171);
+}
+
+.hautH {
+    display: flex;
+    padding: 16px;
+    font-weight: lighter;
+    -moz-box-shadow: 2px 2px 6px rgb(189, 163, 163);
+    -webkit-box-shadow: 2px 2px 6px rgb(228, 214, 214);
+    box-shadow: 2px 2px 6px rgb(219, 209, 209);
+    margin: 15px;
+    background-image: url(../IMAGE/fondT.jpg);
+    background-size: cover;
+    align-items: center;
+
+}
+
+.logo1 {
+    display: flex;
+    flex: 1;
+}
+
+.logo2 {
+
+    flex: 1;
+}
+
+.logo2 img {
+
+    width: 200px;
+    height: auto;
+}
+
+.logo3 {
+    align-items: flex-end;
+}
+
+.logoT {
+    flex: 3;
+    height: 50px;
+    width: 50px;
+}
+
+
+.titre {
+    font-size: 35px;
+    text-shadow: -2px -2px rgb(180, 180, 180), 1px 1px rgb(245, 245, 245), -3px 0 4px rgba(236, 223, 223, 0);
+
+    color: rgb(234, 250, 17);
+}
+
+
+.FR {
+    height: 30px;
+    width: 30px;
+    margin: 1vw;
+    padding: 3vh;
+    margin-right: -30px;
+}
+
+.ENG {
+    height: 30px;
+    width: 30px;
+    margin: 1vw;
+    padding: 3vh;
+
+}
+
+.linkedin {
+    flex: 1;
+    height: 30px;
+    width: 30px;
+    margin: 1vw;
+    padding: 4vh;
+
+}
+
+/************ nav barre **********/
+ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    /* repartir dans ma nav barre */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* avoir le fond */
+    background-color: rgb(36, 26, 24);
+}
+
+li {
+    float: left;
+    /* les alignés */
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* pour pas avoir de soulignement
+  */
+}
+
+nav a:hover {
+    /* change de couleur quand je passe sur le menu */
+    color: rgb(239, 146, 2);
+    border-bottom: 2px solid rgb(239, 146, 2);
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: rgb(30, 20, 20);
+    position: absolute;
+    width: 12%;
+    z-index: 1000;
+    /* pour passer au dessus des elements */
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: black;
+}
+
+.deroulant>a::after {
+    content: " ▼";
+    font-size: 12px;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+/***** bas *****/
+
+.bas {
+    display: flex;
+    flex-wrap: wrap;
+    /* pour prendre la place dont il a besoin */
+    justify-content: space-around;
+
+}
+
+.inter {
+    width: calc(25% - 2rem);
+    width: calc(50% - 4rem);
+    width: calc(75% - 6rem);
+    min-width: 200px;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-top: 10px;
+   font-size: 0.7em;
+
+}
+.LC { 
+    height: 30px ;
+    width: auto;
+}
+.chantier {
+    margin-top: 10%;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 5%;
+    color: white;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5));
+    margin-top: 10%;
+    background-size: cover;
+}
+input{ 
+    background-color: blanchedalmond;
+    border: coral;
+    border-radius: 10%;
+}
+input:hover { 
+    cursor: pointer;
+}
+.rechercheSite:hover { 
+
+    cursor: text;
+}

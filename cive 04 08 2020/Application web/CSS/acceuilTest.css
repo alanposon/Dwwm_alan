@@ -1,0 +1,285 @@
+body { 
+    padding: 0;
+    margin: 0;
+       background-color: black;
+   
+   }
+   #container {
+       background-color:rgba(128, 128, 128, 0.171);
+   }
+
+   h1 
+       {
+         font-size: 32px;
+         text-shadow: -1px -1px rgb(201, 204, 0), 1px 1px rgb(95, 102, 0), -3px 0 4px rgba(236, 223, 223, 0);
+         font-family:Arial, Helvetica, sans-serif;
+         color: rgb(125, 133, 11);
+       }
+   
+   .hautH { 
+    display: flex;
+    padding: 16px;
+    font-weight:lighter ;
+    -moz-box-shadow: 2px 2px 6px #888;  
+    -webkit-box-shadow: 2px 2px 6px #888;  
+    box-shadow : 2px 2px 6px #888;  
+    text-align:center;
+    margin: 15px;
+    background-image:url(fond.jpg); 
+   }
+
+   
+.hautH div {
+   display: flex;
+}
+   .linkedin{
+    
+      margin: 1vw;
+      padding: 4vh;
+     
+   }
+
+   .FR {
+ 
+     margin: 1vw;
+     padding: 3vh;
+   }
+
+   .ENG{
+
+    margin: 1vw;
+    padding: 3vh;
+  
+   }
+     
+   img {
+	width: 30px;
+	height: 30px;
+}
+   .bas { 
+   display: flex;
+   flex-wrap: wrap; /* pour prendre la place dont il a besoin */
+   justify-content: space-around; 
+   }
+   /************ Bandeau ************/
+.bandeau { 
+margin: 10px ;
+padding: 10px ;
+    text-align: center;
+    border : 5px solid grey; 
+    color: white ;  
+    
+}
+
+/************* slider *******/
+
+body {
+    margin: 0;
+}
+
+#slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 400px;
+}
+
+#slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    max-height: 100%;
+
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#slides figure {
+    display: inline-block;
+    width: 100vw;
+    max-height: 100%;
+    margin: 0;
+}
+
+#slides figure img {
+    width: 100%;
+    /*Centrer l'image verticalement si celle-ci ne peut être affichée totalement*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#slides figure figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 2.5em 0;
+    text-align: center;
+    width: inherit;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.dots_commands  {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    padding:0;
+    margin: 0;
+    text-align: center;
+}
+
+.dots_commands li {
+    display: inline;
+    padding: 0; 
+    margin: 0;
+}
+
+.dots_commands label {
+    position: relative;
+    display: inline-block;
+    height:8px; width: 8px;
+    margin: 0 5px;
+    text-indent: -9999px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.55) inset;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]#show_slide1:checked ~ nav .dots_commands li:nth-of-type(1) label,
+input[type="radio"]#show_slide2:checked ~ nav .dots_commands li:nth-of-type(2) label,
+input[type="radio"]#show_slide3:checked ~ nav .dots_commands li:nth-of-type(3) label {
+    outline: none;
+    background: dodgerblue;
+}
+
+input[type="radio"]#show_slide1:checked ~ div#slides {
+    animation: none;
+    left: 0;
+}
+
+input[type="radio"]#show_slide2:checked ~ div#slides {
+    animation: none;
+    left: -100vw;
+}
+
+input[type="radio"]#show_slide3:checked ~ div#slides {
+    animation: none;
+    left: -200vw;
+}
+
+input[type="radio"]:not(:nth-last-of-type(1)):checked ~ nav label#play {
+    display: block;
+}
+
+input[type="radio"]#play:checked ~ div#slides {
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#play {
+    position: absolute;
+    cursor: pointer;
+    bottom: 2em;
+    right: 2em;
+    width: 0;
+    height: 0;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    border-left: 1em solid rgba(255,255,255,0.7);
+    display: none;
+    text-indent: -9999px;
+}
+
+#slides:hover {
+    animation-play-state: paused; /* Mise en pause de l'animation */
+}
+
+@keyframes slide {
+    0%, 20%, 100% {
+        left: 0; /*1ère image*/
+    }
+    35%, 50% {
+        left: -100vw; /*2ème image*/
+    }
+    70%, 95% {
+        left: -200vw; /*3ème image*/
+    }
+}
+   /************ nav barre **********/
+   ul {
+       display: flex;
+       justify-content: center;
+       justify-content: space-around; /* repartir dans ma nav barre */
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden; /* avoir le fond */
+       background-color: rgb(107, 23, 23);
+   }
+   
+   li {
+       float: left; /* les alignés */
+   }
+   
+   li a {
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none; /* pour pas avoir de soulignement
+   */}
+   nav a:hover{
+       color: orange;
+       border-bottom: 2px solid gold;
+   }
+   
+   .sous{
+       display: none;
+       box-shadow: 0px 1px 2px #CCC;
+       background-color: black;
+       position: absolute;
+       width: 12%;
+       z-index: 1000;
+   }
+   nav > ul li:hover .sous{
+       display: block;
+   }
+   .sous li{
+       float: none;
+       width: 100%;
+       text-align: left;
+   }
+   .sous a{
+       padding: 10px;
+       border-bottom: none;
+   }
+   .sous a:hover{
+       border-bottom: none;
+       background-color: black;
+   }
+   .deroulant > a::after{
+       content:" ▼";
+       font-size: 12px;
+   }
+   
+   li a:hover {
+       background-color: #111;
+   }
+   
+   /* Change the link color to #111 (black) on hover */
+   li a:hover {
+       background-color: #111;
+   }
+   /*************** affiche de film ******/

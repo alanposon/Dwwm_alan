@@ -1,0 +1,163 @@
+#------------------------------------------------------------
+#        Script MySQL.
+#------------------------------------------------------------
+CREATE DATABASE IF NOT EXISTS `cive` DEFAULT CHARACTER SET utf8 
+COLLATE utf8_general_ci;
+USE `cive`;
+
+
+#------------------------------------------------------------
+# Table: PosteEntreprise
+#------------------------------------------------------------
+
+CREATE TABLE PosteEntreprise(
+        idPosteEntreprise      Int PRIMARY KEY Auto_increment  NOT NULL ,
+        libellePosteEntreprise Varchar (50) NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+#------------------------------------------------------------
+# Table: User
+#------------------------------------------------------------
+
+CREATE TABLE User(
+        idUser                 Int PRIMARY KEY Auto_increment  NOT NULL ,
+        nom                    Varchar (50) NOT NULL ,
+        prenom                 Varchar (50) NOT NULL ,
+        password               Varchar (50) NOT NULL ,
+        libellePosteEntreprise Varchar (50) NOT NULL ,
+        matricule              Varchar (50) NOT NULL ,
+		mail                   Varchar (50) NOT NULL ,
+        idPosteEntreprise      Int NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+#------------------------------------------------------------
+# Table: ImgSlider
+#------------------------------------------------------------
+
+CREATE TABLE ImgSlider(
+        idImgSlider      Int PRIMARY KEY Auto_increment  NOT NULL ,
+        libelleImgSilder Varchar (50) NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+#------------------------------------------------------------
+# Table: TempsSansAccident
+#------------------------------------------------------------
+
+CREATE TABLE TempsSansAccident(
+        idTempsSansAccident Int PRIMARY KEY Auto_increment  NOT NULL ,
+        DateDernierAccident Date NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+#------------------------------------------------------------
+# Table: planning
+#------------------------------------------------------------
+
+CREATE TABLE planning(
+        idPlanning       Int PRIMARY KEY Auto_increment  NOT NULL ,
+        libellePlanning  Varchar (50) NOT NULL ,
+        DateChantier     Date NOT NULL ,
+        activiteChantier Varchar (50) NOT NULL ,
+        adresseChantier  Varchar (50) NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+#------------------------------------------------------------
+# Table: OffreEmploi
+#------------------------------------------------------------
+
+CREATE TABLE OffreEmploi(
+        idOffreEmploi          Int PRIMARY KEY Auto_increment  NOT NULL ,
+        NumeroOffreEmploi      Int NOT NULL ,
+        entrepriseOffreEmploi  Varchar (50) NOT NULL ,
+        dateOffreEmploi        Date NOT NULL ,
+        descriptionOffreEmploi Varchar (50) NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+#------------------------------------------------------------
+# Table: Ville
+#------------------------------------------------------------
+
+CREATE TABLE Ville(
+        idVille      Int PRIMARY KEY Auto_increment  NOT NULL ,
+        libelleVille Varchar (50) NOT NULL ,
+        codePostal   Int NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+#------------------------------------------------------------
+# Table: Chantier
+#------------------------------------------------------------
+
+CREATE TABLE Chantier(
+        idChantier       Int PRIMARY KEY Auto_increment  NOT NULL ,
+        adresseChantier  Varchar (50) NOT NULL ,
+        activiteChantier Varchar (50) NOT NULL ,
+        dateChantier     Date NOT NULL ,
+        idVille          Int NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+#------------------------------------------------------------
+# Table: Administration
+#------------------------------------------------------------
+
+CREATE TABLE Administration(
+        idAdministration  Int PRIMARY KEY Auto_increment  NOT NULL ,
+        idPlanning Int NOT NULL ,
+        idUser     Int NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+#------------------------------------------------------------
+# Table: Interaction
+#------------------------------------------------------------
+
+CREATE TABLE Interaction(
+        idInteraction Int PRIMARY KEY Auto_increment  NOT NULL ,
+        idOffreEmploi       Int NOT NULL ,
+        idUser              Int NOT NULL ,
+        CV                  Varchar (50) NOT NULL ,
+        ReponseAuxQuestions Varchar (200) NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+#------------------------------------------------------------
+# Table: Attribution
+#------------------------------------------------------------
+
+CREATE TABLE Attribution(
+        idAttribution Int PRIMARY KEY Auto_increment  NOT NULL ,
+        idChantier Int NOT NULL ,
+        idPlanning Int NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+ALTER TABLE 'User'
+	ADD CONSTRAINT User_PosteEntreprise_FK FOREIGN KEY (idPosteEntreprise) REFERENCES PosteEntreprise(idPosteEntreprise);
+	
+ALTER TABLE 'Chantier'
+	ADD CONSTRAINT Chantier_Ville_FK FOREIGN KEY (idVille) REFERENCES Ville(idVille);
+		
+ALTER TABLE 'Administration' 
+	ADD CONSTRAINT Administre_planning_FK FOREIGN KEY (idPlanning) REFERENCES planning(idPlanning),
+	ADD CONSTRAINT Administre_User0_FK FOREIGN KEY (idUser) REFERENCES User(idUser);
+	
+ALTER TABLE 'Interaction'
+	ADD CONSTRAINT Interagie_OffreEmploi_FK FOREIGN KEY (idOffreEmploi) REFERENCES OffreEmploi(idOffreEmploi),
+	ADD CONSTRAINT Interagie_User0_FK FOREIGN KEY (idUser) REFERENCES User(idUser);
+	
+ALTER TABLE 'Attribution'
+	ADD CONSTRAINT Attribution_chantier_FK FOREIGN KEY (idChantier) REFERENCES chantier(idChantier),
+	ADD CONSTRAINT Attribution_planning0_FK FOREIGN KEY (idPlanning) REFERENCES planning(idPlanning);
+
+
+
+
+
+
+

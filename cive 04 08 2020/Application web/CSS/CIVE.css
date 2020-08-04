@@ -1,0 +1,1789 @@
+/***** le header *****/
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: monospace;
+  background-image: url(../IMAGE/fondAcier.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#container {
+  background-color: rgba(128, 128, 128, 0.171);
+}
+
+.log {
+  display: flex;
+}
+
+.hautH {
+  display: flex;
+  padding: 16px;
+  font-weight: lighter;
+  -moz-box-shadow: 2px 2px 6px rgb(189, 163, 163);
+  -webkit-box-shadow: 2px 2px 6px rgb(228, 214, 214);
+  box-shadow: 2px 2px 6px rgb(219, 209, 209);
+  /* margin: 15px; */
+  background-image: url(../IMAGE/fondT.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  align-items: center;
+
+}
+
+.logo1 {
+  display: flex;
+  flex: 1;
+}
+
+.logo2 {
+  flex: 1;
+}
+
+.logo2 img {
+  width: 200px;
+  height: auto;
+}
+
+.logo3 {
+  align-items: flex-end;
+}
+
+.logoT {
+  flex: 3;
+  height: 50px;
+  width: 50px;
+}
+
+.FR {
+  height: 30px;
+  width: 30px;
+  margin: 1vw;
+  padding: 3vh;
+  margin-right: -30px;
+}
+
+.FR:hover,
+.ENG:hover {
+  cursor: pointer;
+}
+
+.ENG {
+  height: 30px;
+  width: 30px;
+  margin: 1vw;
+  padding: 3vh;
+}
+
+
+.linkedin {
+  flex: 1;
+  height: 30px;
+  width: 30px;
+  margin: 1vw;
+  padding: 4vh;
+
+}
+
+/************ nav barre **********/
+ul {
+  /* disposition */
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  /* repartir dans ma nav barre */
+  list-style-type: none;
+  /* marge exterieur */
+  margin: 0;
+  /* marge interieur */
+  padding: 0;
+  /* depassement du contenue */
+  overflow: hidden;
+  /* avoir le fond */
+  background-color: rgb(36, 26, 24);
+}
+
+li {
+  /* les alignés */
+  float: left;
+}
+
+li a {
+  /* affichage exterieur a l'element */
+  display: block;
+  /* couleur du texte */
+  color: white;
+  /* alignement */
+  text-align: center;
+  /* marge interieur */
+  padding: 14px 16px;
+  /* pas de soulignement */
+  text-decoration: none;
+}
+
+nav a:hover {
+  /* change de couleur quand je passe sur le menu */
+  color: rgb(239, 146, 2);
+  border-bottom: 2px solid rgb(239, 146, 2);
+}
+
+.sous {
+  /* masque l'element */
+  display: none;
+  /* ombre */
+  box-shadow: 0px 1px 2px #CCC;
+  /* couleur de fond */
+  background-color: rgb(30, 20, 20);
+  /* disposition */
+  position: absolute;
+  /* largeur a la page */
+  width: 12%;
+  /* pour passer au dessus des elements */
+  z-index: 1000;
+
+}
+
+nav>ul li:hover .sous {
+  /* affichage exterieur a l'element */
+  display: block;
+}
+
+.sous li {
+  /* pas d'alignement */
+  float: none;
+  /* largeur */
+  width: 100%;
+  /* aligner a gauche */
+  text-align: left;
+}
+
+.sous a {
+  /* marge interieur */
+  padding: 10px;
+  /* pas de bordure basse */
+  border-bottom: none;
+}
+
+.sous a:hover {
+  /* pas de bordure basse */
+  border-bottom: none;
+  /* couleur de fond */
+  background-color: black;
+}
+
+.deroulant>a::after {
+  /* integre symbole */
+  content: " ▼";
+  /* taille de la police */
+  font-size: 12px;
+}
+
+li a:hover {
+  /* fond coloré */
+  background-color: #111;
+}
+
+
+li a:hover {
+  /* change la couleur du fond quand on passe dessus */
+  background-color: #111;
+}
+
+
+/***** bandeau message *****/
+
+/************ Bandeau ************/
+.bandeau {
+  /* margin: 10px; */
+  padding: 10px;
+
+  border: 5px solid transparent;
+  color: white;
+  background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5));
+
+}
+
+#homme {
+
+  position: relative;
+  top: 10%;
+  left: 0px;
+
+}
+
+#homme img {
+  width: 150px;
+  height: 150px;
+}
+
+/********* bas ****************/
+
+fieldset {
+
+  margin-top: 5%;
+
+}
+
+.bas {
+
+  display: flex;
+  font-family: monospace;
+  padding: 5%;
+  flex-direction: column;
+  background-color: white;
+  width: 70vw;
+  margin: 0 auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  height: 90%;
+  min-height: 600px;
+
+}
+
+.bas1 {
+
+  align-items: center;
+  display: flex;
+
+}
+
+.bas2 {
+
+  flex-direction: column;
+  padding: 5%;
+  height: 35vh;
+  display: flex;
+
+}
+
+.bas3 {
+  margin-top: 50px;
+  flex-direction: column;
+  padding: 5%;
+  height: 8vh;
+  display: flex;
+}
+
+.bas4 {
+  margin-top: 20px;
+  flex-direction: column;
+  padding: 5%;
+  height: 20vh;
+  display: flex;
+
+}
+
+.bas5 {
+  margin-top: 20px;
+  flex-direction: column;
+  padding: 5%;
+  height: 10vh;
+  display: flex;
+
+}
+
+.bas6 {
+  margin-top: 50px;
+  flex-direction: column;
+  padding: 5%;
+  height: 10vh;
+  display: flex;
+
+}
+
+.bas7 {
+  margin-top: 50px;
+  flex-direction: column;
+  padding: 5%;
+
+  display: flex;
+
+}
+
+.bas8 {
+
+  padding: 5%;
+  margin-top: -18vh;
+}
+
+
+.bas9 {
+
+  padding: 5%;
+  margin-top: -15vh;
+}
+
+.bas9 h2 {
+  color: white;
+  background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5));
+}
+
+/* notre parc machine */
+
+.atelier {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  align-self: center;
+  display: flex;
+}
+
+.atelier img {
+  flex: 2;
+}
+
+.atelier h3 {
+  flex: 1;
+
+}
+
+.presentPMH {
+  flex: 1;
+}
+
+.plus {
+  flex: 2;
+  font-size: 15px;
+}
+
+/****** entreprise ******/
+
+.entreprise img {
+  height: 40vh;
+  width: 97.5vw;
+  margin-top: 10%;
+}
+
+/***** histoire *****/
+.histoire {
+  display: flex;
+  justify-content: space-between;
+}
+
+/***** effectif *****/
+
+.effectif {
+  display: flex;
+  justify-content: space-between;
+}
+
+/***** chiffre affaire *****/
+
+.CA {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*****Client*****/
+
+.client {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*****fournisseur *****/
+
+.fournisseur {
+  display: flex;
+  justify-content: space-between;
+}
+
+/***** Presentation *****/
+.fondOrange {
+  align-self: center;
+  color: white;
+  background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5));
+}
+
+.presentation h2 {
+  color: white;
+  background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5));
+}
+
+.geographie {
+
+  display: flex;
+
+}
+
+.geographie img {
+  height: 220px;
+  width: auto;
+}
+
+.geographieT {
+  padding-top: 5%;
+}
+
+/*******bas1 gauche  **************/
+
+
+.introBG img {
+  height: 100px;
+  width: 100px;
+  margin-top: 5%;
+}
+
+/***** DescCIVE *****/
+.DescCIVE {
+  display: flex;
+  text-align: center;
+
+}
+
+.CiveLogoText {
+  flex: 1;
+}
+
+.photoCive {
+  flex: 2;
+}
+
+.photoCive img {
+  width: 550px;
+  height: 350px;
+
+}
+
+.basAccueil {
+
+  text-align: center;
+}
+
+.basClientFourn {
+
+  text-align: center;
+
+}
+
+.basPoly {
+
+  font-family: monospace;
+  margin: 20%;
+  padding: 1%;
+
+  background-color: white;
+  width: 70vw;
+  margin: 0 auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+
+}
+
+td .fondOrange {
+  margin: 10px;
+}
+
+/*******bas1 Droite **************/
+.basDroite {
+
+
+  display: flex;
+
+  padding-left: 5%;
+}
+
+.basDroite img {
+  min-width: 20%;
+  max-width: 50%;
+  height: 100px;
+
+  border: 3px transparent solid;
+}
+
+/****** veritas *****/
+
+.veritasI {
+  /* image */
+
+  width: 175px;
+  height: auto;
+}
+
+.veritasC {
+  /* contenu */
+  display: inline-block;
+}
+
+.veritasT {
+  /* text */
+  opacity: 0;
+}
+
+.veritasC:hover .veritasT {
+  /* passage de souris */
+
+  z-index: 1000;
+  border: 2px solid rgba(128, 128, 128, 0.075);
+  background-color: rgba(40, 40, 40, 40);
+  color: white;
+  opacity: 1;
+}
+
+@media screen and (min-width: 250px) and (max-width: 300px) {
+  .veritasI {
+    /* image */
+
+    min-width: 300px;
+    height: auto;
+  }
+}
+
+.contenu.long { 
+text-align: center;
+
+}
+
+/***** mase *****/
+.maseI {
+  /* image */
+
+  width: 80px;
+  height: auto;
+}
+
+.maseC {
+  /* contenu */
+  display: inline-block;
+}
+
+.maseT {
+  /* text */
+  opacity: 0;
+}
+
+.maseC:hover .maseT {
+  z-index: 1000;
+  border: 2px solid rgba(128, 128, 128, 0.075);
+  background-color: rgba(40, 40, 40, 40);
+  color: white;
+  opacity: 1;
+}
+
+/***** cefri *****/
+.cefriI {
+  /* image */
+  width: 10px;
+  height: 10px;
+
+}
+
+.cefriC {
+  /* contenu */
+  display: inline-block;
+}
+
+.cefriT {
+  /* text */
+  opacity: 0;
+}
+
+.cefriC:hover .cefriT {
+  z-index: 1000;
+  border: 2px solid rgba(128, 128, 128, 0.075);
+  background-color: rgba(40, 40, 40, 40);
+  color: white;
+  opacity: 1;
+}
+
+/***** edf *****/
+.edfI {
+  /* image */
+  width: 80px;
+  height: auto;
+}
+
+.edfC {
+  /* contenu */
+  display: inline-block;
+}
+
+.edfT {
+  /* text */
+  opacity: 0;
+}
+
+.edfC:hover .edfT {
+  z-index: 900;
+  border: 2px solid rgba(128, 128, 128, 0.075);
+  background-color: rgba(40, 40, 40, 40);
+  color: white;
+  opacity: 1;
+}
+
+/***** Message de connexion  *****/
+
+.erreur p{ 
+  background-color: white;
+ width: 660px ;
+ height: auto;
+ text-align: center;
+font-size: 1.5em;
+}
+.bienvenue {
+  padding-left: 50px;
+  background-color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/***** deconnexion *****/
+.messageDeco {
+
+  background-color: white;
+  text-align: center;
+}
+
+/************* slider *******/
+
+
+
+#slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 300px;
+}
+
+#slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  max-height: 100%;
+
+  animation-name: slide;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#slides figure {
+  display: inline-block;
+  width: 100vw;
+  max-height: 100%;
+  margin: 0;
+}
+
+#slides figure img {
+  width: 100%;
+  /*Centrer l'image verticalement si celle-ci ne peut être affichée totalement*/
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#slides figure figcaption {
+  position: absolute;
+  bottom: 0;
+  padding: 2.5em 0;
+  font-size: 20px;
+  text-align: center;
+  width: inherit;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+
+#slides:hover {
+  animation-play-state: paused;
+  /* Mise en pause de l'animation */
+}
+
+/***** histoire *****/
+
+@keyframes slide {
+
+  0%,
+  20%,
+  100% {
+    left: 0;
+    /*1ère image*/
+  }
+
+  35%,
+  50% {
+    left: -100vw;
+    /*2ème image*/
+  }
+
+  70%,
+  95% {
+    left: -200vw;
+    /*3ème image*/
+  }
+}
+
+@media (max-width: 400px) {
+  ul {
+    background-color: orange;
+  }
+}
+
+.idenCIVE { 
+  margin-left: -40%;
+}
+
+/************* nos métier ********/
+
+.inter {
+  width: 10%;
+  height: 35%;
+}
+
+/****** titre ******/
+.titreH1 {
+
+  height: 65px;
+}
+
+.titreH1 {
+  font-size: 5em;
+}
+
+.titreB {
+  display: flex;
+}
+
+
+.titre {
+  text-align: center;
+}
+
+.titrePage {
+  color: red;
+  padding-left: 5%;
+  margin-bottom: -20px;
+}
+
+.titreM i {
+  /* metier */
+  font-size: smaller;
+}
+
+.titreM {
+  color: white;
+  margin-bottom: 3%;
+  background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5));
+}
+
+.titreA span {
+  font-size: 17px;
+}
+
+/****** metier ******/
+.metier {
+  display: flex;
+  justify-content: space-between;
+}
+
+.metier img {
+  border-radius: 10%;
+  height: 200px;
+  width: 200px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  /* zoom */
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.metier:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+/**********activité *****/
+
+.activite {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenu1 img {
+  border-radius: 10%;
+  height: 200px;
+  width: 200px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  /* zoom */
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.contenu2 img {
+  border-radius: 10%;
+  height: 200px;
+  width: 200px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  /* zoom */
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.activite img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+
+
+
+
+/***** nos Realisations *****/
+/***** Galerie *****/
+
+.description img {
+  /* taille */
+  width: 600px;
+  height: 400px;
+}
+
+.description span img {
+  /* taille */
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+
+  /* quand c'est sous les 600px */
+  .description img {
+    /* taille */
+    width: 400px;
+    height: 300px;
+  }
+
+  .description span img {
+    /* taille */
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  /* quand c'est sous les 400px */
+  .description img {
+    /* taille */
+    width: 300px;
+    height: 200px;
+  }
+
+  .description span img {
+    /* taille */
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.description {
+  /* position */
+  position: relative;
+}
+
+/*pour le saut de page, on cree une class
+ que l'on met en display:none*/
+.target {
+  display: none
+}
+
+/* englobe le slider */
+.cadre_diapo {
+  /* largeur max */
+  max-width: 600px;
+  /* marge exterieur */
+  margin: 2rem auto;
+  /* masque element */
+  overflow: hidden;
+  /* ombre */
+  box-shadow: 30px -15px rgb(50, 26, 24);
+}
+
+
+.interieur_diapo {
+  /* disposition */
+  display: flex;
+  /* largeur */
+  width: 200%;
+  /* change apres 0.4 seconde */
+  transition: transform .4s ease-in-out
+}
+
+.description span {
+  /* position */
+  position: absolute;
+  /* gauche */
+  left: 0;
+  /* haut */
+  top: 2%;
+  /* taille de la police */
+  font-size: 75%;
+  /* disposition */
+  display: flex;
+  /* marge interieur */
+  padding: .5rem;
+  /* disposer au centre */
+  justify-content: center;
+  /* couleur texte */
+  color: white;
+  /* couleur fond */
+  background: hsla(0, 0%, 0%, .35);
+  /* arrondir les angles */
+  border-radius: 30%;
+}
+
+.logoC {
+  /* taille */
+  width: 50px;
+  height: 50px;
+}
+
+.logoA {
+  /* disposition */
+  display: flex;
+}
+
+/*navigation avec images miniatures*/
+.navigation_diapo {
+  /* disposition */
+  display: flex;
+  /*permet d'aligner les photos les unes à la suite des autres, 
+  on peut aussi utiliser le positionnement absolu*/
+  list-style-type: none;
+  /* marge */
+  margin: 0;
+  padding: 0
+}
+
+.navigation_diapo img {
+  /* bordure */
+  border: 3px solid white;
+  /* ombre */
+  box-shadow: 0 0 5px hsla(0, 0%, 0%, .4);
+  /* largeur / hauteur */
+  width: 50px;
+  height: 50px;
+  /* marge exterieur */
+  margin: -5px;
+}
+
+/**** remplissage des cases du diapo *****/
+/***** Diapo 1 *****/
+
+/*image 1*/
+#B_id1:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(0)
+}
+
+/*image 2*/
+#B_id2:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-50%)
+}
+
+/*image 3*/
+#B_id3:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-100%)
+}
+
+/*image 4*/
+#B_id4:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-150%)
+}
+
+/*image 5*/
+#B_id5:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-200%)
+}
+
+/***** Diapo 2 *****/
+#C_id1:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(0)
+}
+
+/*image 1*/
+
+#C_id2:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-50%)
+}
+
+/*image 2*/
+
+#C_id3:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-100%)
+}
+
+/*image 3*/
+
+#C_id4:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-150%)
+}
+
+/*image 4*/
+
+/***** Diapo 3 *****/
+
+#D_id1:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(0)
+}
+
+/*image 1*/
+
+#D_id2:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-50%)
+}
+
+/*image 2*/
+
+#D_id3:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-100%)
+}
+
+/*image 3*/
+
+/***** Diapo 4 *****/
+
+#E_id1:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(0)
+}
+
+/*image 1*/
+
+#E_id2:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-50%)
+}
+
+/*image 2*/
+
+#E_id3:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-100%)
+}
+
+/***** Diapo 5 *****/
+
+/*image 1*/
+#F_id1:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(0)
+}
+
+/*image 2*/
+#F_id2:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-50%)
+}
+
+/*image 3*/
+#F_id3:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-100%)
+}
+
+/*image 4*/
+#F_id4:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-150%)
+}
+
+/***** Diapo 6 *****/
+
+/*image 1*/
+#G_id1:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(0)
+}
+
+/*image 2*/
+#G_id2:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-50%)
+}
+
+/*image 3*/
+#G_id3:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-100%)
+}
+
+/*image 4*/
+#G_id4:target~.cadre_diapo .interieur_diapo {
+  transform: translatex(-150%)
+}
+
+/***********************************************/
+/******HCTS********* HCTS **********HCTS*******/
+/*********************************************/
+
+/************* switch de header **************/
+
+.titreH1 {
+  padding: 5%;
+  color: white;
+  background: linear-gradient(to right, rgb(142, 198, 63), rgb(41, 5, 5));
+}
+
+.titreH1 span {
+  font-size: 20px;
+}
+
+.txtG h2 {
+  color: white;
+  background: linear-gradient(to right, rgb(142, 198, 63), rgb(41, 5, 5));
+}
+
+/****** entreprise ******/
+.entreprise img {
+  height: 40vh;
+  width: 97.5vw;
+  margin-top: 10%;
+}
+
+.fondVert {
+  color: white;
+  background: linear-gradient(to right, rgb(142, 198, 63), rgb(41, 5, 5));
+}
+
+/***** Presentation *****/
+
+.presentationHH h2 {
+  color: white;
+  background: linear-gradient(to right, rgb(142, 198, 63), rgb(41, 5, 5));
+}
+
+.geographie {
+
+  display: flex;
+  padding-top: 80px;
+}
+
+.geographie img {
+  height: 220px;
+  width: auto;
+}
+
+/*******bas1 gauche  **************/
+
+.introBG img {
+  height: 100px;
+  width: 100px;
+  margin-top: 5%;
+}
+
+
+/*******bas1 Droite **************/
+.basDroite {
+
+  flex: 1;
+  display: flex;
+}
+
+/**** hcts titre *****/
+
+.titreHCTS {
+  color: white;
+  background: linear-gradient(to right, rgb(142, 198, 63), rgb(41, 5, 5));
+
+}
+
+/***** hover article *****/
+
+/************* slider HCTS*******/
+
+@keyframes slide {
+
+  0%,
+  20%,
+  100% {
+    left: 0;
+    /*1ère image*/
+  }
+
+  35%,
+  50% {
+    left: -100vw;
+    /*2ème image*/
+  }
+
+}
+
+/***** connxion *****/
+
+.formConne {
+  display: flex;
+}
+
+/**** formulaire contact *****/
+
+.contactDuo {
+  flex-direction: column;
+  display: flex;
+}
+
+.idenCIVE img {
+  width: 150px;
+  height: 150px;
+}
+
+.idenCIVE {
+  padding-left: 60%;
+  height: 200px;
+  width: 25%;
+  min-width: 280px;
+  min-height: 300px;
+}
+
+.idenCIVE2 img {
+  width: 150px;
+  height: 150px;
+}
+
+.idenCIVE2 {
+
+  margin-left: 30%;
+  height: 200px;
+  width: 25%;
+  min-width: 280px;
+  min-height: 300px;
+}
+
+.idenCIVE2 u{
+width: 500px;
+height: 100px;
+  
+}
+
+
+
+.formConCom {
+  display: flex;
+  flex-direction: row;
+  color: black;
+}
+
+@media screen and (min-width: 200px) and (max-width: 820px) {
+
+  .formConCom {
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+
+  .bas {
+    height: 900px;
+  }
+}
+
+.formContact {
+  color: black;
+  display: flex;
+
+}
+
+.formIdent {
+  display: flex;
+
+}
+
+.coord {
+  color: white;
+  background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5));
+  padding: 5%;
+  border-radius: 5%;
+}
+
+
+
+
+.imageForm img {
+  width: 150px;
+  height: 150px;
+
+}
+
+
+.input1 {
+
+  padding: 5%;
+}
+
+.duo {
+
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+form {
+
+  padding-left: 5%;
+
+
+  border-radius: 5%;
+
+  opacity: 80%;
+  height: 30px;
+  font-size: 20px;
+}
+
+form .formChantier {
+  padding: 5% 5% 0% 5%;
+  border: 1px solid white;
+  border-radius: 5%;
+  color: white;
+  background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5));
+  opacity: 80%;
+  height: 350px;
+  font-size: 20px;
+
+}
+
+
+.formulaire {
+margin: 7% 10% 15% 32%;
+background-color: white;
+opacity: 88%;
+border-radius: 10%;
+height: 42vh;
+ 
+  padding: 1%;
+min-width: 380px;
+max-width: 380px;
+}
+
+.formulaire label , .formulaire input {
+
+  margin: 3%;
+}
+
+
+.RechercheOf {
+  background: transparent;
+  border: none;
+}
+
+.cssform {
+  padding: 5%;
+}
+
+.formulaire input {
+  display: flex;
+
+}
+
+.cssform p {
+  width: 300px;
+  clear: left;
+  margin: 0;
+  padding: 5px 0 8px 0;
+  padding-left: 155px;
+  /*width of left column containing the label elements*/
+  border-top: 1px dashed gray;
+  height: 1%;
+}
+
+.cssform label {
+  font-weight: bold;
+  float: left;
+  margin-left: -155px;
+  width: 150px;
+
+}
+
+
+.cssform textarea {
+  width: 250px;
+  height: 150px;
+}
+
+
+* html .threepxfix {
+  margin-left: 3px;
+}
+
+/***** recherche emploi *****/
+
+.hautOffre {
+
+  padding: 5%;
+}
+
+.RechercheOf {
+
+  margin: 5%;
+
+}
+
+.basOffre {
+  display: flex;
+  flex-wrap: wrap;
+  /* pour prendre la place dont il a besoin */
+  justify-content: space-around;
+
+}
+
+.recheAjout {
+
+  display: flex;
+  align-items: center;
+}
+
+.inter {
+
+  width: calc(75% - 6rem);
+  min-width: 300px;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+
+
+}
+
+.boutonPos {
+  padding: 0 5%;
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.long {
+  width: 100%;
+  padding-bottom: 5%;
+  overflow-y: scroll;
+  height: 100px;
+  text-align: justify;
+}
+
+.LC {
+
+  height: 60px;
+  width: auto;
+}
+
+
+.offre {
+
+  margin-top: 10%;
+  background-size: cover;
+  width: 300px;
+  min-height: 300px;
+  border-left: 2px solid rgb(243, 154, 0);
+  border-right: 3px solid rgb(41, 5, 5);
+  border-radius: 5%;
+  color: black;
+  width: 300px;
+  height: 200px;
+  /* background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5)); */
+  background: transparent;
+  position: relative;
+  background-size: cover;
+
+}
+
+.descriptionOffreEmploi{
+
+}
+/***** dernier accident *****/
+
+
+.contenuDernier {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+}
+
+.logoDate {
+  align-self: center;
+  width: 100px;
+  height: 100px;
+  padding: 5% 0% 5% 0%;
+}
+
+.boutonModif {
+  align-self: center;
+  border: none;
+  padding: 10px 0px 4px 0px;
+  border-radius: 75%;
+  border-bottom: 7px solid rgb(243, 154, 0);
+  font: bold 13px Arial;
+  color: #555;
+  background: #fff;
+  box-shadow: 2px 2px 3px #999;
+  border-top: 2px solid #59cd27;
+  text-align: center;
+  width: 6em;
+  height: 2em;
+
+}
+
+.dateDernier {
+  margin: 3.5%;
+}
+
+.dernierAContenu a {
+
+  margin: 5%;
+}
+
+.dernierAContenu {
+  border-radius: 5%;
+  padding: 4%;
+  margin-bottom: 33.6%;
+  display: flex;
+  width: 30vw;
+}
+
+.blocContenu {
+  flex: 1;
+}
+
+.boutonDernier {
+
+  border: none;
+  padding: 20px;
+  border-radius: 75%;
+
+  font: bold 13px Arial;
+  color: #555;
+  background: #fff;
+
+}
+
+button,
+.bouton {
+  border: none;
+  padding: 6px 0 6px 0;
+  border-radius: 75%;
+  border-bottom: 7px solid rgb(243, 154, 0);
+  font: bold 13px Arial;
+  color: #555;
+  background: #fff;
+  box-shadow: 2px 2px 3px #999;
+  border-top: 2px solid #59cd27;
+}
+
+.boutonADD { 
+margin: 5%;
+margin-left: 20%;
+
+}
+
+input:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.rechercheSite:hover {
+
+  cursor: text;
+}
+
+.mesMail {
+
+  color: green;
+  font-size: 1em;
+  margin-top: 20%;
+  margin-left: 40%;
+  border: 1px solid green;
+  border-radius: 5%;
+  height: 30px;
+  width: 400px;
+  padding: 5%;
+
+
+}
+
+.boutonIns {
+  padding-left: 3%;
+}
+
+.navA {
+  color: white;
+}
+
+/****** nos metier *****/
+
+.Cadre1 {
+
+  display: flex;
+}
+
+.espaceV {
+  flex: 0.2;
+}
+
+.contenu1 {
+  margin: 5%;
+  flex: 1;
+
+}
+
+.contenu1 p {
+  overflow-y: scroll;
+  height: 35vh;
+  width: 300px;
+}
+
+.contenu2 {
+  margin: 5% 0% 0% 5%;
+  flex: 1;
+
+}
+
+.contenu2 p {
+
+  height: 35vh;
+  width: 15vw;
+}
+
+/****** offre d'emploi quand on est pas encore connecter *****/
+
+.offreCo:hover {
+
+
+  content: 'Connecter vous pour decouvrir nos offres d\'emploi';
+}
+
+footer {
+
+  background-color: rgb(36, 26, 24);
+  color: white;
+  bottom: 0;
+  width: 100%;
+  line-height: 4em;
+  /* hauteur de ligne */
+  text-align: center;
+  height: 50px;
+  margin-top: 10%;
+
+}
+
+.ligne {
+  display: flex;
+}
+
+.contenuePla {
+  padding-top: 5%;
+  width: 180px;
+  height: 150px;
+  font-size: 15px;
+  color: black;
+  background-color: rgb(236, 214, 214);
+
+}
+
+.planning {
+
+  text-align: center;
+}
+
+.color_line input {
+  min-width: 100%;
+  max-width: 200%;
+}
+
+table {
+
+  align-self: center;
+  /* mettre au milieu */
+  display: inline;
+}
+
+table.color_line tr:nth-child(2n+0) td {
+  color: white;
+  background-color: rgb(66, 4, 4);
+}
+
+table.color_line tr:nth-child(2n+3) td {
+  color: rgb(134, 10, 10);
+  background-color: white;
+}
+
+td input {
+  width: 100px;
+  height: 100px;
+}
+
+/***** api meteo *****/
+
+.contient {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+.cadre {
+  border: 1px solid white;
+  border-radius: 15%;
+  background-image: url(../IMAGE/fondMeteo.jpg);
+  filter: grayscale(50%);
+  background-size: cover;
+  height: 500px;
+  width: 300px;
+}
+
+#ville {
+  text-transform: capitalize;
+  font-size: 3em;
+}
+
+#temperature {
+  font-size: 3em;
+}
+
+#changer {
+  margin-top: 5%;
+  text-align: center;
+  color: yellow;
+  cursor: pointer;
+}
+
+#icon {
+  font-size: 5em;
+  height: 80px;
+}
+
+.vitesseVent {
+  font-size: 1.5em;
+
+}
+
+#horaire {
+  color: white;
+  font-size: 1.5em;
+}
+
+#date {
+  font-size: 1.8em;
+  color: white;
+}
+
+
+img#imgRouge {
+  height: 2vh;
+}
+
+img#imgVerte {
+  height: 2vh;
+}
+
+/***** marquee *****/
+
+marquee {
+  font-size: 2rem;
+}
+
+/****** test phone ******/
+
+@media screen and (max-width: 600px) {
+
+  .fondOrange {
+    background: linear-gradient(blue, white, red);
+  }
+}
