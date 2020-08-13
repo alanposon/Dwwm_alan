@@ -1,0 +1,65 @@
+/*************************** entete */
+
+#logo{ 
+    float:right;
+    border : 1rem solid red ;
+    transition: all 1s;
+border-radius: 95px 10px 55px 200px;
+    
+}
+#logo:hover{
+    border : 1rem solid yellow ;
+    transform: scale(1.25);
+}
+
+
+/*******************Contenu ***********/
+
+.coordonnee{ 
+display: flex; 
+}
+
+.titre{ 
+  flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.case{ 
+      flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin: 0 50% 0 0;
+}
+
+body{ 
+    
+    
+  
+background-color: skyblue;
+
+}
+  
+
+
+.coordonnee { 
+display: flex; }
+
+p{
+
+   color :  red ;
+}
+
+
+.pari{
+    color : red; 
+    text-decoration:underline;
+        font-family: 'Pinyon Script', cursive;
+    font-size : 15px ;
+     transition: all 1s;
+}
+.pari:hover{
+    color: yellow ;
+    transform: rotate(10deg);
+}

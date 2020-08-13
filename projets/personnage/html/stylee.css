@@ -1,0 +1,91 @@
+
+.listeArticle .h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 2%;
+    
+
+}
+
+
+
+
+
+.espace{
+    padding: 0 1%;
+}
+.espace-2{
+    padding: 5% 0;
+}
+.espace-3{
+    padding: 6% 0;
+}
+
+
+
+
+.listeArticle .contenue-deconnect{
+    display: flex;
+    justify-content: center;
+}
+
+.listeArticle .contenue-deconnect a{
+    background-color: #44A33D;
+    padding: 1%;
+    border-radius: 4%;
+    transition: 0.5s;
+}
+.listeArticle .deconnect{
+    color: white; 
+}
+
+.listeArticle .deconnect{
+    color: white; 
+    font-size: 1.2em;
+}
+
+.listeArticle .conteneur-1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+.listeArticle .conteneur-tab{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.listeArticle .text-tab{
+    background-color: #44A33D;
+    color: white;
+    border: 1px solid white;
+    padding: 2%;
+}
+
+.listeArticle .conteneur-tab-2{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.listeArticle .text-tab-2{
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border: 1px solid white;
+    padding: 2%;
+}
+
+.listeArticle .text-tab-2 a{
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+.listeArticle .a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}

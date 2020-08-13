@@ -1,0 +1,182 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: black;
+
+}
+
+body:active {
+    transform: scale(1.1);
+}
+
+.employe {
+
+    display: flex;
+    border: solid brown 1px;
+    background-color: cornsilk;
+    justify-content: center;
+
+}
+
+.bandeau {
+    width: auto;
+    display: flex;
+    margin: 7vh;
+    background-color: darkturquoise;
+}
+
+
+.logo {
+    flex: 2;
+    margin: 1vw;
+}
+
+.titrePage {
+
+    flex: 9;
+    /* le titre prendra une place de 9 sur 10 ( logo 1/10 , titre 9/10 = 10/10 )*/
+    color: white;
+
+    font-family: fantasy;
+    text-align: center;
+    font-size: 6em;
+    /* on change la taille de la police ;*/
+
+    /* on change l'espacement entre les lettre */
+    text-transform: uppercase;
+    /* on passe le tout en majuscule */
+    /* faire un ombrage */
+    text-align: center;
+
+    /* on aligne le texte au centre */
+}
+
+.info {
+    display: flex;
+
+}
+
+.agence {
+    display: flex;
+
+}
+
+.poste {
+    display: flex;
+
+}
+
+.enfants {
+    display: flex;
+}
+
+denfants {
+  border-radius: 10%;
+    border: 3px solid white;
+    background-color: mediumturquoise;
+    font-size: 5em;
+}
+
+.tposte {
+    border-radius: 10%;
+    border: 3px solid white;
+    background-color: mediumturquoise;
+    font-size: 5em
+}
+
+.tenfants {
+    border-radius: 10%;
+    border: 3px solid white;
+    background-color: mediumturquoise;
+    font-size: 5em
+}
+
+.tagence {
+    border-radius: 10%;
+    border: 3px solid white;
+    background-color: mediumturquoise;
+    font-size: 5em
+}
+
+.tinfo {
+    border-radius: 10%;
+    border: 3px solid white;
+    background-color: mediumturquoise;
+    font-size: 5em
+}
+
+.titre tableau {
+
+    display: flex;
+    color: white;
+    font-size: 5vw;
+
+}
+
+.enssemble {
+    display: flex;
+
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding: 12vh;
+
+}
+
+th {
+    background-color: darkblue;
+}
+
+td {
+    color: black;
+    background-color: green;
+}
+
+
+table {}
+
+th,
+td {
+
+    border: 2px solid white;
+
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+
+
+    .nom {
+        color: blueviolet;
+        font-size: 2em;
+
+    }
+
+    .body {
+        width: 200vw;
+    }
+}
+
+footer {
+
+    color: black;
+    border: 2px solid tomato;
+    background-color: rgb(206, 197, 155);
+}
+
+@media screen and (max-width:800px) {
+
+
+
+    .nom {
+        flex-direction: column-reverse;
+        color: green;
+        font-size: 2em;
+    }

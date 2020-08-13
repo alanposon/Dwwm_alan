@@ -1,0 +1,48 @@
+:root {
+    --color-green-fonce: #44A33D;
+    --color-green-clair: #87BB34;
+    --color-sombre: #272D2D;
+    --color-rouge-sombre: #36151E;
+    --color-white: #fff;
+    --color-gris: rgb(216, 216, 216);
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-white);
+    font-family: 'Saira', sans-serif;
+}
+
+
+.conteneur-tab {
+    display: flex;
+    justify-content: center;
+
+}
+
+.dedans {
+    display: flex;
+    padding: 2px;
+}
+
+.contenu-tab {
+    display: flex;
+    
+    background-color: var(--color-gris);
+}
+
+.conteneur2-tab {
+    display: flex;
+    align-items: center;
+    border-radius: 8%;
+    border: 2px solid black;
+}
+
+.entete {
+    color: white;
+    border: 2px solid black;
+    border-radius: 8%;
+    background-color: var(--color-green-fonce);
+}

@@ -1,0 +1,12 @@
+label{
+    display: inline-block;
+    min-width: 200px;
+}
+
+img#image_Crouge, img#image_CrougeMail, img#image_CrougeTel {
+    display: none;
+}
+
+img#image_Vvert, img#image_VvertMail, img#image_VvertTel {
+    display: none;
+}

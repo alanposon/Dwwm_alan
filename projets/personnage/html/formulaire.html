@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+ 
+
+    
+
+
+</head>
+<body>
+<div class="formulaire center">
+<form action="resultat.php" method="GET">
+    <fieldset>
+        <legend><i class="connexion"></i>connexion</legend>
+        <label for="pseudo">Votre pseudo </label>
+        <input type="text" name="pseudo" id="pseudo" maxlength="30" required>
+
+        <label for="motDePasse">Votre Mot de Passe*</label>
+        <input type="password" name="mot_de_passe" id="mot_de_passe"required>    
+      
+    </fieldset>
+        <div class="btn">
+            <button type="submit" name="valider"> Valider</button>
+            <button type="reset" name="annulez" class="annule"> Annulez</button>
+        </div>
+    </fieldset>
+</form>
+</div>
+</body>
+</html>

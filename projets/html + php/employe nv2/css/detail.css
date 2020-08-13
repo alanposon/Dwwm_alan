@@ -1,0 +1,42 @@
+/*PAGE DETAIL EMPLOYE********************************/
+.detail {
+    display: flex;
+    margin: 4vh auto;
+    width: 80vw;
+
+
+}
+
+.titreDetail {
+    display: flex;
+    align-content: center;
+    flex: 1;
+
+}
+
+.titreDetail h3 {
+    text-align: center;
+    border-radius: 30px;
+    font-size: 2rem;
+    font-weight: 300;
+    min-height: 6vh;
+    width: 100%;
+    line-height: 6vh;
+    transform: scale(1.25);
+    color: white;
+}
+
+.detailEmploye {
+    display: flex;
+    align-items: center;
+    flex: 2;
+    background-color: #77d3fc;
+    padding: 1vw 0 1vw 5vw;
+}
+
+li {
+    color: #151515;
+    padding-left: 10;
+    list-style-position: inside;
+    line-height: 3vh;
+}

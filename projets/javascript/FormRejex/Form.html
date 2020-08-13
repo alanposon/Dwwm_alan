@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML>
+
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulaire Walking Dead </title>
+    <link rel="stylesheet" href="Css.css" />
+</head>
+
+
+<body>
+    <header>
+        <h1>Formulaire d'inscription à l'elite</h1>
+    </header>
+    <div class="formulaire">
+
+        <div>
+            <label for="nom">Nom : </label>
+            <input type="text" id="nom" name="nom" pattern="^[A-ZÀ-Ý]{1}[a-zà-ý '-]*$" required autofocus>
+            </div>
+
+        <div>
+            <label for="prenom">Prenom : </label>
+            <input type="text" id="prenom" name="prenom" pattern="^[A-ZÀ-Ý]{1}[a-zà-ý '-]*$"
+                placeholder="1er lettre en maj" required>
+        </div>
+
+        <div>
+            <label for="Numero">numero </label>
+            <input type="tel" id="numero" name="number" pattern="^(0|\+33)[\d]([-./ ]?[\d]{2}){4}$"
+                placeholder="numero de telephone" required>
+        </div>
+
+        <div>
+            <label for="codePostal">Code postal : </label>
+            <input type="text" id="posta" name="codePostal" 
+            pattern="^\d{5}$" required>
+
+        </div>
+
+        <div class="password">
+            <label for="motDePasse">Mot de passe : </label>
+            <input type="password" id="motDePasse" name="motDePasse"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[!@#\$%\^&\*+])[a-zA-Z\d!@#\$%\^&\*+]{8,}$" required>
+        <img src="eye.png" id="eye" alt="eye">
+        </div>
+
+        <div>
+            <label for="confirm">Confirmer mot de passe : </label>
+            <input type="password" id="confirm" name="confirm" 
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[!@#\$%\^&\*+])[a-zA-Z\d!@#\$%\^&\*+]{8,}$" required>
+        </div>
+<!--******************************* a voir apres -->
+        <p>
+            <input type="checkbox" name="confirmation" id="confirmation">
+            <label for="confirmation">M'envoyer un courriel de confirmation</label>
+        </p>
+
+        <p>
+            <input type="radio" name="abonnement" id="abonewspromo" value="abonewspromo">
+            <label for="abonewspromo">M'abonner à la newsletter et aux promotions</label>
+            <br>
+            <input type="radio" name="abonnement" id="abonews" value="abonews">
+            <label for="abonews">M'abonner uniquement à la newsletter</label>
+            <br>
+            <input type="radio" name="abonnement" id="aborien" value="aborien" checked>
+            <label for="aborien">Ne pas m'abonner</label>
+            <br>
+        </p>
+        <p>
+            <label for="nationalite">Nationalité :</label>
+            <select name="nationalite" id="nationalite">
+                <option value="FR" selected>Française</option>
+                <option value="BE">Belge</option>
+                <option value="SUI">Suisse</option>
+                <option value="XX">Autre</option>
+            </select>
+        </p>
+
+<div class="alert">
+<img class="icon" id="imgNom"
+title="Inscrivez votre nom tout en majuscule, 3 carracteres minimum "
+src="question.png" alt="">
+<img class="icon" id="imgPremon"
+title="Inscrivez votre prenom avec avec une majuscule au debut , 2 caracteres minimum"
+src ="question.png" alt="">
+<img class="icon" id="imgCourriel"
+title="Inscrivez votre courriel dans un format valide : mail@fournisseur.com"
+src ="question.png" alt="">
+<img class="icon" id="imgCodePostal"
+title="Inscrivez votre code postal "
+src ="question.png" alt="">
+<img class="icon" id="imgMotDePasse"
+title="Inscrivez votre mot de passe "
+src ="question.png" alt="">
+<img class="icon" id="imgConfirmation"
+title="Inscrivez votre mot de passe pour confirmer "
+src ="question.png" alt="">
+</div>
+
+        <!--*******************************************-->
+        <div>
+            <div class="bouton">
+                <button id="submit" type="submit ">Valider</button>
+                <button type="submit">Annuler</button>
+            </div>
+        </div>
+
+        <script src="test.js"></script>
+</body>
+
+
+</html>

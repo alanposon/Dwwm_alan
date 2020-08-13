@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("fond.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(67, 69, 71, 0.5);
+    border-radius: 50px;
+    width: 40vw;
+    padding: 3vw;
+    background-color: rgba(95, 96, 99,0.5);
+border: 2px black solid;
+ 
+}
+div{
+    display: flex;
+    margin-bottom: 1vw;
+    justify-content: center;
+    flex: 1;
+  
+}
+div div{
+    margin-bottom:0;
+}
+ img {
+    width: 20px;
+    height: 20px;
+    margin-left: 3vw;
+} 
+header{
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 3vw;
+    color: white;
+}
+
+label {
+    flex: 0.5;
+    color: white;
+    font-size: 1.1vw;
+}
+input, textarea, .inputLabel{
+    flex: 1;
+}
+
+.column{
+    flex-direction: column;
+    justify-content: center;
+}
+.checkbox{
+   flex: 4;
+}
+
+button{
+    margin-left: 1vw;
+    border-radius: 34px;
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    padding: 0.5vw;
+}
+
+/* label{
+    display: inline-block;
+    min-width: 200px;
+}
+
+img#Rouge.png, img#RougeMail, img#RougeTel {
+    display: none;
+}
+
+img#Vert.png, img#VertMail, img#VertTel {
+    display: none;
+} */

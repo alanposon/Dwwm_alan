@@ -1,0 +1,166 @@
+
+/*********************** GENERAL*****************/
+html{
+    display: flex;
+    justify-content: center;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     background-color: rgb(112, 136, 112);
+    width: 80%;
+}
+header, footer{
+    background-color: black;
+    color: rgb(0, 255, 106);
+    text-align: center;
+    padding: 2vw;
+    margin: 2vw;
+    width: 100%;
+}
+
+div{
+    display: flex;
+    flex: 1;
+    padding: 0.2vw 0;
+}
+.centrer{
+    justify-content: center;
+}
+.colonne{
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+/* ------------------------------ CSS -- */
+
+
+
+.center {
+    width: 40vw;
+    margin: 0 auto;
+}
+
+
+form, .confirmation, .liste {
+    background-color: rgba(34, 34, 34, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    margin-top: 10vh;
+    color: rgb(250, 255, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+h2{
+    padding: 3vw 1vw 2vw 1vw;
+    color: white;
+    font-family: 'Trade Winds', cursive;
+
+}
+input {
+    background-color: rgb(80, 80, 80);
+    border: 0;
+    border-bottom:#a6c22b solid 1px ;
+    color: rgb(250, 255, 240);
+    min-height: 4vh;
+    text-indent: 1vw;
+}
+fieldset, input{
+    width: calc(100% - 80px);
+    margin: 10px 40px;
+    
+}
+div.radio{
+    display:
+        flex;
+    align-items: center;
+    
+}
+fieldset{
+    border: white solid 2px;
+    border-radius: 30px;
+}
+ 
+legend{
+    font-weight: 700;
+    text-transform: uppercase;
+    color:deepskyblue;
+    padding: 0 3vw;
+
+}
+.login{
+    padding-right: 1vw;
+}
+
+.btn {
+    margin: 10px 0 30px 0;
+}
+button, a {
+  
+    border-radius: 10px;
+    background-color:rgb(230, 203, 203);
+    border: 1;
+    padding: 0vw 0.5vw;
+    margin: 0.5vw;
+    cursor:pointer;
+    transition: all .5s;
+}
+button:hover, a:hover{
+    background-color: #a6c22b;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.annule:hover{
+ background-color: rgb(182, 6, 6);
+}
+
+/* CONFIRMATION**************************** */
+.confirmation{
+    padding-bottom: 4vh;
+}
+
+
+/*********************** LISTE*****************/
+.ligne{
+    width: 100%;
+    border: 1px rgb(44, 41, 41) solid;
+}
+.bloc{
+    padding: 2vw;
+    background-color: bisque;
+}
+
+.titre{
+    background-color: black;
+    color: white;
+}
+.bouton{
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: grey;
+    color: white;
+    align-self: center;
+    padding: 1vw 2vw;
+    margin: 1vw;
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+/* ----------------------------------------------MEDIA QUERIES 960px ---- */
+/* ------------------------------------------------------------------------- */
+
+@media screen and (max-width: 960px) {
+    .center {
+        width: 80vw;
+    }
+}
